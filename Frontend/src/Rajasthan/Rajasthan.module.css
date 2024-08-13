@@ -1,0 +1,1471 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:700");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", "Poppins", sans-serif;
+}
+
+body {
+  font-family: roboto, "Lato", sans-serif;
+}
+
+/* Rajasthan.module.css */
+
+/* Home section */
+.home {
+  height: 100vh;
+  position: relative;
+  margin-bottom: -100px;
+}
+
+.video {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.homeContent {
+  position: relative;
+  padding-top: 170px;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(45px, 7vw, 130px);
+  line-height: 1.1;
+}
+
+.home p {
+  font-size: clamp(20px, 2.5vw, 40px);
+  margin-top: 12px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
+/* Description section */
+.description {
+  padding: 30px 100px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+
+.gradientLine {
+  margin: 0 0 20px 0;
+  display: block;
+  border: none;
+  height: 3px;
+  background: #0071b9;
+  background: linear-gradient(
+    to right,
+    rgb(0, 111, 156),
+    #0071b9,
+    #26abff,
+    #0071b9,
+    white
+  );
+}
+
+.logoAndText {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; 
+}
+
+.logoImg img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin-right: 50px;
+  margin-bottom: 35px; 
+}
+
+.text {
+  flex: 1;
+}
+
+.description hr {
+  margin-top: 20px;
+}
+
+.description p {
+  font-size: 20px;
+  color: #848484;
+  font-weight: 700;
+}
+
+.expand {
+  font-weight: 700;
+  color: rgb(255, 108, 29);
+  background-color: #ffffff;
+  border: none;
+  font-size: 18px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode";
+  cursor: pointer;
+}
+
+.expand:hover {
+  color: rgb(255, 64, 0);
+}
+
+/* Headings */
+.mainHeading {
+  color: #777;
+  text-transform: uppercase;
+  display: block;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: -10px;
+  letter-spacing: 3px;
+  animation: moveInLeft 1s ease-out;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .description {
+    padding: 20px;
+  }
+
+  .homeContent {
+    padding-top: 100px;
+  }
+
+  .logoImg img {
+    width: 100%;
+    max-width: 300px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .description p {
+    font-size: 16px;
+  }
+
+  .expand {
+    font-size: 16px;
+  }
+
+  .mainHeading {
+    font-size: 1.5rem;
+  }
+}
+
+/*-------------- Card_Rajasthan section  */
+.Cards_Main {
+  position: relative;
+  width: 95%;
+  border-radius: 15px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 20px;
+  background: rgb(255, 208, 146);
+  background: linear-gradient(
+    315deg,
+    rgba(255, 208, 146, 1) 14%,
+    rgba(254, 254, 227, 1) 100%
+  );
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-image: url("/public/images/Rajasthan_img/Rajasthan_Camels.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.Cards_Main_Gujrat {
+  position: relative;
+  width: 95%;
+  border-radius: 15px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 20px;
+  background: rgb(255, 208, 146);
+  background: linear-gradient(
+    315deg,
+    rgba(255, 208, 146, 1) 14%,
+    rgba(254, 254, 227, 1) 100%
+  );
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-image: url("/public/images/Gujrata.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+.Cards_Main_MP {
+  position: relative;
+  width: 95%;
+  border-radius: 15px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 20px;
+  background: rgb(255, 208, 146);
+  background: linear-gradient(
+    315deg,
+    rgba(255, 208, 146, 1) 14%,
+    rgba(254, 254, 227, 1) 100%
+  );
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-image: url("/public/images/Rajasthan_img/Tiger.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+.Cards_Main_Maharashtra {
+  position: relative;
+  width: 95%;
+  border-radius: 15px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 20px;
+  background: rgb(255, 208, 146);
+  background: linear-gradient(
+    315deg,
+    rgba(255, 208, 146, 1) 14%,
+    rgba(254, 254, 227, 1) 100%
+  );
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-image: url("/public/images/Rajasthan_img/marine.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+.Cards_Main_Daman {
+  position: relative;
+  width: 95%;
+  border-radius: 15px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 20px;
+  background: rgb(255, 208, 146);
+  background: linear-gradient(
+    315deg,
+    rgba(255, 208, 146, 1) 14%,
+    rgba(254, 254, 227, 1) 100%
+  );
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-image: url("/public/images/Rajasthan_img/Dammu.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+.Cards_Main_Goa  {
+  position: relative;
+  width: 95%;
+  border-radius: 15px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 20px;
+  background: rgb(255, 208, 146);
+  background: linear-gradient(
+    315deg,
+    rgba(255, 208, 146, 1) 14%,
+    rgba(254, 254, 227, 1) 100%
+  );
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-image: url("/public/images/Rajasthan_img/Goa.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+.Cards_Main_Keral  {
+  position: relative;
+  width: 95%;
+  border-radius: 15px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 20px;
+  background: rgb(255, 208, 146);
+  background: linear-gradient(
+    315deg,
+    rgba(255, 208, 146, 1) 14%,
+    rgba(254, 254, 227, 1) 100%
+  );
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-image: url("/public/images/Rajasthan_img/Keral.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+.Cards_Main_Karnataka  {
+  position: relative;
+  width: 95%;
+  border-radius: 15px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 20px;
+  background: rgb(255, 208, 146);
+  background: linear-gradient(
+    315deg,
+    rgba(255, 208, 146, 1) 14%,
+    rgba(254, 254, 227, 1) 100%
+  );
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-image: url("/public/images/Rajasthan_img/karnataka.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+.Cards_Main_Andhra  {
+  position: relative;
+  width: 95%;
+  border-radius: 15px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 20px;
+  background: rgb(255, 208, 146);
+  background: linear-gradient(
+    315deg,
+    rgba(255, 208, 146, 1) 14%,
+    rgba(254, 254, 227, 1) 100%
+  );
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-image: url("/public/images/Rajasthan_img/Andhra.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+.Cards_Main_Meghalaya  {
+  position: relative;
+  width: 95%;
+  border-radius: 15px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 20px;
+  background: rgb(255, 208, 146);
+  background: linear-gradient(
+    315deg,
+    rgba(255, 208, 146, 1) 14%,
+    rgba(254, 254, 227, 1) 100%
+  );
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-image: url("/public/images/Rajasthan_img/meghalya.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+.Cards_Main_Up  {
+  position: relative;
+  width: 95%;
+  border-radius: 15px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 20px;
+  background: rgb(255, 208, 146);
+  background: linear-gradient(
+    315deg,
+    rgba(255, 208, 146, 1) 14%,
+    rgba(254, 254, 227, 1) 100%
+  );
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-image: url("/public/images/Rajasthan_img/up.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+
+.rajasthan_Pattern {
+  position: absolute;
+  top: 9%;
+  left: 20%;
+  width: 1000px;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  opacity: 0.1;
+  animation: rotatePattern 25s linear infinite;
+}
+@keyframes rotatePattern {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rajasthan_logo2 {
+  position: relative;
+  right: 33%;
+  z-index: 2;
+}
+.Gujrat_logo2 {
+  position: relative;
+  right: 33%;
+  z-index: 2;
+}
+
+
+.Ladakh_Cards_Main {
+  position: relative;
+  width: 95%;
+  border-radius: 15px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 20px;
+  background: rgb(255, 208, 146);
+  background: linear-gradient(
+    315deg,
+    rgba(255, 208, 146, 1) 14%,
+    rgba(254, 254, 227, 1) 100%
+  );
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-image: url("/public/images/Ladakh_img/shanti-stupta-leh3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.Ladakh_logo2 {
+  position: relative;
+  right: 33%;
+  z-index: 2;
+}
+
+.JammuKashmir_Cards_Main {
+  position: relative;
+  width: 95%;
+  border-radius: 15px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 20px;
+  background: rgb(255, 208, 146);
+  background: linear-gradient(
+    315deg,
+    rgba(255, 208, 146, 1) 14%,
+    rgba(254, 254, 227, 1) 100%
+  );
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-image: url("/public/images/J&K_img/Snow_BG_JK.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.JammuKashmir_logo2 {
+  position: relative;
+  right: 33%;
+  z-index: 2;
+}
+
+.HimachalPradesh_Cards_Main {
+  position: relative;
+  width: 95%;
+  border-radius: 15px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 20px;
+  background: rgb(255, 208, 146);
+  background: linear-gradient(
+    315deg,
+    rgba(255, 208, 146, 1) 14%,
+    rgba(254, 254, 227, 1) 100%
+  );
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-image: url("/public/images/HimachalPradesh_img/Himachal_BG.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.HimachalPradesh_logo2 {
+  position: relative;
+  right: 33%;
+  z-index: 2;
+}
+.Uttarakhand_Cards_Main {
+  position: relative;
+  width: 95%;
+  border-radius: 15px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 20px;
+  background: rgb(255, 208, 146);
+  background: linear-gradient(
+    315deg,
+    rgba(255, 208, 146, 1) 14%,
+    rgba(254, 254, 227, 1) 100%
+  );
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-image: url('/public/images/Uttarakhand_img/Uttarakhand_BG.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.Uttarakhand_logo2 {
+  position: relative;
+  right: 33%;
+  z-index: 2;
+}
+.Sikkim_Cards_Main {
+  position: relative;
+  width: 95%;
+  border-radius: 15px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 20px;
+  background: rgb(255, 208, 146);
+  background: linear-gradient(
+    315deg,
+    rgba(255, 208, 146, 1) 14%,
+    rgba(254, 254, 227, 1) 100%
+  );
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-image: url('/public/images/Sikkim_img/sikkim-BG.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.Sikkim_logo2 {
+  position: relative;
+  right: 33%;
+  z-index: 2;
+}
+.Odisha_Cards_Main {
+  position: relative;
+  width: 95%;
+  border-radius: 15px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 20px;
+  background: rgb(255, 208, 146);
+  background: linear-gradient(
+    315deg,
+    rgba(255, 208, 146, 1) 14%,
+    rgba(254, 254, 227, 1) 100%
+  );
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-image: url('/public/images/Odisha_img/Odisha_BG.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.Odisha_logo2 {
+  position: relative;
+  right: 33%;
+  z-index: 2;
+}
+.Assam_Cards_Main {
+  position: relative;
+  width: 95%;
+  border-radius: 15px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 20px;
+  background: rgb(255, 208, 146);
+  background: linear-gradient(
+    315deg,
+    rgba(255, 208, 146, 1) 14%,
+    rgba(254, 254, 227, 1) 100%
+  );
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-image: url('/public/images/Assam_img/assam-BG.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.Assam_logo2 {
+  position: relative;
+  right: 33%;
+  z-index: 2;
+}
+.WestBengal_Cards_Main {
+  position: relative;
+  width: 95%;
+  border-radius: 15px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 20px;
+  background: rgb(255, 208, 146);
+  background: linear-gradient(
+    315deg,
+    rgba(255, 208, 146, 1) 14%,
+    rgba(254, 254, 227, 1) 100%
+  );
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-image: url('/public/images/WestBengal_img/WestBengal_BG.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.WestBengal_logo2 {
+  position: relative;
+  right: 33%;
+  z-index: 2;
+}
+.TamilNadu_Cards_Main {
+  position: relative;
+  width: 95%;
+  border-radius: 15px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 20px;
+  background: rgb(255, 208, 146);
+  background: linear-gradient(
+    315deg,
+    rgba(255, 208, 146, 1) 14%,
+    rgba(254, 254, 227, 1) 100%
+  );
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-image: url('/public/images/TamilNadu_img/TamilNadu-BG.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.TamilNadu_logo2 {
+  position: relative;
+  right: 33%;
+  z-index: 2;
+}
+.Cities {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 70px;
+  margin-bottom: 35px;
+  z-index: 3;
+  flex-wrap: wrap; /* Add this to make items wrap on smaller screens */
+}
+
+/* new card */
+.card {
+  width: 222px;
+  height: 254px;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  font-size: 30px;
+  overflow: hidden;
+  font-weight: 900;
+  margin: 10px; /* Add margin to separate cards when wrapping */
+}
+
+.card:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.firstcontent {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  border-radius: 15px;
+  background-image: url();
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  z-index: 1;
+}
+.firstcontent span {
+  position: absolute;
+  z-index: 2;
+}
+
+/* first background image */
+.firstImage {
+  position: relative;
+  display: inline-block;
+}
+
+.firstImage img {
+  width: 100%;
+  height: 254px;
+  border-radius: 10px;
+}
+
+.firstImage::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.firstImage img {
+  position: relative;
+  z-index: 0;
+}
+
+/* ------- */
+.card:hover .firstcontent {
+  height: 0px;
+  opacity: 0;
+}
+
+.secondcontent {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;     
+  border-radius: 15px;
+  transition: all 0.4s;
+  font-size: 0px;
+  transform: rotate(90deg) scale(-1);
+  color: #fff;
+}
+.secondImage {
+  position: relative;
+  display: inline-block;
+}
+
+.secondImage img {
+  width: 100%;
+  height: 254px;
+  border-radius: 10px;
+}
+
+.secondImage::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  z-index: 1;
+}
+.secondcontent span {
+  position: absolute;     
+  white-space: nowrap; 
+  top: 10%;    
+  z-index: 3;
+}
+.secondcontent p {
+  position: absolute;
+  top: 35%;
+  z-index: 3;
+  font-size: 15px;
+  margin: 5px;
+}
+
+.secondImage img {
+  position: relative;
+  z-index: 0;
+}
+.card:hover .secondcontent {
+  opacity: 1;
+  height: 100%;
+  font-size: 1.8rem;
+  transform: rotate(0deg);
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .Cards_Main {
+    width: 90%;
+  }
+  .Cards_Main_Gujrat {
+    width: 90%;
+  }
+  .Cards_Main_MP {
+    width: 90%;
+  }
+  .Cards_Main_Up {
+    width: 90%;
+  }
+  .Cards_Main_Maharashtra {
+    width: 90%;
+  }
+  .Cards_Main_Daman {
+    width: 90%;
+  }
+  .Cards_Main_Goa {
+    width: 90%;
+  }
+  .Cards_Main_Keral {
+    width: 90%;
+  }
+  .Cards_Main_Karnataka {
+    width: 90%;
+  }
+  .Cards_Main_Andhra {
+    width: 90%;
+  }
+  .Cards_Main_Meghalaya {
+    width: 90%;
+  }
+
+  .rajasthan_logo2 {
+    right: 20%;
+  }
+  .Gujrat_logo2 {
+    right: 20%;
+  }
+  .rajasthan_Pattern {
+    width: 800px;
+  }
+  .Ladakh_Cards_Main{
+    width: 90%;
+  }
+  .Ladakh_logo2 {
+    right: 20%;
+  }
+  .JammuKashmir_Cards_Main {
+    width: 90%;
+  }
+  .JammuKashmir_logo2 {
+    right: 20%;
+  }
+  .HimachalPradesh_Cards_Main {
+    width: 90%;
+  }
+  .HimachalPradesh_logo2 {
+    right: 20%;
+  }
+  .Uttarakhand_Cards_Main {
+    width: 90%;
+  }
+  .Uttarakhand_logo2 {
+    right: 20%;
+  }
+  .Sikkim_Cards_Main {
+    width: 90%;
+  }
+  .Sikkim_logo2 {
+    right: 20%;
+  }
+  .Odisha_Cards_Main {
+    width: 90%;
+  }
+  .Odisha_logo2 {
+    right: 20%;
+  }
+  .Assam_Cards_Main {
+    width: 90%;
+  }
+  .Assam_logo2 {
+    right: 20%;
+  }
+  .WestBengal_Cards_Main {
+    width: 90%;
+  }
+  .WestBengal_logo2 {
+    right: 20%;
+  }
+  .TamilNadu_Cards_Main {
+    width: 90%;
+  }
+  .TamilNadu_logo2 {
+    right: 20%;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .Cards_Main {
+    width: 85%;
+  }
+  .Cards_Main_Gujrat {
+    width: 85%;
+  }
+  .Cards_Main_MP {
+    width: 85%;
+  }
+  .Cards_Main_Up {
+    width: 85%;
+  }
+  .Cards_Main_Maharashtra {
+    width: 85%;
+  }
+  .Cards_Main_Daman{
+    width: 85%;
+  }
+  .Cards_Main_Goa {
+    width: 85%;
+  }
+  .Cards_Main_Keral {
+    width: 85%;
+  }
+  .Cards_Main_Karnataka {
+    width: 85%;
+  }
+  .Cards_Main_Andhra {
+    width: 85%;
+  }
+  .Cards_Main_Meghalaya {
+    width: 85%;
+  }
+
+  .rajasthan_logo2 {
+    right: 10%;
+  }
+  .Gujrat_logo2 {
+    right: 10%;
+  }
+  .rajasthan_Pattern {
+    width: 600px;
+  }
+  .Ladakh_Cards_Main{
+    width: 85%;
+  }
+  .Ladakh_logo2 {
+    right: 10%;
+  }
+  .JammuKashmir_Cards_Main {
+    width: 85%;
+  }
+  .JammuKashmir_logo2 {
+    right: 10%;
+  }
+  .HimachalPradesh_Cards_Main {
+    width: 85%;
+  }
+  .HimachalPradesh_logo2 {
+    right: 10%;
+  }
+  .Sikkim_Cards_Main {
+    width: 85%;
+  }
+  .Sikkim_logo2 {
+    right: 10%;
+  }
+  .Odisha_Cards_Main {
+    width: 85%;
+  }
+  .Odisha_logo2 {
+    right: 10%;
+  }
+  .Assam_Cards_Main {
+    width: 85%;
+  }
+  .Assam_logo2 {
+    right: 10%;
+  }
+  .WestBengal_Cards_Main {
+    width: 85%;
+  }
+  .WestBengal_logo2 {
+    right: 10%;
+  }
+  .TamilNadu_Cards_Main {
+    width: 85%;
+  }
+  .TamilNadu_logo2 {
+    right: 10%;
+  }
+  .Cities {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 480px) {
+  .Cards_Main {
+    width: 80%;
+  }
+  .Cards_Main_Gujrat {
+    width: 80%;
+  }
+  .Cards_Main_MP {
+    width: 80%;
+  }
+  .Cards_Main_Up {
+    width: 80%;
+  }
+  .Cards_Main_Daman {
+    width: 80%;
+  }
+  .Cards_Main_Goa {
+    width: 80%;
+  }
+  .Cards_Main_Keral {
+    width: 80%;
+  }
+  .Cards_Main_Karnataka {
+    width: 80%;
+  }
+  .Cards_Main_Andhra {
+    width: 80%;
+  }
+  .Cards_Main_Meghalaya {
+    width: 80%;
+  }
+  .Cards_Main_Maharashtra {
+    width: 80%;
+  }
+
+  .rajasthan_logo2 {
+    right: 5%;
+  }
+  .Gujrat_logo2 {
+    right: 5%;
+  }
+  .rajasthan_Pattern {
+    width: 400px;
+  }
+  .Ladakh_Cards_Main{
+    width: 80%;
+  }
+  .Ladakh_logo2 {
+    right: 5%;
+  }
+  
+  .JammuKashmir_Cards_Main{
+    width: 80%;
+  }
+  .JammuKashmir_logo2 {
+    right: 5%;
+  }
+  .HimachalPradesh_Cards_Main{
+    width: 80%;
+  }
+  .HimachalPradesh_logo2 {
+    right: 5%;
+  }
+  .Uttarakhand_Cards_Main{
+    width: 80%;
+  }
+  .Uttarakhand_logo2 {
+    right: 5%;
+  }
+  .Sikkim_Cards_Main{
+    width: 80%;
+  }
+  .Sikkim_logo2 {
+    right: 5%;
+  }
+  .Odisha_Cards_Main{
+    width: 80%;
+  }
+  .Odisha_logo2 {
+    right: 5%;
+  }
+  .Assam_Cards_Main{
+    width: 80%;
+  }
+  .Assam_logo2 {
+    right: 5%;
+  }
+  .WestBengal_Cards_Main{
+    width: 80%;
+  }
+  .WestBengal_logo2 {
+    right: 5%;
+  }
+  .TamilNadu_Cards_Main{
+    width: 80%;
+  }
+  .TamilNadu_logo2 {
+    right: 5%;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+
+/* xxxxxxxxxxxxxxxxENDxxxxxxxxxxxxxxxxxx */
+/*-----------------------------CardSlider section  */
+/*=============== CARD ===============*/
+a {
+  text-decoration: none;
+}
+
+.Slidercontainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  position: relative;
+}
+
+.card__container {
+  padding-block: 5rem;
+}
+
+.card__content {
+  margin: 40px auto;
+  padding: 20px;
+  width: 90%; 
+  max-width: 1600px; 
+  height: fit-content;
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+
+.card__article {
+  border-radius: 1.25rem;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  min-height: 360px;
+}
+
+.card__image {
+  position: relative;
+  margin-bottom: -0.75rem;
+}
+
+.card__data {
+  background-color: rgb(190, 240, 253);
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+.card__img {
+  width: 180px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+}
+
+.card__name {
+  font-size: 22px;
+  color: var(--second-color);
+  margin-bottom: 0.75rem;
+  font-family: 'Georgia', serif;
+  font-weight: 400;
+  letter-spacing: 0.75px;
+  text-transform: capitalize;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 0.25rem;
+  transition: color 0.3s ease, border-bottom-color 0.3s ease;
+}
+
+.card__name:hover {
+  color: var(--main-color);
+  border-bottom-color: var(--main-color);
+}
+
+
+.card__description {
+  font-weight: 500;
+  margin-bottom: 1.75rem;
+}
+
+.card__button {
+  display: inline-block;
+  background-color: rgb(255, 208, 0);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  color: black;
+  font-weight: 600;
+}
+
+/* Swiper class */
+.swiperButtonPrev:after,
+.swiperButtonNext:after {
+  content: "";
+}
+
+.swiperButtonPrev,
+.swiperButtonNext {
+  width: initial;
+  height: initial;
+  font-size: 3rem;
+  color: rgb(255, 125, 39);
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.swiperButtonPrev {
+  left: 0px;
+}
+
+.swiperButtonNext {
+  right: 0px;
+}
+
+.swiperPagination-bullet {
+  background-color: black;
+}
+
+.swiperPagination-bullet-active {
+  background-color: rgb(212, 61, 61);
+}
+
+/* --------------Button for Book the Tour ------------ */
+.BookTour button {
+  --color: #ff5500;
+  font-family: inherit;
+  display: inline-block;
+  width: 15em; 
+  height: 3em; 
+  line-height: 3em; 
+  overflow: hidden;
+  cursor: pointer;
+  margin: 20px;
+  font-size: 19px;
+  font-weight: 600;
+  z-index: 1;
+  color: var(--color);
+  border: 2px solid var(--color);
+  border-radius: 6px;
+  position: relative;
+}
+
+.BookTour button::before {
+  position: absolute;
+  content: "";
+  background: var(--color);
+  width: 600px;
+  height: 500px;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.BookTour button:hover {
+  color: rgb(255, 255, 255);
+}
+
+.BookTour button:before {
+  top: 100%;
+  left: 100%;
+  transition: 0.3s all;
+}
+
+.BookTour button:hover::before {
+  top: -80px;
+  left: -80px;
+}
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+  .card__data {
+    padding: 1rem;
+  }
+}
+
+
+/* For medium devices */
+@media screen and (min-width: 768px) {
+  .card__content {
+    margin-inline: 3rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card__article {
+    min-height: 460px; 
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1120px) {
+  .card__container {
+    max-width: 1120px;
+  }
+
+  .swiperButtonPrev {
+    left: 1rem; /* Adjust for larger screens if needed */
+  }
+
+  .swiperButtonNext {
+    right: 1rem; /* Adjust for larger screens if needed */
+  }
+}
+
+/* ---------------heading title for tours */
+.heading {
+  color: #e34800;
+  font: 800 200%/1.1 "Lato";
+  text-transform: uppercase;
+  position: relative;
+  text-align: center;
+  margin: 0;
+  display: inline-block; /* Ensures the heading does not take up full width */
+}
+
+.Tourtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.Tourtitle::before,
+.Tourtitle::after {
+  content: "";
+  width: 50%;
+  height: 2px;
+  background-color: #e34800;
+}
+
+.Tourtitle::before {
+  margin-right: 10px;
+}
+
+.Tourtitle::after {
+  margin-left: 10px;
+}

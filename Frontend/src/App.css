@@ -1,0 +1,2127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* --------------------------------------------------------------------- */ 
+                                      /*Video  */
+/* --------------------------------------------------------------------- */
+.India{
+  font-family: 'Roboto Serif', serif;  
+  font-size: 48px;  
+  font-weight: bold;  
+  text-align: center;  
+  margin: 20px;  
+
+  background: linear-gradient(45deg, #FF5733, #FFC300);  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);  
+  letter-spacing: 2px;  
+
+  
+  padding: 10px; 
+  border-radius: 10px;  
+} 
+   .text-overlay {
+     position: absolute;
+    top: 50%;
+     left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      width: 100%;
+      z-index: 2;
+   }
+    
+   .overlay-text {
+    font-size: 16px;
+    font-weight: 800;
+    color: white;
+   }
+
+
+.india-intro {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  line-height: 1.6;
+  color: #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.india-intro h2 {
+  text-align: center;
+  color: #007BFF;
+  font-size: 24px;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+.india-intro p {
+  margin: 10px 0;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+  animation-delay: 1s;
+}
+
+.india-intro p span {
+  color: #FF5733;
+  font-weight: bold;
+}
+
+.india-intro:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+  }
+}
+ 
+ /* navbaar css */
+ .video-container {
+  width: 100%;
+  text-align: center;
+}
+
+.video0 {
+  width: 85%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  
+}
+
+@media (max-width: 450px) {
+  .India {
+    font-size: 24px; /* Adjust font size for smaller screens */
+    margin: 10px;
+    letter-spacing: 1px;
+  }
+
+  .text-overlay {
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%; /* Adjust width for smaller screens */
+    padding: 10px;
+    position: absolute;
+  }
+
+  .overlay-text {
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+
+  .india-intro {
+    max-width: 90%; /* Adjust max-width for smaller screens */
+    margin: 20px auto;
+    padding: 10px;
+    line-height: 1.4;
+  }
+
+  .india-intro h2 {
+    font-size: 20px; /* Adjust font size for smaller screens */
+    margin-bottom: 15px;
+  }
+
+  .india-intro p {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .video-container {
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+
+  .video0 {
+    width: 100%;
+    height: 50vh; /* Adjust height for smaller screens */
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 750px) {
+  .India {
+    font-size: 24px; /* Adjust font size for smaller screens */
+    margin: 10px;
+    letter-spacing: 1px;
+  }
+
+  .text-overlay {
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%; /* Adjust width for smaller screens */
+    padding: 10px;
+    position: absolute;
+  }
+
+  .overlay-text {
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+
+  .india-intro {
+    max-width: 90%; /* Adjust max-width for smaller screens */
+    margin: 20px auto;
+    padding: 10px;
+    line-height: 1.4;
+  }
+
+  .india-intro h2 {
+    font-size: 20px; /* Adjust font size for smaller screens */
+    margin-bottom: 15px;
+  }
+
+  .india-intro p {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .video-container {
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+
+  .video0 {
+    width: 100%;
+    height: 50vh; /* Adjust height for smaller screens */
+    object-fit: cover;
+  }
+}
+
+
+
+
+
+
+/* -------------------------------------------------------------------------- */
+                                        /*Navbar  */
+/* -------------------------------------------------------------------------- */
+
+.tourlogo{
+width: 150px;
+height: 80px;
+}
+.navbar-container {
+  background-color: #333;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  width: 100%;
+}
+
+.nav-item {
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 15px;
+  position: relative;
+  transition: background-color 0.3s, color 0.3s;
+ 
+}
+.nav-item:hover {
+  background-color: #575757;
+  color: #fff;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #575757;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 5;
+  top: 40px;
+}
+
+.dropdown-content p {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.dropdown-content p:hover {
+  background-color: #777;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.hamburger {
+  display: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: auto;
+  padding: 10px 15px;
+}
+
+
+.signup-buttonn {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  border: none;
+  border-radius: 20px;
+  height: 50px;
+  width: 100px;
+  color: white;
+  /* padding: 10px 20px; */
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s, transform 0.2s;
+
+}
+
+.signup-buttonn:hover {
+  background: linear-gradient(135deg, #feb47b, #ff7e5f);
+  transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+
+ 
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .dropdown-content {
+    position: static;
+    box-shadow: none;
+  }
+
+  .dropdown-content p:hover {
+    background-color: #777;
+  }
+}
+
+
+ 
+
+/* ------------------------------------------------------------------------------ */
+                          /* Slider css */
+/* -------------------------------------------------------------------------------- */
+  
+ 
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+  overflow: hidden;  
+  border-radius: 10px; 
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Match border radius */
+  transition: transform 0.3s; /* Smooth transform */
+}
+
+.swiper-slide:hover img {
+  transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+
+.swiper-slide .content {
+  position: absolute;
+  bottom: 50%; /* Center text vertically */
+  left: 50%; /* Center text horizontally */
+  transform: translate(-50%, 50%); /* Adjust centering */
+  color: white; /* Change text color to white */
+  font-weight: 600;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.6s, transform 0.6s; /* Smooth transition */
+  z-index: 2; /* Ensure text/content is above the overlay */
+  font-size: 24px; /* Adjust font size as needed */
+}
+
+.swiper-slide::before,
+.swiper-slide::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background: rgba(0, 0, 0, 0.8); /* Black overlay color */
+  transition: transform 0.6s, opacity 0.6s; /* Smooth transition */
+  z-index: 1;
+}
+
+.swiper-slide::before {
+  left: 0;
+  transform: translateX(-100%);
+}
+
+.swiper-slide::after {
+  right: 0;
+  transform: translateX(100%);
+}
+
+.swiper-slide:hover::before,
+.swiper-slide:hover::after {
+  transform: translateX(0);
+}
+
+.swiper-slide:hover .content {
+  opacity: 1; /* Show text on hover */
+  transform: translate(-50%, -50%) scale(1.1); /* Center text and enlarge on hover */
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.mm{
+   padding: 70px;
+   height: 470px;
+}
+
+
+ 
+@media (max-width: 450px) {
+ 
+
+  .swiper-slide {
+    height: 200px  !important;
+    width: 100%  !important;
+  }
+
+ 
+
+  .swiper-slide img {
+    width: 100%   ;
+    height: 100%   ;
+    object-fit: cover  
+  }
+
+  .swiper-slide .content {
+    font-size: 14px;
+    bottom: 40%;
+    transform: translate(-50%, 40%);
+  }
+
+  .swiper-slide::before,
+  .swiper-slide::after {
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media(min-width:450px) and (max-width:750px) {
+ 
+
+  .swiper-slide {
+    height: 300px  !important;
+    width: 100%  !important;
+  }
+
+ 
+
+  .swiper-slide img {
+    width: 100%   ;
+    height: 100%   ;
+    object-fit: cover  
+  }
+
+  .swiper-slide .content {
+    font-size: 14px;
+    bottom: 40%;
+    transform: translate(-50%, 40%);
+  }
+
+  .swiper-slide::before,
+  .swiper-slide::after {
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+
+
+ 
+
+
+
+/* --------------------------------------------------------- */
+              /* /Destination css */
+
+/* --------------------------------------------------------- */
+
+
+.Destinaton{
+  background-color:  rgb(252,243,233);
+  height: 600px;
+  
+}
+.Destination-info{
+  margin: auto;
+  width: 1260px;
+  margin-top: 80px;
+  
+
+} 
+.HEADER {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.HEADER h3 {
+  font-size: 2.5em;
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.HEADER p {
+  font-size: 1.2em;
+  margin: 10px 0 0;
+  font-weight: 300;
+}
+
+.Countries-Distribution{
+   
+  height: 400px;
+  display: flex;
+  justify-content:space-between;
+   
+}
+.Ujjain{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 417px;
+  position: relative;
+}
+.MAld{
+  display: flex;
+  gap: 20px;
+}
+.Mexico{
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.Info{
+  position: absolute;
+  color: white;
+  font-size: 16px;
+  font-weight: 800;
+  top: 130px;
+  left: 10px;
+
+
+}
+.Info-1{
+  position: absolute;
+  color: white;
+  font-size: 16px;
+  font-weight: 800;
+  bottom: -80px;
+  left: 10px;
+}
+.Info-2{
+  position: absolute;
+  color: white;
+  font-size: 16px;
+  font-weight: 800;
+  left: 230px;
+  bottom: -80px;
+}
+
+.LA{
+  position: relative;
+}
+.Info-3{
+  position: absolute;
+  color: white;
+  font-size: 16px;
+  font-weight: 800;
+ bottom: -80px;
+ left: 10px;
+ 
+}
+
+.Mexico{
+  position: relative;
+}
+ 
+.Info-4{
+  position: absolute;
+  color: white;
+  font-size: 16px;
+  font-weight: 800;
+ top: 160px;
+ left: 10px;
+ 
+}
+.Info-5{
+  position: absolute;
+  color: white;
+  font-size: 16px;
+  font-weight: 800;
+ bottom: -80px;
+ left: 10px;
+ 
+}
+
+
+
+ 
+
+@media (max-width: 450px) {
+  .Destination-info {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .HEADER h3 {
+    font-size: 1.5em;
+  }
+
+  .HEADER p {
+    font-size: 1em;
+  }
+
+  .Countries-Distribution {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .Ujjain,
+  .LA,
+  .Mexico {
+    width: 100%;
+  }
+
+  .Ujjain img,
+  .LA img,
+  .Mexico img {
+    width: 100% !important;
+    height: auto;
+    border-radius: 20px;
+  }
+
+ 
+  .Info-5 {
+    font-size: 14px;
+    font-weight: 700;
+    top: unset;
+    bottom: 10px;
+    left: 10px;
+  }
+  .Info-2{
+    font-size: 14px;
+    font-weight: 700;
+    top: unset;
+    bottom: 10px;
+    
+  }
+  .Info-1{
+    font-size: 14px;
+    font-weight: 700;
+    top: unset;
+    bottom: 10px;
+    left: 10px;
+  }
+  .Info-3{
+    font-size: 14px;
+    font-weight: 700;
+    top: unset;
+    bottom: 10px;
+    left: 10px;
+  }
+
+  .MAld {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+
+
+@media (min-width: 450px) and (max-width: 850px) {
+  .Destination-info {
+    width: 90%;
+    margin-top: 40px;
+  }
+
+  .HEADER h3 {
+    font-size: 2em;
+  }
+
+  .HEADER p {
+    font-size: 1.1em;
+  }
+
+  .Countries-Distribution {
+    height: auto;
+    width: 100% ;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .Ujjain,
+  .LA,
+  .Mexico {
+    width: 100%;
+  }
+
+  .Ujjain img,
+  .LA img,
+  .Mexico img {
+    width: 100% !important;
+    /* height: auto !important; */
+    border-radius: 20px;
+  }
+
+  
+  .Info-5 {
+    font-size: 14px;
+    font-weight: 700;
+    top: unset;
+    bottom: 10px;
+    left: 10px;
+  }
+  .Info-1 {
+    font-size: 14px;
+    font-weight: 700;
+    top: unset;
+    bottom: 10px;
+    left: 10px;
+  }
+  .Info-2 {
+    font-size: 14px;
+    font-weight: 700;
+    top: unset;
+    bottom: 10px;
+    left: 125px;
+  }
+  .Info-3 {
+    font-size: 14px;
+    font-weight: 700;
+    top: unset;
+    bottom: 10px;
+    left: 10px;
+  }
+
+  
+  .MAld {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .MAld div {
+    flex: 1 1 45%;
+  }
+}
+
+
+
+/* ---------------------------------------------------------- */
+                   /* Dialogue */
+/* --------------------------------------------------------- */
+
+.Dialogue-heading{
+  font-family: 'Pacifico', cursive; /* Custom font */
+  color: #333;
+  font-size: 3em; /* Larger font size */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Text shadow */
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient text color */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+ 
+
+.dialogue-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+  margin-top: 180px;
+}
+
+.dialogue-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.images-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  
+}
+
+.left-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  flex: 1;
+  
+}
+.left-images img{object-fit: contain;}
+
+.dialogue-image {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.right-image-container {
+  flex: 1;
+  height: 100%;
+ 
+}
+
+.right-image {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  /* filter: blur(2px); */
+  
+ 
+}
+
+h1 {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+
+
+
+@media (max-width: 450px) {
+  .dialogue-heading {
+    font-size: 2em; /* Smaller font size for smaller screens */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Adjust text shadow */
+    margin-bottom: 15px;
+  }
+
+  .dialogue-container {
+    height: auto; /* Adjust height for smaller screens */
+    margin-top: 1100px;
+    padding: 10px;
+  }
+
+  .dialogue-content {
+    width: 100%; /* Full width for smaller screens */
+    max-width: none; /* Remove max width */
+  }
+
+  .images-container {
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center align images */
+    gap: 20px;
+  }
+
+  .left-images {
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 5px; /* Reduce gap between images */
+  }
+
+  .dialogue-image,
+  .right-image {
+    width: 100%; /* Full width for images */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 300px; /* Set a max width for better fit */
+    max-height: 250px; /* Set a max height for better fit */
+  }
+
+  .right-image-container {
+    width: 100%; /* Full width for container */
+    height: auto; /* Adjust height for smaller screens */
+  }
+
+  h1 {
+    font-size: 1.5em; /* Smaller font size for smaller screens */
+    margin-bottom: 15px; /* Adjust margin */
+  }
+}
+
+
+@media (min-width: 450px) and (max-width:750px) {
+  .dialogue-heading {
+    font-size: 2em; /* Smaller font size for smaller screens */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Adjust text shadow */
+    margin-bottom: 15px;
+  }
+
+  .dialogue-container {
+    height: auto; /* Adjust height for smaller screens */
+    margin-top: 100px;
+    padding: 10px;
+  
+  }
+
+  .dialogue-content {
+    width: 100%; /* Full width for smaller screens */
+    max-width: none; /* Remove max width */
+  }
+
+  .images-container {
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center align images */
+  }
+
+  .left-images {
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 5px; /* Reduce gap between images */
+  }
+
+  .dialogue-image,
+  .right-image {
+    width: 100%; /* Full width for images */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 400px; /* Set a max width for better fit */
+    max-height: 350px; /* Set a max height for better fit */
+  }
+
+  .right-image-container {
+    width: 100%; /* Full width for container */
+    height: auto; /* Adjust height for smaller screens */
+  }
+
+  h1 {
+    font-size: 1.5em; /* Smaller font size for smaller screens */
+    margin-bottom: 15px; /* Adjust margin */
+  }
+}
+
+@media(min-width:750px) and (max-width:1000px){
+  .images-container {
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center align images */
+    
+  }
+}
+
+
+
+
+/* -------------------------------------------------------------- */
+                       /* VACATION */
+/*--------------------------------------------------------------- */
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;  
+}
+
+.Vacation {
+  width: 1000px;
+  background-color: transparent;  
+}
+
+.rectangle {
+  position: relative;
+  width: 1000px;  
+  height: 400px; 
+  /* border: 2px solid #000;   */
+  border-radius: 10px;  
+  overflow: hidden;  
+}
+
+.Mini-Vacation {
+  position: absolute;
+  width: 100%;  
+  /* height: 100%;  */
+  outline: none;  
+  z-index: -1;  
+}
+
+.f {
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; /* Center the items vertically */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.image-container {
+  width: 200px; /* Adjust the width of each image container */
+  height: 250px; /* Adjust the height of each image container */
+  margin: 0 10px; /* Adjust the margin for spacing between images */
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 100px;
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+
+.Traveler{
+  position: absolute;
+  top: 20px;
+ 
+  font-size: 25px;font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Traveler span{
+  font-family:Cursive  ;
+  color: yellow;
+  font-size: 30px;
+  margin-left: 30px;
+}
+.image-container p{
+  font-size: 16px;
+  color: gray;
+  font-family:Cursive  ;
+  background-color: aqua;
+  border-bottom-left-radius: 10px ;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+}
+/* --------------------------------------------------- */
+/*           YOUTUBE_SHRIYA */
+/* --------------------------------------------------- */
+
+.main{
+
+  background-color: antiquewhite;
+  padding: 50px;
+}
+.Shriya{
+  margin: auto;
+  width: 1260px; 
+  display: flex;
+  justify-content: center;
+}
+.Hansika{
+  display: flex;
+  width: 80%; 
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+ 
+}
+ .wow{
+  width: 500px;
+  border-radius: 10px;
+ }
+ .Happy{
+  width: 400px;
+  border-radius: 10px;
+  height: 240px;
+ }
+ .mini-hansika{
+  background-color: #FDF3EB;
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+ }
+
+ .mini-hansika p{
+  font-size: 25px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  color: green ;
+  font-family: cursive;
+  margin-left: 75px;
+  margin-top: 10px;
+  
+ }
+.inputt{
+  width: 100%;
+  border: 2px solid aqua;
+  height: 66px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #FDF3EB;
+  margin-top: -13px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  text-align: center;
+}
+  
+
+.inputt::placeholder {
+  text-align: center;
+  padding: 0; 
+  font-size: 20px;
+  font-weight: 800;
+  color: black;
+}
+
+.inputt:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3), 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 450px) {
+  .main {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .Shriya {
+    width: 100%; /* Full width for smaller screens */
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .Hansika {
+    width: 100%; /* Full width for smaller screens */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+  }
+
+  .wow,
+  .Happy,
+  .mini-hansika {
+    width: 100%; /* Full width for images */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure they don't exceed container width */
+    margin-bottom: 20px; /* Add space between stacked items */
+  }
+
+  .mini-hansika p {
+    font-size: 18px; /* Adjust font size for smaller screens */
+    margin-left: 0; /* Remove left margin */
+    margin-top: 10px; /* Adjust top margin */
+    text-align: center; /* Center align text */
+  }
+
+  .inputt {
+    height: 50px; /* Adjust height for smaller screens */
+    font-size: 18px; /* Adjust font size for input */
+  }
+
+  .inputt::placeholder {
+    font-size: 16px; /* Adjust placeholder font size */
+  }
+}
+@media (min-width: 451px) and (max-width: 750px) {
+  .main {
+    padding: 30px; /* Adjust padding for medium screens */
+  }
+
+  .Shriya {
+    width: 100%; /* Full width for medium screens */
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .Hansika {
+    width: 100%; /* Full width for medium screens */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+  }
+
+  .wow {
+    width: 90%; /* Adjust width for medium screens */
+    max-width: 90%; /* Ensure it doesn't exceed container width */
+    margin-bottom: 20px; /* Add space between stacked items */
+  }
+
+  .Happy {
+    width: 90%; /* Adjust width for medium screens */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 90%; /* Ensure it doesn't exceed container width */
+    margin-bottom: 20px; /* Add space between stacked items */
+  }
+
+  .mini-hansika {
+    width: 90%; /* Adjust width for medium screens */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 90%; /* Ensure it doesn't exceed container width */
+    margin-bottom: 20px; /* Add space between stacked items */
+  }
+
+  .mini-hansika p {
+    font-size: 22px; /* Adjust font size for medium screens */
+    margin-left: 0; /* Remove left margin */
+    margin-top: 10px; /* Adjust top margin */
+    text-align: center; /* Center align text */
+  }
+
+  .inputt {
+    height: 60px; /* Adjust height for medium screens */
+    font-size: 20px; /* Adjust font size for input */
+  }
+
+  .inputt::placeholder {
+    font-size: 18px; /* Adjust placeholder font size */
+  }
+}
+@media (min-width: 751px) and (max-width: 1200px) {
+  .main {
+    padding: 40px; /* Adjust padding for medium-large screens */
+  }
+
+  .Shriya {
+    width: 100%; /* Full width for medium-large screens */
+  }
+
+  .Hansika {
+    width: 100%; /* Full width for medium-large screens */
+    justify-content: space-around; /* Ensure spacing around items */
+    align-items: center; /* Center align items */
+  }
+
+  .wow {
+    width: 80%; /* Adjust width for medium-large screens */
+    max-width: 100%; /* Ensure it doesn't exceed container width */
+  }
+
+  .Happy {
+    width: 100%; /* Adjust width for medium-large screens */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure it doesn't exceed container width */
+  }
+
+  .mini-hansika {
+    width: 170%; /* Adjust width for medium-large screens */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure it doesn't exceed container width */
+  }
+
+  .mini-hansika p {
+    font-size: 22px; /* Adjust font size for medium-large screens */
+    margin-left: 0; /* Remove left margin */
+    margin-top: 10px; /* Adjust top margin */
+    text-align: center; /* Center align text */
+  }
+
+  .inputt {
+    height: 60px; /* Adjust height for medium-large screens */
+    font-size: 20px; /* Adjust font size for input */
+  }
+
+  .inputt::placeholder {
+    font-size: 18px; /* Adjust placeholder font size */
+  }
+}
+
+
+/* ---------------------------------------------------- */
+               /* PACKAGES */
+/* ---------------------------------------------------- */
+/* Add this to your existing CSS */
+
+.PAckagess {
+  margin: auto;
+  width: 1260px;
+  background-color: #e4e0df;
+  border-radius: 20px;
+  height: 400px;
+  display: flex;
+  flex-direction: column; /* Updated to display items in a column */
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.PAckagess p {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: palevioletred;
+  font-family: emoji;
+}
+.PAckagess h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: palevioletred;
+  font-family: emoji;
+}
+
+.PAckagess  span {
+  color:cadetblue; /* Set the color for 'budget' */
+  font-family: cursive;
+  font-size: 2.0rem;
+  font-weight: 900;
+}
+
+.boss {
+  padding: 140px;
+  padding-top: 80px;
+}
+.PAckagess .prices {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9; /* Optional background color for the container */
+}
+
+.PAckagess .prices div {
+  width: 150px; /* Set the width as needed */
+  height: 150px; /* Set the height as needed */
+  margin: 10px;
+  background-color: #e0e0e0; /* Light grey background color */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  
+}
+
+/* Hover effect */
+.PAckagess .prices div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional styling for text inside the divs */
+.PAckagess .prices div p {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+  text-align: center;
+}
+
+
+@media (max-width: 450px) {
+  .PAckagess {
+    width: 100%; /* Full width for smaller screens */
+    height: auto; /* Adjust height for smaller screens */
+    padding: 10px; /* Add padding for better spacing */
+    border-radius: 10px; /* Adjust border radius */
+  }
+
+  .PAckagess p {
+    font-size: 1.5em; /* Smaller font size for smaller screens */
+    margin-bottom: 5px; /* Adjust margin */
+  }
+
+  .PAckagess span {
+    font-size: 1.5rem; /* Smaller font size for smaller screens */
+  }
+
+  .boss {
+    padding: 40px; /* Adjust padding for smaller screens */
+    padding-top: 20px; /* Adjust top padding */
+  }
+
+  .PAckagess .prices {
+    flex-direction: column; /* Stack items vertically */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .PAckagess .prices div {
+    width: 100%; /* Full width for divs */
+    height: auto; /* Adjust height for smaller screens */
+    margin: 5px 0; /* Adjust margin */
+    padding: 10px; /* Add padding for better spacing */
+  }
+
+  .PAckagess .prices div p {
+    font-size: 14px; /* Smaller font size for smaller screens */
+  }
+}
+@media (min-width: 451px) and (max-width: 850px) {
+  .PAckagess {
+    width: 90%; /* Adjust width for medium screens */
+    height: auto; /* Adjust height for medium screens */
+    padding: 20px; /* Add padding for better spacing */
+    border-radius: 15px; /* Adjust border radius */
+  }
+
+  .PAckagess p {
+    font-size: 2em; /* Adjust font size for medium screens */
+    margin-bottom: 10px; /* Adjust margin */
+  }
+
+  .PAckagess span {
+    font-size: 1.8rem; /* Adjust font size for medium screens */
+  }
+
+  .boss {
+    padding: 80px; /* Adjust padding for medium screens */
+    padding-top: 40px; /* Adjust top padding */
+    margin-top: 200px;
+  }
+
+  .PAckagess .prices {
+    flex-direction: column; /* Stack items vertically */
+    padding: 15px; /* Adjust padding */
+  }
+
+  .PAckagess .prices div {
+    width: 80%; /* Adjust width for medium screens */
+    height: auto; /* Adjust height for medium screens */
+    margin: 10px 0; /* Adjust margin */
+    padding: 15px; /* Add padding for better spacing */
+  }
+
+  .PAckagess .prices div p {
+    font-size: 16px; /* Adjust font size for medium screens */
+  }
+}
+
+
+/* ------------------------------------------------------------- */
+                  
+                       /* DISCOUNT */
+/* ------------------------------------------------------------- *//* Container styling */
+.signup-container {
+  position: relative; /* Make container a positioning context */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden; /* Hide anything overflowing */
+}
+
+/* Add a pseudo-element for the background image */
+.signup-container::before {
+  content: ""; /* Empty content for the pseudo-element */
+  position: absolute; /* Absolute positioning */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/public/bgsignup.jpg'); /* Correct path from the public directory */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  filter: blur(10px); /* Apply blur effect */
+  z-index: -1; /* Place it behind the form */
+}
+
+/* Form styling */
+.signup-form {
+  position: relative; /* Relative positioning to stay above the pseudo-element */
+ 
+  padding: 40px;
+ 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Larger shadow */
+  width: 100%;
+  max-width: 600px; /* Increase width to fit two columns */
+}
+
+/* Form heading styling */
+.signup-form h2 {
+  margin-bottom: 20px;
+  font-family: 'Pacifico', cursive; /* Custom cursive font */
+  color:  black;
+  font-size: 2em; /* Larger font size */
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column; /* Stack labels and inputs vertically */
+}
+
+/* Grid container for inputs */
+.input-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 20px; /* Space between columns */
+}
+
+/* Label styling */
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  font-weight: bold; /* Bold labels */
+  text-align: left; /* Align text to the left */
+}
+
+/* Input styling */
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ff7e5f; /* Border color matching gradient */
+  border-radius: 8px; /* Rounded corners */
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+/* Input focus styling */
+.form-group input:focus {
+  border-color: #feb47b; /* Border color on focus */
+  box-shadow: 0 0 8px rgba(255, 126, 95, 0.6); /* Shadow on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Button styling */
+.signup-button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient background */
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+/* Button hover styling */
+.signup-button:hover {
+  background: linear-gradient(135deg, #feb47b, #ff7e5f); /* Reverse gradient on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Import custom font for heading */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+ 
+/* -------------------------------------------------- */
+                 /* REVIEW */
+/* -------------------------------------------------- */
+ .tab {
+  
+  height: 100px;
+  display: flex;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 35px 85px;
+  
+  border-left: none;
+  /* height: 300px; */
+  display: none;
+  color: gray;
+  /* margin-top: 60px; */
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.Revieww{
+  margin: auto;
+  width: 1260px;
+  height: 600px;
+  padding: 28px;
+  /* padding-top: 50px; */
+
+}
+
+.Revieww p{
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: green;
+  line-height: 5;
+}
+
+.tabu{
+  padding: 50px;
+}
+
+@media (max-width: 450px) {
+  .tab {
+    height: auto; /* Adjust height for smaller screens */
+    flex-direction: column; /* Stack buttons vertically */
+  }
+
+  .tab button {
+    padding: 16px 12px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Adjust font size for better readability */
+    text-align: center; /* Center align text */
+  }
+
+  .tabcontent {
+    padding: 20px 10px; /* Adjust padding for smaller screens */
+    float: none; /* Ensure it doesn't float */
+    width: 100%; /* Full width for tab content */
+    display: block; /* Ensure it is displayed */
+    margin-top: 10px; /* Add margin for better spacing */
+  }
+
+  .Revieww {
+    width: 100%; /* Full width for smaller screens */
+    height: auto; /* Adjust height for smaller screens */
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .Revieww p {
+    font-size: 18px; /* Adjust font size for better readability */
+    line-height: 1.5; /* Adjust line height */
+    text-align: center; /* Center align text */
+  }
+
+  .tabu {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+}
+@media (min-width: 451px) and (max-width: 850px) {
+  .tab {
+    height: auto; /* Adjust height for medium screens */
+    flex-direction: column; /* Stack buttons vertically */
+  }
+
+  .tab button {
+    padding: 20px 14px; /* Adjust padding for medium screens */
+    font-size: 16px; /* Adjust font size for better readability */
+    text-align: center; /* Center align text */
+  }
+
+  .tabcontent {
+    padding: 30px 20px; /* Adjust padding for medium screens */
+    float: none; /* Ensure it doesn't float */
+    width: 100%; /* Full width for tab content */
+    display: block; /* Ensure it is displayed */
+    margin-top: 10px; /* Add margin for better spacing */
+  }
+
+  .Revieww {
+    width: 100%; /* Full width for medium screens */
+    height: auto; /* Adjust height for medium screens */
+    padding: 25px; /* Adjust padding for medium screens */
+  }
+
+  .Revieww p {
+    font-size: 20px; /* Adjust font size for better readability */
+    line-height: 2; /* Adjust line height */
+    text-align: center; /* Center align text */
+  }
+
+  .tabu {
+    padding: 40px; /* Adjust padding for medium screens */
+  }
+}
+
+/* ---------------------------------------------------------- */
+                              /* Footer */
+/* ---------------------------------------------------------- */
+
+
+.Footer{
+  width: 1260px;
+ 
+  height: 500px;
+  display: flex;
+ 
+  align-items: center;
+  gap: 80px;
+  
+}
+
+.MAin-footer{
+  margin: auto;
+  background-color: #000000;
+  display: flex;
+  justify-content: center; 
+}
+
+.footer-info{
+  color: white;
+  
+}
+.gif{
+  width: 400px;
+  height: 200px;
+}
+
+
+@media (max-width: 450px) {
+  .Footer {
+    width: 100%; /* Full width for smaller screens */
+    height: auto; /* Adjust height for smaller screens */
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Adjust gap between items */
+    align-items: center; /* Center align items */
+    padding: 20px; /* Add padding for better spacing */
+  }
+
+  .MAin-footer {
+    width: 100%; /* Full width for smaller screens */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+    padding: 20px; /* Add padding for better spacing */
+  }
+
+  .footer-info {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    text-align: center; /* Center align text */
+  }
+
+  .gif {
+    width: 100%; /* Full width for gif */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure it doesn't exceed container width */
+  }
+}
+
+@media (min-width: 451px) and (max-width: 750px) {
+  .Footer {
+    width: 100%; /* Full width for medium screens */
+    height: auto; /* Adjust height for medium screens */
+    flex-direction: column; /* Stack items vertically */
+    gap: 40px; /* Adjust gap between items */
+    align-items: center; /* Center align items */
+    padding: 30px; /* Add padding for better spacing */
+  }
+
+  .MAin-footer {
+    width: 100%; /* Full width for medium screens */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+    padding: 30px; /* Add padding for better spacing */
+  }
+
+  .footer-info {
+    font-size: 18px; /* Adjust font size for medium screens */
+    text-align: center; /* Center align text */
+  }
+
+  .gif {
+    width: 100%; /* Full width for gif */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure it doesn't exceed container width */
+  }
+}
+@media (min-width: 751px) and (max-width: 1300px) {
+  .Footer {
+    width: 100%; /* Full width for medium-large screens */
+    height: auto; /* Adjust height for medium-large screens */
+    gap: 40px; /* Adjust gap between items */
+    padding: 30px; /* Add padding for better spacing */
+    justify-content: center; /* Center align items */
+  }
+
+  .MAin-footer {
+    width: 100%; /* Full width for medium-large screens */
+    padding: 30px; /* Add padding for better spacing */
+    display: flex; /* Maintain flex layout */
+    justify-content: center; /* Center content */
+    align-items: center; /* Center align items */
+  }
+
+  .footer-info {
+    font-size: 18px; /* Adjust font size for medium-large screens */
+  }
+
+  .gif {
+    width: 400px; /* Fixed width for gif */
+    height: 200px; /* Fixed height for gif */
+  }
+}
+
+
+
+
+ /* -------------------------------------------------------- */
+
+              /* DIFFERENTTOURS */
+ /* -------------------------------------------------------- */
+
+
+ /* .Footer-1{
+  width: 1260px;
+ 
+  height: 400px;
+  display: flex;
+ 
+ 
+ 
+  
+}
+.bgc{
+  background-color: #000000;
+ 
+
+}
+
+.bgc p{
+  color: white;
+} 
+.MAin-footer-1{
+  margin: auto;
+  display: flex;
+  justify-content: center; 
+}
+
+.footer-info-1{
+  color: white;
+  line-height: 3;
+  
+} */
+/* --------------------------------------------- */
+              /* INFORMATION */
+/* --------------------------------------------- */
+
+
+ 
+.Info-flex{
+  width: 1260px;
+ display: flex;
+ justify-content: space-between;
+ gap: 190px;
+
+}
+.Info-flex p{
+color: white;
+
+}
+.text{
+  display: flex;
+  flex-direction: column;
+}
+
+.MAin-footer-2{
+  margin: auto;
+  background-color: #000000;
+  display: flex;
+  justify-content: center; 
+  padding: 60px;
+}
+.headingg p{
+  color: red;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+@media (max-width: 500px) {
+  .Info-flex {
+    width: 100%; /* Full width for smaller screens */
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Adjust gap between items */
+    align-items: center; /* Center align items */
+    padding: 20px; /* Add padding for better spacing */
+  }
+
+  .Info-flex p {
+    color: white; /* Maintain text color */
+    text-align: center; /* Center align text */
+    font-size: 16px; /* Adjust font size for better readability */
+  }
+
+  .text {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+    text-align: center; /* Center align text */
+  }
+
+  .MAin-footer-2 {
+    width: 100%; /* Full width for smaller screens */
+    padding: 20px; /* Adjust padding for better spacing */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+  }
+
+  .headingg p {
+    color: red; /* Maintain text color */
+    font-size: 18px; /* Adjust font size for better readability */
+    font-weight: 600; /* Maintain font weight */
+    text-align: center; /* Center align text */
+  }
+}
+@media (min-width: 500px) and (max-width: 1000px) {
+  .Info-flex {
+    width: 131%; /* Full width for medium screens */
+    gap: 30px; /* Adjust gap between items */
+    padding: 20px; /* Add padding for better spacing */
+  }
+
+  .Info-flex p {
+    color: white; /* Maintain text color */
+    font-size: 18px; /* Adjust font size for better readability */
+  }
+
+  .text {
+    flex-direction: column; /* Ensure items are stacked vertically */
+    align-items: center; /* Center align items */
+    text-align: center; /* Center align text */
+  }
+
+  .MAin-footer-2 {
+    width: 100%; /* Full width for medium screens */
+    padding: 20px; /* Adjust padding for better spacing */
+    justify-content: center; /* Center content */
+    align-items: center; /* Center align items */
+  }
+
+  .headingg p {
+    color: red; /* Maintain text color */
+    font-size: 20px; /* Adjust font size for better readability */
+    font-weight: 600; /* Maintain font weight */
+    text-align: center; /* Center align text */
+  }
+}
+
+
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+
+
+                            /*ROUTER COMPONENT  */
+
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+
+
+.Bali{
+  /* width: 600px; */
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  background-color: white;
+
+
+}
+.Bali p{
+  font-size: 20px;
+  font-weight: 700;
+}
+.Bali span{
+  font-size: 18px;
+}
+
+.Bali button{   
+   background-color: red;
+  width: 177px;
+  padding: 7px;
+  border-radius: 6px;
+  color: white;
+  border: none;
+
+}
+ 
+
+.Bali-black-box{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  background-color: #000000;padding: 10px;
+  margin-top: -5px;
+}
+ 
+
+.Bali-info{
+  display: flex;
+  justify-content: space-between;
+  width:600px;
+  color: white;font-weight: 500;
+}
+  
+
+.Bali-rating{
+  color: white;
+  font-weight: 500;
+}
+
+.BaliInfo{
+  width: 1260px;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+
+}
+
+.Budget{
+  background-color: white;
+  width: 300px;
+  height: 800px;
+  border-radius: 10px;
+  line-height: 2;
+  position: sticky;
+  top: 0;
+}
+.Tour-Info{
+  width: 800px;
+  /* background-color: blue; */
+  border-radius: 10px;
+
+}
+.Budget-Info{
+ padding: 30px;
+ /* font-size: ; */
+ font-weight: 400;
+ 
+}
+.Budget-Info label{
+  margin-left: 10px;margin-bottom: 2px;
+}
+
+ .Balimainbox{
+  background-color: #F3F4FB;
+ }
+
+
+ .Hotel{
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out; 
+ }
+ .Hotel-Review{
+ 
+  display: flex;
+ 
+ }
+
+ .Hotel:hover{
+  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+ }
+ .imgg{
+  overflow: hidden;
+ }
+ .Hotel-image{
+  width: 450px;
+  height: 310px;
+ 
+   transform: scale(1);
+  transition: transform 0.5s cubic-bezier(0.47, 0.03, 0.49, 1.35);
+ 
+ }
+ .Hotel-image:hover { 
+  transform: scale(1.1);
+ 
+  
+}
+
+ .Hotel-Info{
+  padding: 20px;
+  background-color: white;
+  
+ }
+
+ .Hotel-Info blockquote{
+  font-weight: 600;
+  font-size: 18px;
+ }
+ 
+ .Bali-price{  
+    display: flex;
+  gap: 14px;
+  padding-left: 105px;
+
+ }
+ .Bali-price button{
+  padding: 10px;
+  background-color:#09B367 ;
+  color: white;
+  border-radius: 5px ;
+  height: 45px;
+  border: none;
+ }
+ .Bali-price p{
+  font-weight: 600;
+ }
+ .Bali-Info-Footer{
+  height: 60px;
+  background-color:#E8EAF3 ;
+ 
+  display: flex; 
+  align-items: center;
+ }
+ 
+
+ 
+ 
+ 
+ 
+
+.Tour-column{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  margin-left: 35px;
+  overflow-y: auto;
+
+}
+ 
+
+
+
