@@ -3,14 +3,17 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import  styles from '../Rajasthan/Rajasthan.module.css'
+import styles from '../Rajasthan/Rajasthan.module.css';
 import { Navigation, Pagination } from 'swiper/modules';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleChevronRight, faCircleChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import gsap from 'gsap';
 import PropTypes from 'prop-types';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate from react-router-dom
 
 const GujratCardSlider = ({ title, slides }) => {
+  const navigate = useNavigate(); // Initialize useNavigate
+
   useEffect(() => {
     const heading = document.getElementById('heading');
 
@@ -23,6 +26,10 @@ const GujratCardSlider = ({ title, slides }) => {
       ease: 'power1.inOut'
     });
   }, []);
+
+  const handleExploreNowClick = () => {
+    navigate(`/itinerary/${slides}`); // Navigate to the itinerary page for the specific state
+  };
 
   return (
     <div className='container'>
@@ -75,13 +82,12 @@ const GujratCardSlider = ({ title, slides }) => {
                 <p className={styles.card__description}>
                   {slide.description}
                 </p>
-
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
         <div className={styles.BookTour}>
-          <button>Explore Now</button>
+          <button onClick={handleExploreNowClick}>Explore Now</button>
         </div>
       </section>
     </div>

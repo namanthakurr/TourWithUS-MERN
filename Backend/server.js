@@ -118,6 +118,29 @@ app.get("/api/logout", (req, res) => {
     status: "success",
   });
 });
+
+
+// Backend endpoint to get itinerary data by state
+app.get('/api/itinerary/:state', async (req, res) => {
+  try {
+    const { state } = req.params; // Get state from URL params
+    console.log(state);
+
+    // Use dynamic key access to get the specific state's data
+    const data = await TourData.findOne({}); // Get the entire document (assuming there's only one)
+    
+    if (data && data[state]) {
+      res.status(200).json(data[state]); // Send the specific state's data array
+    } else {
+      res.status(404).json({ message: 'No data found for the specified state' });
+    }
+  } catch (err) {
+    res.status(500).json({ error: 'Error fetching data' });
+  }
+});
+
+
+
 const port = process.env.PORT || 8000;
 
 app.listen(port, () => {

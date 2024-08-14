@@ -12,7 +12,7 @@ import Maharashtra from "./Maharashtra/Maharashtra.jsx";
 import Daman from "./Daman&Diu/Daman.jsx";
 import Goa from "./Goa/Goa.jsx";
 import Keral from "./Kerala/Keral.jsx";
-import Karnataka from "./Karnataka/Karnataka.jsx"
+import Karnataka from "./Karnataka/Karnataka.jsx";
 import AndhraPradesh from "./AndhraPradesh/AndhraPradesh.jsx";
 import Meghalaya from "./Meghalaya/Meghalaya.jsx";
 import Up from "./Up/Up.jsx";
@@ -27,7 +27,7 @@ import WestBengalFile from "./East/WestBengal/WestBengalFile.jsx";
 import TamilNaduFile from "./Tamil Nadu/TamilNaduFile.jsx";
 import SignUpForm from "./Project/SignUpForm.js";
 import LoginForm from "./Project/LoginForm.js";
-
+import Itinerary from "./RouterComponent/Itinerary.js";
 
 const router = createBrowserRouter([
   {
@@ -41,45 +41,48 @@ const router = createBrowserRouter([
         path: "/rajasthan",
         element: <Rajasthan />,
       },
+      { 
+        path: "/itinerary/:state",
+        element: <Itinerary /> },
       {
-        path:'/gujrat',
-        element:<Gujrat/>
+        path: "/gujrat",
+        element: <Gujrat />,
       },
       {
-        path:'/mp',
-        element:<MadhyaPradesh/>
+        path: "/mp",
+        element: <MadhyaPradesh />,
       },
       {
-        path:'/maharashtra',
-        element:<Maharashtra/>
+        path: "/maharashtra",
+        element: <Maharashtra />,
       },
       {
-        path:'/daman',
-        element:<Daman/>
-      },
- {
-        path:'/goa',
-        element:<Goa/>
+        path: "/daman",
+        element: <Daman />,
       },
       {
-        path:'/keral',
-        element:<Keral/>
+        path: "/goa",
+        element: <Goa />,
       },
       {
-        path:'/karnataka',
-        element:<Karnataka/>
+        path: "/keral",
+        element: <Keral />,
       },
       {
-        path:'/andhra',
-        element:<AndhraPradesh/>
+        path: "/karnataka",
+        element: <Karnataka />,
       },
       {
-        path:'/meghalaya',
-        element:<Meghalaya/>
+        path: "/andhra",
+        element: <AndhraPradesh />,
       },
       {
-        path:'/up',
-        element:<Up/>
+        path: "/meghalaya",
+        element: <Meghalaya />,
+      },
+      {
+        path: "/up",
+        element: <Up />,
       },
       {
         path: "/ladakh",
@@ -91,50 +94,46 @@ const router = createBrowserRouter([
       },
       {
         path: "/Himachal_Pradesh",
-        element: <HimachalPradesh/>,
+        element: <HimachalPradesh />,
       },
       {
         path: "/Uttarakhand",
-        element: <Uttarakhand/>,
+        element: <Uttarakhand />,
       },
       {
         path: "/Sikkim",
-        element: <SikkimFile/>,
+        element: <SikkimFile />,
       },
       {
         path: "/Odisha",
-        element: <OdishaFile/>,
+        element: <OdishaFile />,
       },
       {
         path: "/Assam",
-        element: <AssamFile/>,
+        element: <AssamFile />,
       },
       {
         path: "/WestBengal",
-        element: <WestBengalFile/>,
+        element: <WestBengalFile />,
       },
       {
         path: "/TamilNadu",
-        element: <TamilNaduFile/>,
+        element: <TamilNaduFile />,
       },
       {
         path: "/SignUpForm",
-        element: <SignUpForm/>,
+        element: <SignUpForm />,
       },
       {
         path: "/LoginForm",
-        element: <LoginForm/>,
+        element: <LoginForm />,
       },
-    
     ],
   },
 ]);
 
-
-
 function App() {
   return <RouterProvider router={router} />;
- 
 }
 
 export default App;

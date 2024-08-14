@@ -1,0 +1,227 @@
+{
+    "Rajasthan": [
+      {
+        "image": "/images/Rajasthan_img/Hawa_mahal.jpg",
+        "title": "FORTS AND PALACES OF RAJASTHAN 1",
+        "description": "Passionate about development and design, I carry out projects at the request of users.",
+        "link": "/"
+      },
+      {
+        "image": "/images/Rajasthan_img/Hawa_mahal.jpg",
+        "title": "FORTS AND PALACES OF RAJASTHAN 2",
+        "description": "Passionate about development and design, I carry out projects at the request of users.",
+        "link": "/"
+      },
+      {
+        "image": "/images/Rajasthan_img/Hawa_mahal.jpg",
+        "title": "FORTS AND PALACES OF RAJASTHAN 3",
+        "description": "Passionate about development and design, I carry out projects at the request of users.",
+        "link": "/"
+      },
+      {
+        "image": "/images/Rajasthan_img/Hawa_mahal.jpg",
+        "title": "FORTS AND PALACES OF RAJASTHAN 4",
+        "description": "Passionate about development and design, I carry out projects at the request of users.",
+        "link": "/"
+      },
+      {
+        "image": "/images/Rajasthan_img/Hawa_mahal.jpg",
+        "title": "FORTS AND PALACES OF RAJASTHAN 5",
+        "description": "Passionate about development and design, I carry out projects at the request of users.",
+        "link": "/"
+      }
+    ],
+    "Gujrat": [
+      {
+        "image": "/images/Rajasthan_img/Heritage.jpg",
+        "title": "Heritage and Culture Tour",
+        "description": "Explore Gujarat heritage: temples, markets, arts, crafts, and traditions.",
+        "link": "/"
+      },
+      {
+        "image": "/images/Rajasthan_img/WIldlife.jpg",
+        "title": "Wildlife and Nature Expedition",
+        "description": "Experience Gujarat wildlife: lions, birdwatching, salt flats, and sanctuaries.",
+        "link": "/"
+      },
+      {
+        "image": "/images/Rajasthan_img/Spiritual.jpg",
+        "title": "Spiritual Sojourn And Temples",
+        "description": "Discover Gujarat spirituality: sacred temples, ashrams, peaceful retreats, ancient sites.",
+        "link": "/"
+      },
+      {
+        "image": "/images/Rajasthan_img/Beaches.jpg",
+        "title": "Beach and Coastal Retreat",
+        "description": "Embark on Gujarat Wildlife and Nature Expedition: lions, birdwatching, Rann of Kutch, and scenic landscapes await.",
+        "link": "/"
+      },
+      {
+        "image": "/images/Rajasthan_img/Navratri.jpg",
+        "title": "Festival and Cultural ",
+        "description": "Celebrate Gujarat festivals: Navratri, Rann Utsav, and kites.",
+        "link": "/"
+      }
+    ],
+    "MadhyaPradesh": [
+      {
+        "image": "/images/Rajasthan_img/Khajju.jpg",
+        "title": "Historical Wonders Tour",
+        "description": "Explore Gwalior Fort, Khajuraho Temples, Ujjain, and Mandu’s grandeur.",
+        "link": "/"
+      },
+      {
+        "image": "/images/Rajasthan_img/Tigu.jpg",
+        "title": "Wildlife Adventure Tour",
+        "description": "Safari in Bandhavgarh, Kanha, Pench, and explore Satpura’s wildlife.",
+        "link": "/"
+      },
+      {
+        "image": "/images/Rajasthan_img/Ramghat.jpg",
+        "title": "Cultural-Spiritual Journey",
+        "description": "Discover Ujjain’s temples, Sanchi’s carvings, Indore’s culture, and Jabalpur.",
+        "link": "/"
+      },
+      {
+        "image": "/images/Rajasthan_img/waterfall.jpg",
+        "title": "Nature-Scenic Beauty Tour",
+        "description": "Explore Pachmarhi’s hills, Bhedaghat’s waterfalls, Kanha, and Satpura’s beauty.",
+        "link": "/"
+      },
+      {
+        "image": "/images/Rajasthan_img/tribe.jpg",
+        "title": "Festivals and Local Experiences Tour ",
+        "description": "Experience Indore’s festivals, Jabalpur’s markets, Ujjain’s Kumbh, and Mandu’s crafts.",
+        "link": "/"
+      }
+    ],
+    "Maharashtra": [
+      {
+        "image": "/images/Rajasthan_img/wankhede.jpg",
+        "title": "Mumbai Highlights Tour",
+        "description": "Explore Mumbai iconic landmarks, vibrant markets, and cultural treasures.",
+        "link": "/"
+      },
+      {
+        "image": "/images/Rajasthan_img/WesternGhat.jpg",
+        "title": "Western Adventure",
+        "description": "Discover hill stations, scenic views, and historical forts in Maharashtra.",
+        "link": "/"
+      },
+      {
+        "image": "/images/Rajasthan_img/HeritageMaharashtra.jpg",
+        "title": "Central Heritage Tour",
+        "description": "Explore historic sites and cultural heritage.",
+        "link": "/"
+      },
+      {
+        "image": "/images/Rajasthan_img/Ella.jpg",
+        "title": "Maharashtra Wildlife Safari",
+        "description": "Embark on thrilling wildlife safaris through Maharashtra rich national parks and reserves.",
+        "link": "/"
+      },
+      {
+        "image": "/images/Rajasthan_img/bhole.jpg",
+        "title": "Spiritual Maharashtra Pilgrimage",
+        "description": "Visit sacred temples and spiritual sites.",
+        "link": "/"
+      }
+    ],
+    "Daman": [
+      {
+        "image": "/images/Rajasthan_img/Diuslides-Fort.jpg",
+        "title": "Diu Fort Exploration",
+        "description": "Discover the historic Diu Fort with its panoramic views and rich heritage.",
+        "link": "/"
+      },
+      {
+        "image": "/images/Rajasthan_img/beachtourism03.jpg",
+        "title": "Beach Relaxation Tour",
+        "description": "Enjoy the serene beaches of Daman and Diu, perfect for relaxation.",
+        "link": "/"
+      },
+      {
+        "image": "/images/Rajasthan_img/damanheritager.jpg",
+        "title": "Heritage and Culture Tour",
+        "description": "Explore the cultural landmarks and colonial architecture of Daman and Diu.",
+        "link": "/"
+      },
+      {
+        "image": "/images/Rajasthan_img/devka-beach.jpg",
+        "title": "Water Sports Adventure",
+        "description": "Embark on thrilling water sports activities in the clear waters of Daman and Diu.",
+        "link": "/"
+      },
+      {
+        "image": "/images/Rajasthan_img/luxury.jpg",
+        "title": "Luxury and Leisure Tour",
+        "description": "Luxury: Relax, explore, indulge in Daman and Diu.",
+        "link": "/"
+      }
+    ],
+    "Goa": [
+      {
+        "image": "/images/Rajasthan_img/slideagudafort.jpg",
+        "title": "Aguada Fort Exploration",
+        "description": "Discover the historic Aguada Fort with its panoramic views and rich heritage.",
+        "link": "/"
+      },
+      {
+        "image": "/images/Rajasthan_img/Baga-Beach-in-goa.jpg",
+        "title": "Beach Relaxation Tour",
+        "description": "Enjoy the serene beaches of Goa.",
+        "link": "/"
+      },
+      {
+        "image": "/images/Rajasthan_img/goaculture.jpg",
+        "title": "Heritage and Culture Tour",
+        "description": "Explore the cultural landmarks and colonial architecture of Old Goa and culture dances",
+        "link": "/"
+      },
+      {
+        "image": "/images/Rajasthan_img/watergoa.jpg",
+        "title": "Water Sports Adventure",
+        "description": "Embark on thrilling water sports activities in the clear waters of Goa.",
+        "link": "/"
+      },
+      {
+        "image": "/images/Rajasthan_img/naturegoa.jpg",
+        "title": "Nature and Adventure",
+        "description": "Experience the natural beauty and adventure at Dudhsagar Falls.",
+        "link": "/"
+      }
+    ],
+    "Kerala": [
+      {
+        "image": "/images/Rajasthan_img/blackwateractivity.jpg",
+        "title": "Backwaters Cruise",
+        "description": "Explore the serene backwaters of Kerala on a traditional houseboat.",
+        "link": "/"
+      },
+      {
+        "image": "/images/Rajasthan_img/teaplantationjpg.jpg",
+        "title": "Tea Plantation Tour",
+        "description": "Discover the lush tea gardens and scenic views of Munnar.",
+        "link": "/"
+      },
+      {
+        "image": "/images/Rajasthan_img/one-bedroom-premium-houseboat-alleppey.jpeg",
+        "title": "Houseboat Experience",
+        "description": "Enjoy a relaxing houseboat stay in the tranquil backwaters of Alleppey.",
+        "link": "/"
+      },
+      {
+        "image": "/images/Rajasthan_img/keralwildlife.jpg",
+        "title": "Wildlife Adventure",
+        "description": "Explore the diverse wildlife in Kerala’s national parks and sanctuaries.",
+        "link": "/"
+      },
+      {
+        "image": "/images/Rajasthan_img/ayurveda.jpg",
+        "title": "Ayurvedic Wellness",
+        "description": "Experience traditional Ayurvedic treatments and wellness therapies.",
+        "link": "/"
+      }
+    ]
+  }
+  
