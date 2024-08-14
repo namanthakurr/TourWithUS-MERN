@@ -40,7 +40,7 @@ function NAveeeee() {
           <div className={`navbar-links ${isMenuOpen ? 'open' : ''}`}>
             <img src='/images/TourLogo.png' alt='hanbde' className='tourlogo'/>
             <Link to="/">
-              <p className="nav-item">Home</p>
+              <p className='nav-item' style={{marginTop:"10px"}}>Home</p>
             </Link>
             <div className="nav-item dropdown">
               <p>North</p>

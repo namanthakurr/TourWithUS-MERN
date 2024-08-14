@@ -1,97 +1,42 @@
 import React from "react";
-// import Balivideo1 from "../video/Balivideo1.mp4";
-import Container from "react-bootstrap/Container";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import NavDropdown from "react-bootstrap/NavDropdown";
-
 import "bootstrap/dist/css/bootstrap.min.css";
+
+const GujratSlidesData = [
+  {
+    image: '/images/Rajasthan_img/Heritage.jpg',
+    title: 'Heritage and Culture Tour',
+    description: 'Explore Gujarat heritage: temples, markets, arts, crafts, and traditions.',
+    link: '/'
+  },
+  {
+    image: '/images/Rajasthan_img/WIldlife.jpg',
+    title: 'Wildlife and Nature Expedition',
+    description: 'Experience Gujarat wildlife: lions, birdwatching, salt flats, and sanctuaries.',
+    link: '/'
+  },
+  {
+    image: '/images/Rajasthan_img/Spiritual.jpg',
+    title: 'Spiritual Sojourn And Temples',
+    description: 'Discover Gujarat spirituality: sacred temples, ashrams, peaceful retreats, ancient sites.',
+    link: '/'
+  },
+  {
+    image: '/images/Rajasthan_img/Beaches.jpg',
+    title: 'Beach and Coastal Retreat',
+    description: 'Embark on Gujarat Wildlife and Nature Expedition: lions, birdwatching, Rann of Kutch, and scenic landscapes await.',
+    link: '/'
+  },
+  {
+    image: '/images/Rajasthan_img/Navratri.jpg',
+    title: 'Festival and Cultural',
+    description: 'Celebrate Gujarat festivals: Navratri, Rann Utsav, and kites.',
+    link: '/'
+  },
+];
 
 function Bali() {
   return (
     <div>
-      <div className="navbar-container">
-        <Navbar
-          expand="lg"
-          variant="dark"
-          style={{ backgroundColor: "#900C3E" }}
-        >
-          <Container>
-            <Navbar.Brand href="#">
-              <img src="verma.png" className="logo" alt="Logo" />
-            </Navbar.Brand>
-            <Navbar.Toggle aria-controls="navbarSupportedContent" />
-            <Navbar.Collapse id="navbarSupportedContent">
-              <Nav className="me-auto">
-                <Nav.Link href="#" active>
-                  Home
-                </Nav.Link>
-                <NavDropdown
-                  title="International Holidays"
-                  id="basic-nav-dropdown-link"
-                >
-                  <NavDropdown.Item href="#">Bali</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Dubai</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Thailand</NavDropdown.Item>
-                  <NavDropdown.Item href="#">London</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Australia</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Newzealand</NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#">More countries</NavDropdown.Item>
-                </NavDropdown>
-
-                <NavDropdown title="Honeymoon Gateways" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="#">
-                    Bali Honeymoon Packages
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#">
-                    Dubai Honeymoon Packages
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#">
-                    Greece Honeymoon Packages
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#">
-                    Brazil Honeymoon Packages
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#">
-                    Australia Honeymoon Packages
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#">More Packages</NavDropdown.Item>
-                </NavDropdown>
-                <NavDropdown
-                  title="Packages by Interest"
-                  id="basic-nav-dropdown"
-                >
-                  <NavDropdown.Item href="#">
-                    International Tour Packages
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#">
-                    Solo Tour Packages
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#">
-                    Couple Tour Packages
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#">
-                    Family Tour Packages
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#">
-                    Friends Group Tour Packages
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#">
-                    More Luxuries Packages
-                  </NavDropdown.Item>
-                </NavDropdown>
-
-                <NavDropdown title="Search" id="basic-nav-dropdown-search">
-                  <NavDropdown.Item href="#">More Searches</NavDropdown.Item>
-                </NavDropdown>
-              </Nav>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
-      </div>
       <br></br>
       <br></br>
       <br></br>
@@ -102,11 +47,9 @@ function Bali() {
 
       <div className="Bali">
         <div>
-          {" "}
-          <p>Bali Tour Packages</p>
+          <p>Gujarat Tour Packages</p>
           <span>
-            Paradise of lush landscapes, vibrant culture, and tranquil
-            spirituality
+            Explore the vibrant culture, stunning landscapes, and rich heritage of Gujarat.
           </span>
         </div>
         <div>
@@ -114,15 +57,16 @@ function Bali() {
         </div>
       </div>
 
-      <div>
         <div className="Bali-video">
-          {/* <video src={Balivideo1} autoPlay loop muted className="Bali-v" /> */}
+           
+          {/* <video src='/videos/gujarat.mp4' autoPlay loop muted className="Bali-v" /> */}
         </div>
+      <div>
         <div className="Bali-black-box">
           <div className="Bali-info">
             <div>
               IDEAL DURATION
-              <br />5 nights
+              <br /> 7-10 nights
             </div>
             <div>
               VISA PROCESSING
@@ -132,18 +76,18 @@ function Bali() {
             <div>
               BEST TIME
               <br />
-              Apr- Jul{" "}
+              Oct - Mar
             </div>
             <div>
               STARTING PRICE
               <br />
-              ₹17,887
+              ₹12,500
             </div>
           </div>
           <div className="Bali-rating">
             OUR EXPERTISE
             <br />
-            4.7 from 13.5k travellers
+            4.8 from 10k travellers
           </div>
         </div>
       </div>
@@ -261,207 +205,28 @@ function Bali() {
           </div>
 
           <div className="Tour-column">
-            <div className="Tour-Info">
-              <div
-                style={{ borderRadius: "10px", overflow: "hidden" }}
-                className="Hotel"
-              >
-                <div className="Hotel-Review">
-                  <div className="imgg">
-                    <img
-                      src="Baliactivity.jpg"
-                      className="Hotel-image"
-                      alt=""
-                    />
-                  </div>
-                  <div className="Hotel-Info">
-                    <blockquote>
-                      {" "}
-                      Unforgettable 6 Days Bali Tour Package
-                    </blockquote>
-                    <p>5 Nights: Ubud (2N) {">"} Kuta (3N)</p>
-                    <p>
-                      {" "}
-                      {"\u2713"} 4{"\u2606"}Hotels {"\u2713"} 3 activities{" "}
-                      {"\u2713"} Shared transfer
-                    </p>
-                    <p> {"\u2713"} 24x7 concierge</p>
-                    <hr />
-                    <div className="Bali-price">
-                      <p>
-                        ₹27,700
-                        <br /> per person
-                      </p>
-                      <button type="button">View Details</button>
+            {GujratSlidesData.map((slide, index) => (
+              <div className="Tour-Info" key={index}>
+                <div
+                  style={{ borderRadius: "10px", overflow: "hidden" }}
+                  className="Hotel"
+                >
+                  <div className="Hotel-Review">
+                    <div className="imgg">
+                      <img src={slide.image} className="Hotel-image" alt="" />
+                    </div>
+                    <div className="Hotel-Info">
+                      <blockquote>{slide.title}</blockquote>
+                      <p>{slide.description}</p>
+                      <hr />
+                      <div className="Bali-price">
+                        <button type="button">Book Tour</button>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div className="Bali-Info-Footer">
-                  <p>
-                    {" "}
-                    {"\u2022"} Kintamani Volcano + Tegallalang Rice Terraces +
-                    Ubud monkey forest
-                  </p>
-                </div>
               </div>
-            </div>
-            <div className="Tour-Info">
-              <div
-                style={{ borderRadius: "10px", overflow: "hidden" }}
-                className="Hotel"
-              >
-                <div className="Hotel-Review">
-                  <div className="imgg">
-                    <img src="Hoteelview.jpg" className="Hotel-image" alt="" />
-                  </div>
-                  <div className="Hotel-Info">
-                    <blockquote>Popular Bali Itinerary For 6 Days</blockquote>
-                    <p>5 Nights: Kuta (2N) {">"} Ubud (3N)</p>
-                    <p>
-                      {" "}
-                      {"\u2713"} 4{"\u2606"}Hotels {"\u2713"} 3 activities{" "}
-                      {"\u2713"} Shared transfer
-                    </p>
-                    <p> {"\u2713"} 24x7 concierge</p>
-                    <hr />
-                    <div className="Bali-price">
-                      <p>
-                        ₹31,000
-                        <br /> per person
-                      </p>
-                      <button type="button">View Details</button>
-                    </div>
-                  </div>
-                </div>
-                <div className="Bali-Info-Footer">
-                  <p>
-                    {" "}
-                    {"\u2022"} Any two beaches (Nusa Dua Beach/Pandawa
-                    Beach/Padang Padang Beach) + GWK Culture Park + <br />{" "}
-                    Uluwatu Cliff Temple + Kecak Dance.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="Tour-Info">
-              <div
-                style={{ borderRadius: "10px", overflow: "hidden" }}
-                className="Hotel"
-              >
-                <div className="Hotel-Review">
-                  <div className="imgg">
-                    <img src="Skydiving.jpg" className="Hotel-image" alt="" />
-                  </div>
-                  <div className="Hotel-Info">
-                    <blockquote>
-                      Adventure-Packed Bali Vacation Package
-                    </blockquote>
-                    <p>5 Nights:Kuta (3N) {">"} Ubud (2N)</p>
-                    <p>
-                      {" "}
-                      {"\u2713"} 4.5{"\u2606"}Hotels {"\u2713"} 4 activities{" "}
-                      {"\u2713"} Shared transfer
-                    </p>
-                    <p> {"\u2713"} 24x7 concierge</p>
-                    <hr />
-                    <div className="Bali-price">
-                      <p>
-                        ₹37,200
-                        <br /> per person
-                      </p>
-                      <button type="button">View Details</button>
-                    </div>
-                  </div>
-                </div>
-                <div className="Bali-Info-Footer">
-                  <p>
-                    {" "}
-                    {"\u2022"} Parasailing, Banana Boat, Jet Ski With Shared
-                    Transfers
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="Tour-Info">
-              <div
-                style={{ borderRadius: "10px", overflow: "hidden" }}
-                className="Hotel"
-              >
-                <div className="Hotel-Review">
-                  <div className="imgg">
-                    <img src="Scene.jpg" className="Hotel-image" alt="" />
-                  </div>
-                  <div className="Hotel-Info">
-                    <blockquote>
-                      Best Value 5 Nights Bali Indonesia Tour Package
-                    </blockquote>
-                    <p>5 Nights: Kuta (5N)</p>
-                    <p>
-                      {" "}
-                      {"\u2713"} 4{"\u2606"}Hotels {"\u2713"} 4 activities{" "}
-                      {"\u2713"} Shared transfer
-                    </p>
-                    <p> {"\u2713"} 24x7 concierge</p>
-                    <hr />
-                    <div className="Bali-price">
-                      <p>
-                        ₹24,599
-                        <br /> per person
-                      </p>
-                      <button type="button">View Details</button>
-                    </div>
-                  </div>
-                </div>
-                <div className="Bali-Info-Footer">
-                  <p>
-                    {" "}
-                    {"\u2022"} Any two beaches (Nusa Dua Beach/Pandawa
-                    Beach/Padang Padang Beach) + GWK Culture Park + <br />
-                    Uluwatu Cliff Temple + Kecak Dance.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="Tour-Info">
-              <div
-                style={{ borderRadius: "10px", overflow: "hidden" }}
-                className="Hotel"
-              >
-                <div className="Hotel-Review">
-                  <div className="imgg">
-                    <img src="Celebration.jpg" className="Hotel-image" alt="" />
-                  </div>
-                  <div className="Hotel-Info">
-                    <blockquote>
-                      {" "}
-                      Eat Pray Love: Bali Package with Nusa Penida
-                    </blockquote>
-                    <p>5 Nights: Ubud (3N) {">"} Kuta (2N)</p>
-                    <p>
-                      {" "}
-                      {"\u2713"} 4{"\u2606"}Hotels {"\u2713"} 2 activities{" "}
-                      {"\u2713"} Shared transfer
-                    </p>
-                    <p> {"\u2713"} 24x7 concierge</p>
-                    <hr />
-                    <div className="Bali-price">
-                      <p>
-                        ₹38,499
-                        <br /> per person
-                      </p>
-                      <button type="button">View Details</button>
-                    </div>
-                  </div>
-                </div>
-                <div className="Bali-Info-Footer">
-                  <p>
-                    {" "}
-                    {"\u2022"} Guided Bali Tour: Ulun Danu Beratan Temple +
-                    Tanah Lot
-                  </p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
