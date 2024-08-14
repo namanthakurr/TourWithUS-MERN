@@ -9,11 +9,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleChevronRight, faCircleChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import gsap from 'gsap';
 import PropTypes from 'prop-types';
-<<<<<<< Updated upstream
 import { useNavigate } from 'react-router-dom'; // Import useNavigate from react-router-dom
-=======
-import { Link } from 'react-router-dom';
->>>>>>> Stashed changes
+// import { Link } from 'react-router-dom';
 
 const GujratCardSlider = ({ title, slides }) => {
   const navigate = useNavigate(); // Initialize useNavigate
@@ -32,8 +29,9 @@ const GujratCardSlider = ({ title, slides }) => {
   }, []);
 
   const handleExploreNowClick = () => {
-    navigate(`/itinerary/${slides}`); // Navigate to the itinerary page for the specific state
+    navigate(`/itinerary/${encodeURIComponent(JSON.stringify(slides))}`);
   };
+  
 
   return (
     <div className='container'>
@@ -91,13 +89,10 @@ const GujratCardSlider = ({ title, slides }) => {
           ))}
         </Swiper>
         <div className={styles.BookTour}>
-<<<<<<< Updated upstream
           <button onClick={handleExploreNowClick}>Explore Now</button>
-=======
-          <Link to='/bali'>
+          {/* <Link to='/bali'>
           <button>Explore Now</button>
-          </Link>
->>>>>>> Stashed changes
+          </Link> */}
         </div>
       </section>
     </div>

@@ -27,12 +27,9 @@ import WestBengalFile from "./East/WestBengal/WestBengalFile.jsx";
 import TamilNaduFile from "./Tamil Nadu/TamilNaduFile.jsx";
 import SignUpForm from "./Project/SignUpForm.js";
 import LoginForm from "./Project/LoginForm.js";
-<<<<<<< Updated upstream
 import Itinerary from "./RouterComponent/Itinerary.js";
-=======
 // import Bali from './RouterComponent/Bali.js'
 
->>>>>>> Stashed changes
 
 const router = createBrowserRouter([
   {
@@ -133,18 +130,12 @@ const router = createBrowserRouter([
         path: "/LoginForm",
         element: <LoginForm />,
       },
-<<<<<<< Updated upstream
-=======
       // {
-      //   path: "/bali",
-      //   element: <Bali/>,
       // },
     
->>>>>>> Stashed changes
     ],
   },
-]);
-
+])
 function App() {
   return <RouterProvider router={router} />;
 }
