@@ -90,9 +90,6 @@ const GujratCardSlider = ({ title, slides }) => {
         </Swiper>
         <div className={styles.BookTour}>
           <button onClick={handleExploreNowClick}>Explore Now</button>
-          {/* <Link to='/bali'>
-          <button>Explore Now</button>
-          </Link> */}
         </div>
       </section>
     </div>

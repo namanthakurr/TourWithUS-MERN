@@ -1,5 +1,5 @@
 import React from "react";
-import Ausvideo from "../video/Ausvideo.mp4";
+// import Ausvideo from "../video/Ausvideo.mp4";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
@@ -115,7 +115,7 @@ function Australia() {
 
       <div>
         <div className="Bali-video">
-          <video src={Ausvideo} autoPlay loop muted className="Bali-v" />
+          {/* <video src={Ausvideo} autoPlay loop muted className="Bali-v" /> */}
         </div>
         <div className="Bali-black-box">
           <div className="Bali-info">

@@ -56,19 +56,19 @@ const Itinerary = () => {
             <div className="Budget-Info">
               <p>Budget</p>
               <input type="checkbox" value="50K" style={{ width: "20px", height: "20px" }} />
-              <label> Below ₹50k </label>
+              <label> Below ₹20k </label>
               <br />
               <input type="checkbox" value="75k" style={{ width: "20px", height: "20px" }} />
-              <label> ₹50k - ₹75k </label>
+              <label> ₹20k - ₹30k </label>
               <br />
               <input type="checkbox" value="1lakh" style={{ width: "20px", height: "20px" }} />
-              <label> ₹75k - ₹1L </label>
+              <label> ₹30k - ₹35k </label>
               <br />
               <input type="checkbox" value="2laKh" style={{ width: "20px", height: "20px" }} />
-              <label> ₹1L - ₹1.5L </label>
+              <label> ₹35k - ₹45k </label>
               <br />
               <input type="checkbox" value="Above 2lakh" style={{ width: "20px", height: "20px" }} />
-              <label>Above ₹2L </label>
+              <label>Above ₹45k </label>
               <br />
               <hr />
             </div>
@@ -82,13 +82,12 @@ const Itinerary = () => {
               <label>4-8 days </label>
               <br />
               <input type="checkbox" value="days" style={{ width: "20px", height: "20px" }} />
-              <label> 9-12 days </label>
+              <label> 5-9 days </label>
               <br />
               <input type="checkbox" value="days" style={{ width: "20px", height: "20px" }} />
-              <label> 13-16 days </label>
+              <label>Above 10 days </label>
               <br />
-              <input type="checkbox" value="days" style={{ width: "20px", height: "20px" }} />
-              <label>Above 16 days </label>
+             
               <br />
               <hr />
             </div>
@@ -118,9 +117,15 @@ const Itinerary = () => {
                     <div className="Hotel-Info">
                       <blockquote>{item.title}</blockquote>
                       <p>{item.description}</p>
+                    <div className='R-I'>
+                    <p> {"\u2713"}{item.rating} {"\u2606"}</p>
+                    <p> {"\u2713"}{item.itinerary} </p>
+                    </div>
+                     
                       <hr />
                       <div className="Bali-price">
-                        <button type="button">Book Tour</button>
+                      <p>{item.price}</p>
+                      <button type="button" className='signup-buttonn'>Book Tour</button>
                       </div>
                     </div>
                   </div>

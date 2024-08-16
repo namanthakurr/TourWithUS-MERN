@@ -28,7 +28,7 @@ import TamilNaduFile from "./Tamil Nadu/TamilNaduFile.jsx";
 import SignUpForm from "./Project/SignUpForm.js";
 import LoginForm from "./Project/LoginForm.js";
 import Itinerary from "./RouterComponent/Itinerary.js";
-// import Bali from './RouterComponent/Bali.js'
+ 
 
 
 const router = createBrowserRouter([
@@ -130,9 +130,7 @@ const router = createBrowserRouter([
         path: "/LoginForm",
         element: <LoginForm />,
       },
-      // {
-      // },
-    
+  
     ],
   },
 ])

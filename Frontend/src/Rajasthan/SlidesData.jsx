@@ -36,35 +36,51 @@ const GujratSlidesData = [
   {
     image: '/images/Rajasthan_img/Heritage.jpg',
     title: 'Heritage and Culture Tour',
-    description: ' Explore Gujarat heritage: temples, markets, arts, crafts, and traditions.',
+    description: 'Explore Gujarat heritage: temples, markets, arts, crafts, and traditions.',
+    itinerary: '3-5 Days',
+    price: '₹25,000 - ₹30,000',
+    rating: 4.7,
     link: '/'
   },
   {
     image: '/images/Rajasthan_img/WIldlife.jpg',
     title: 'Wildlife and Nature Expedition',
     description: 'Experience Gujarat wildlife: lions, birdwatching, salt flats, and sanctuaries.',
+    itinerary: '4-6 Days',
+    price: '₹28,000 - ₹35,000',
+    rating: 4.8,
     link: '/'
   },
   {
     image: '/images/Rajasthan_img/Spiritual.jpg',
     title: 'Spiritual Sojourn And Temples',
     description: 'Discover Gujarat spirituality: sacred temples, ashrams, peaceful retreats, ancient sites.',
+    itinerary: '3-5 Days',
+    price: '₹22,000 - ₹28,000',
+    rating: 4.6,
     link: '/'
   },
   {
     image: '/images/Rajasthan_img/Beaches.jpg',
     title: 'Beach and Coastal Retreat',
-    description: 'Embark on Gujarat Wildlife and Nature Expedition: lions, birdwatching, Rann of Kutch, and scenic landscapes await.',
+    description: 'Embark on a serene journey to Gujarat’s pristine beaches and coastal landscapes.',
+    itinerary: '5-7 Days',
+    price: '₹30,000 - ₹40,000',
+    rating: 4.5,
     link: '/'
   },
   {
     image: '/images/Rajasthan_img/Navratri.jpg',
-    title: 'Festival and Cultural ',
-    description: 'Celebrate Gujarat festivals: Navratri, Rann Utsav, and kites.',
+    title: 'Festival and Cultural Tour',
+    description: 'Celebrate Gujarat’s vibrant festivals: Navratri, Rann Utsav, and the International Kite Festival.',
+    itinerary: '5-7 Days',
+    price: '₹32,000 - ₹42,000',
+    rating: 4.9,
     link: '/'
   },
   // Add more slides as needed
 ];
+
 
 const MPSlidesData = [
   {

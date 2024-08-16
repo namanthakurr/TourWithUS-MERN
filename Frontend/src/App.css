@@ -2106,13 +2106,14 @@ color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
  }
  .imgg{
-  overflow: hidden;
+  overflow: hidden; 
+  
+
  }
  .Hotel-image{
-  width: 450px;
+   width: 100%;
   height: 310px;
- 
-   transform: scale(1);
+  transform: scale(1);
   transition: transform 0.5s cubic-bezier(0.47, 0.03, 0.49, 1.35);
  
  }
@@ -2121,11 +2122,14 @@ color: white;
  
   
 }
+.R-I{
+  display: flex;
+  gap: 30px;
+}
 
  .Hotel-Info{
   padding: 20px;
   background-color: white;
-  
  }
 
  .Hotel-Info blockquote{
@@ -2134,19 +2138,11 @@ color: white;
  }
  
  .Bali-price{  
-    display: flex;
-  gap: 14px;
-  padding-left: 105px;
-
+  display: flex;
+justify-content: space-between;
+align-items: center;
  }
- .Bali-price button{
-  padding: 10px;
-  background-color:#09B367 ;
-  color: white;
-  border-radius: 5px ;
-  height: 45px;
-  border: none;
- }
+ 
  .Bali-price p{
   font-weight: 600;
  }
@@ -2157,11 +2153,6 @@ color: white;
   display: flex; 
   align-items: center;
  }
- 
-
- 
- 
- 
  
 
 .Tour-column{
@@ -2177,5 +2168,317 @@ color: white;
 }
  
 
+@media screen and (max-width: 450px) {
+
+  .Bali {
+    padding: 20px;
+    height: auto;
+  }
+
+  .Bali p {
+    font-size: 32px;
+  }
+
+  .Bali span {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+
+  .Bali button {
+    width: 150px;
+    padding: 5px;
+    border-radius: 4px;
+  }
+
+  .Bali-black-box {
+    flex-direction: column;
+    padding: 5px;
+    margin-top: 10px;
+  }
+
+  .Bali-info {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .BaliInfo {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .Budget {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: static;
+  }
+
+  .Tour-Info {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .Budget-Info {
+    padding: 20px;
+  }
+
+  .Balimainbox {
+    background-color: #F3F4FB;
+  }
+
+  .Hotel {
+    width: 100%;
+  }
+
+  .Hotel-Review {
+    flex-direction: column;
+  }
+
+  .Hotel-image {
+    height: 200px;
+  }
+
+  .R-I {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .Hotel-Info {
+    padding: 15px;
+  }
+
+  .Bali-price {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .Bali-Info-Footer {
+    height: 50px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .Tour-column {
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
 
 
+
+@media screen and (min-width: 450px) and (max-width: 750px) {
+
+  .Bali {
+    padding: 30px;
+    height: auto;
+  }
+
+  .Bali p {
+    font-size: 36px;
+  }
+
+  .Bali span {
+    font-size: 26px;
+    margin-top: 15px;
+  }
+
+  .Bali button {
+    width: 160px;
+    padding: 6px;
+    border-radius: 5px;
+  }
+
+  .Bali-black-box {
+    flex-direction: column;
+    padding: 8px;
+    margin-top: 8px;
+  }
+
+  .Bali-info {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .BaliInfo {
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .Budget {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    position: static;
+  }
+
+  .Tour-Info {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .Budget-Info {
+    padding: 25px;
+  }
+
+  .Balimainbox {
+    background-color: #F3F4FB;
+  }
+
+  .Hotel {
+    width: 100%;
+  }
+
+  .Hotel-Review {
+    flex-direction: column;
+  }
+
+  .Hotel-image {
+    height: 250px;
+  }
+
+  .R-I {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .Hotel-Info {
+    padding: 18px;
+  }
+
+  .Bali-price {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .Bali-Info-Footer {
+    height: 55px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .Tour-column {
+    margin-left: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+
+@media screen and (min-width: 750px) and (max-width: 1160px) {
+
+  .Bali {
+    padding: 20px;
+    height: auto;
+  }
+
+  .Bali p {
+    font-size: 32px;
+  }
+
+  .Bali span {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+
+  .Bali button {
+    width: 150px;
+    padding: 5px;
+    border-radius: 4px;
+  }
+
+  .Bali-black-box {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px;
+    margin-top: 8px;
+  }
+
+  .Bali-info {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .BaliInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .Budget {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-shrink: 1;
+  }
+
+  .Tour-Info {
+    flex: 1;
+    margin-top: 20px;
+  }
+
+  .Budget-Info {
+    padding: 20px;
+  }
+
+  .Balimainbox {
+    background-color: #F3F4FB;
+  }
+
+  .Hotel {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .Hotel-Review {
+    flex-direction: column;
+  }
+
+  .Hotel-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .R-I {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .Hotel-Info {
+    padding: 15px;
+  }
+
+  .Bali-price {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .Bali-Info-Footer {
+    height: 60px;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .Tour-column {
+    margin-left: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    overflow-y: auto;
+  }
+}
