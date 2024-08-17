@@ -389,10 +389,6 @@ const MeghalayaSlidesData = [
   }
 ];
 
-
-
-
-
 const LadakhSlidesData = [
   {
     image: '/images/Ladakh_img/Leh-Tour.jpg',

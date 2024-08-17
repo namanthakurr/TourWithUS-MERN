@@ -22,9 +22,10 @@ const LoginForm = () => {
       const res = await axios.post("/api/login", formData);
       console.log('Login response:', res.data);
   
-      if (res.data.status === "success" && res.data.token) {
+      if (res.data.status === "success" && res.data.token && res.data.userId) {
         alert("Login Successful!!");
         localStorage.setItem("token", res.data.token); // Store the token in localStorage
+        sessionStorage.setItem("userId", res.data.userId); // Store the userId in sessionStorage
         navigate("/"); // Navigate to the home page
         window.location.reload(); // Reload the page to update the navbar
       } else {
@@ -35,6 +36,7 @@ const LoginForm = () => {
       setError("Error during login. Please try again.");
     }
   };
+  
 
   return (
     <div className="signup-container">

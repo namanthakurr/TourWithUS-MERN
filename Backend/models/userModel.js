@@ -1,26 +1,25 @@
 import mongoose from "mongoose";
 import bcrypt from "bcryptjs";
+import TourData from './TourModel.mjs'; // Ensure this path is correct
 
 const userSchema = new mongoose.Schema({
   name: {
     type: String,
-    required: [true, "Please tell us your name."],
+    required: [true, "A user must have a name"],
   },
   email: {
     type: String,
-    required: [true, "Please provide your email."],
+    required: [true, "A user must have an email"],
     unique: true,
-    lowercase: true,
   },
   password: {
     type: String,
-    required: [true, "Please provide a password."],
-    minlength: 8,
-    select: false, // Ensure password is not returned by default
+    required: [true, "A user must have a password"],
+    select: false,
   },
   passwordConfirm: {
     type: String,
-    required: [true, "Please confirm your password."],
+    required: [true, "Please confirm your password"],
     validate: {
       // This only works on CREATE and SAVE
       validator: function (el) {
@@ -29,22 +28,22 @@ const userSchema = new mongoose.Schema({
       message: "Passwords are not the same!",
     },
   },
+  bookedTours: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "TourData", // Make sure this matches the model name in TourModel.mjs
+    },
+  ],
 });
 
-// Encrypt password before saving user
+// Encrypt password before saving
 userSchema.pre("save", async function (next) {
-  // Only run this function if password was modified
   if (!this.isModified("password")) return next();
 
-  // Hash password with cost of 12
   this.password = await bcrypt.hash(this.password, 12);
-
-  // Delete passwordConfirm field
   this.passwordConfirm = undefined;
   next();
 });
-
-
 
 const User = mongoose.model("User", userSchema);
 export default User;

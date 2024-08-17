@@ -23,7 +23,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // READ JSON FILE
-const slideData = JSON.parse(fs.readFileSync(path.join(__dirname, 'slideData.json'), 'utf-8'));
+const slideData = JSON.parse(fs.readFileSync(path.join(__dirname, 'Slidedata.json'), 'utf-8'));
 
 // IMPORT DATA INTO DB
 const importData = async () => {
@@ -63,3 +63,4 @@ if (process.argv[2] === '--import') {
 console.log(process.argv);
 
 // node dev-data/import-dev-data.js --import
+// node dev-data/import-dev-data.js --delete

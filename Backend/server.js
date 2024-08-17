@@ -3,6 +3,7 @@ import cors from "cors";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import User from "./models/userModel.js";
+import TourData from "./models/TourModel.mjs";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
 
@@ -19,7 +20,7 @@ mongoose
   .then(() => console.log("DB Connection Successful!"))
   .catch((err) => console.error("DB Connection Error:", err));
 
-//  ------------------------------- Authentication
+// ------------------------------- Authentication
 
 const signToken = (id) => {
   return jwt.sign({ id }, process.env.JWT_SECRET, {
@@ -46,6 +47,7 @@ const createSendToken = (user, statusCode, res) => {
   res.status(statusCode).json({
     status: "success",
     token,
+    userId: user._id, // Include userId in the response
     data: {
       user,
     },
@@ -69,7 +71,9 @@ app.post("/api/signUp", async (req, res) => {
       passwordConfirm,
     });
 
-    createSendToken(newUser, 201, res);
+    console.log("New User:", newUser); // Debugging line
+
+    createSendToken(newUser, 201, res); // Send token and user data including userId
   } catch (err) {
     console.log(err);
     res.status(500).json({ status: "error", error: "Error during signup" });
@@ -88,6 +92,8 @@ app.post("/api/login", async (req, res) => {
 
     const user = await User.findOne({ email }).select("+password");
 
+    console.log("User:", user); // Debugging line
+
     if (!user) {
       return res
         .status(401)
@@ -95,14 +101,14 @@ app.post("/api/login", async (req, res) => {
     }
 
     const isPasswordValid = await bcrypt.compare(password, user.password);
-    console.log(isPasswordValid);
+
     if (!isPasswordValid) {
       return res
         .status(401)
         .json({ status: "error", error: "Incorrect email or password" });
     }
 
-    createSendToken(user, 200, res);
+    createSendToken(user, 200, res); // Send token and user data including userId
   } catch (err) {
     console.error("Error during login:", err);
     res.status(500).json({ status: "error", error: "Error during login" });
@@ -119,27 +125,60 @@ app.get("/api/logout", (req, res) => {
   });
 });
 
-
 // Backend endpoint to get itinerary data by state
-app.get('/api/itinerary/:state', async (req, res) => {
+
+app.get("/api/itinerary/:state", async (req, res) => {
   try {
     const { state } = req.params; // Get state from URL params
-    console.log(state);
+    console.log("Requested State:", state);
 
     // Use dynamic key access to get the specific state's data
-    const data = await TourData.findOne({}); // Get the entire document (assuming there's only one)
-    
+    const data = await TourData.findOne({});
+
     if (data && data[state]) {
       res.status(200).json(data[state]); // Send the specific state's data array
     } else {
-      res.status(404).json({ message: 'No data found for the specified state' });
+      res
+        .status(404)
+        .json({ message: "No data found for the specified state" });
     }
   } catch (err) {
-    res.status(500).json({ error: 'Error fetching data' });
+    console.error("Error fetching data:", err);
+    res.status(500).json({ error: "Error fetching data" });
   }
 });
 
+app.post("/api/bookTour", async (req, res) => {
+  try {
+    const { userId, tourId } = req.body;
 
+    console.log("Received userId:", userId); // Log userId
+    console.log("Received tourId:", tourId); // Log tourId
+
+    if (!userId || !tourId) {
+      return res
+        .status(400)
+        .json({ status: "error", error: "Missing userId or tourId" });
+    }
+
+    const user = await User.findById(userId);
+    if (!user) {
+      return res.status(404).json({ status: "error", error: "User not found" });
+    }
+
+    if (!user.bookedTours.includes(tourId)) {
+      user.bookedTours.push(tourId);
+      await user.save();
+    }
+
+    res
+      .status(200)
+      .json({ status: "success", message: "Tour booked successfully" });
+  } catch (err) {
+    console.error("Error booking tour:", err);
+    res.status(500).json({ status: "error", error: "Error booking tour" });
+  }
+});
 
 const port = process.env.PORT || 8000;
 

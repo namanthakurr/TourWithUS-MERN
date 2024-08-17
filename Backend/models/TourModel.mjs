@@ -19,6 +19,20 @@ const tourSchema = new Schema({
     type: String,
     required: true,
   },
+  itinerary: {
+    type: String,
+    required: true,
+  },
+  price: {
+    type: String,
+    required: true,
+  },
+  rating: {
+    type: Number,
+    required: true,
+    min: 0,
+    max: 5,
+  },
 });
 
 // Define the schema for the slide data, mapping locations to arrays of tours
@@ -30,9 +44,22 @@ const slideDataSchema = new Schema({
   Daman: [tourSchema],
   Goa: [tourSchema],
   Kerala: [tourSchema],
+  Karnataka: [tourSchema],
+  AndhraPradesh: [tourSchema],
+  Meghalaya: [tourSchema],
+  UttarPradesh: [tourSchema],
+  Ladakh: [tourSchema],
+  JammuAndKashmir: [tourSchema],
+  HimachalPradesh: [tourSchema],
+  Uttarakhand: [tourSchema],
+  Sikkim: [tourSchema],
+  WestBengal: [tourSchema],
+  Assam: [tourSchema],
+  Odisha: [tourSchema],
+  TamilNadu: [tourSchema],
 });
 
 // Create the model from the schema
-const TourData = mongoose.model("SlideData", slideDataSchema);
+const TourData = mongoose.model("TourData", slideDataSchema);
 
 export default TourData;

@@ -30,9 +30,14 @@ const SignUpForm = () => {
     try {
       const res = await axios.post("/api/signUp", formData);
       console.log(res.data);
-      if (res.data.status === "success") {
-        // Adjust based on your backend response
-        navigate("/LoginForm"); // Ensure this path is correct and matches your routing
+
+      if (res.data.status === "success" && res.data.token) {
+        // Store the token and userId in localStorage or sessionStorage
+        localStorage.setItem("token", res.data.token); 
+        sessionStorage.setItem("userId", res.data.userId);
+        alert("Signup successful! Redirecting to home page...");
+        navigate("/");
+        window.location.reload(); 
       } else {
         setError("Signup failed. Please try again.");
       }
