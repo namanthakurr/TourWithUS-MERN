@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 import path from 'path';
 import dotenv from 'dotenv';
 import { fileURLToPath } from 'url';
-import TourData from '../models/TourModel.mjs'; // Ensure correct path and extension
+import TourData from '../models/TourModel.js'; // Ensure correct path and extension
 
 dotenv.config();
 

@@ -9,8 +9,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleChevronRight, faCircleChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import gsap from 'gsap';
 import PropTypes from 'prop-types';
+import { useNavigate } from 'react-router-dom';
 
 const AndhraCardSlider = ({ title, slides }) => {
+  const navigate = useNavigate(); 
   useEffect(() => {
     const heading = document.getElementById('heading');
 
@@ -23,6 +25,11 @@ const AndhraCardSlider = ({ title, slides }) => {
       ease: 'power1.inOut'
     });
   }, []);
+
+  const handleExploreNowClick = () => {
+    const stateName = "AndhraPradesh";
+    navigate(`/itinerary/${stateName}`); // Pass only the state name as a parameter
+  };
 
   return (
     <div className='container'>
@@ -80,7 +87,7 @@ const AndhraCardSlider = ({ title, slides }) => {
           ))}
         </Swiper>
         <div className={styles.BookTour}>
-          <button>Explore Now</button>
+           <button onClick={handleExploreNowClick}>Explore Now</button>
         </div>
       </section>
     </div>

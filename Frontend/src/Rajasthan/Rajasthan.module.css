@@ -811,7 +811,7 @@ h1 {
   align-items: center;
   opacity: 1;
   border-radius: 15px;
-  background-image: url();
+  /* background-image: url(); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -961,6 +961,9 @@ h1 {
   .Gujrat_logo2 {
     right: 20%;
   }
+  .Karnataka_logo2{
+    right: 20%;
+  }
   .rajasthan_Pattern {
     width: 800px;
   }
@@ -1062,6 +1065,9 @@ h1 {
   .Gujrat_logo2 {
     right: 10%;
   }
+  .Karnataka_logo2{
+    right: 10%;
+  }
   .rajasthan_Pattern {
     width: 600px;
   }
@@ -1161,6 +1167,9 @@ h1 {
     right: 5%;
   }
   .Gujrat_logo2 {
+    right: 5%;
+  }
+  .Karnataka_logo2{
     right: 5%;
   }
   .rajasthan_Pattern {

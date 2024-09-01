@@ -3,15 +3,17 @@ import cors from "cors";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import User from "./models/userModel.js";
-import TourData from "./models/TourModel.mjs";
+import TourData from "./models/TourModel.js";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
+import tourRoutes from "./Routes/tour.js";
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 dotenv.config();
+// app.use("/api/TourData", tourRoutes);
 
 const DB = process.env.DATABASE;
 
@@ -127,20 +129,26 @@ app.get("/api/logout", (req, res) => {
 
 // Backend endpoint to get itinerary data by state
 
+// app.get("/api/tours", async (req, res) => {
+//   try {
+//     const allTourData = await TourData.find().lean();
+//     res.json(allTourData);
+//   } catch (error) {
+//     console.error("Error fetching all tour data:", error);
+//     res.status(500).json({ message: "Error fetching tour data." });
+//   }
+// });
+
 app.get("/api/itinerary/:state", async (req, res) => {
   try {
-    const { state } = req.params; // Get state from URL params
-    console.log("Requested State:", state);
+    const { state } = req.params; 
+    const data = await TourData.find({ [state]: { $exists: true } });
 
-    // Use dynamic key access to get the specific state's data
-    const data = await TourData.findOne({});
-
-    if (data && data[state]) {
-      res.status(200).json(data[state]); // Send the specific state's data array
+    if (data.length > 0) {
+      const stateData = data[0][state]; 
+      res.status(200).json(stateData); 
     } else {
-      res
-        .status(404)
-        .json({ message: "No data found for the specified state" });
+      res.status(404).json({ message: `No data found for the specified state: ${state}` });
     }
   } catch (err) {
     console.error("Error fetching data:", err);
@@ -152,20 +160,25 @@ app.post("/api/bookTour", async (req, res) => {
   try {
     const { userId, tourId } = req.body;
 
-    console.log("Received userId:", userId); // Log userId
-    console.log("Received tourId:", tourId); // Log tourId
-
     if (!userId || !tourId) {
       return res
         .status(400)
         .json({ status: "error", error: "Missing userId or tourId" });
     }
 
+    // Find the user by ID
     const user = await User.findById(userId);
     if (!user) {
       return res.status(404).json({ status: "error", error: "User not found" });
     }
 
+    // Ensure the tour exists
+    const tourExists = await TourData.exists({ _id: tourId });
+    if (!tourExists) {
+      return res.status(404).json({ status: "error", error: "Tour not found" });
+    }
+
+    // Add the tour to the user's booked tours if not already booked
     if (!user.bookedTours.includes(tourId)) {
       user.bookedTours.push(tourId);
       await user.save();

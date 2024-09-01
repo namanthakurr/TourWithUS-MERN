@@ -1,6 +1,5 @@
 import mongoose from "mongoose";
 import bcrypt from "bcryptjs";
-import TourData from './TourModel.mjs'; // Ensure this path is correct
 
 const userSchema = new mongoose.Schema({
   name: {
@@ -21,7 +20,6 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: [true, "Please confirm your password"],
     validate: {
-      // This only works on CREATE and SAVE
       validator: function (el) {
         return el === this.password;
       },
@@ -31,7 +29,7 @@ const userSchema = new mongoose.Schema({
   bookedTours: [
     {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "TourData", // Make sure this matches the model name in TourModel.mjs
+      ref: "TourData", // Refers to the TourData model
     },
   ],
 });

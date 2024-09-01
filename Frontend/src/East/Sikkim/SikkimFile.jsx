@@ -41,7 +41,7 @@ function SikkimFile() {
             <div className={styles.home}>
                 <div className={styles.overlay}></div>
                 <video muted loop autoPlay className={styles.video} >
-                    <source src="/videos/Sikkim _video.mp4" type="video/mp4" />
+                    <source src="/videos/Sikkimvideo.mp4" type="video/mp4" />
                 </video>
                 <div className={styles.homeContent}>
                     <h1>Sikkim</h1>

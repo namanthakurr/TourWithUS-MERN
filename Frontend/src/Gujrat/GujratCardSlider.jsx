@@ -1,4 +1,7 @@
-import React, { useEffect } from 'react';
+
+/* eslint-disable */
+import React, { useEffect,useState } from 'react';
+import axios from 'axios';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -9,11 +12,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleChevronRight, faCircleChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import gsap from 'gsap';
 import PropTypes from 'prop-types';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate from react-router-dom
+import { useNavigate } from 'react-router-dom'; 
 // import { Link } from 'react-router-dom';
 
 const GujratCardSlider = ({ title, slides }) => {
-  const navigate = useNavigate(); // Initialize useNavigate
+  const navigate = useNavigate(); 
 
   useEffect(() => {
     const heading = document.getElementById('heading');
@@ -26,12 +29,13 @@ const GujratCardSlider = ({ title, slides }) => {
       yoyo: true,
       ease: 'power1.inOut'
     });
-  }, []);
 
-  const handleExploreNowClick = () => {
-    navigate(`/itinerary/${encodeURIComponent(JSON.stringify(slides))}`);
-  };
+  }, []);
   
+  const handleExploreNowClick = () => {
+    const stateName = "Gujarat";
+    navigate(`/itinerary/${stateName}`); 
+  };
 
   return (
     <div className='container'>

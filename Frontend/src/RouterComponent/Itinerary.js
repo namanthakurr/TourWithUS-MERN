@@ -5,30 +5,30 @@ import axios from "axios";
 const Itinerary = () => {
   const { state } = useParams();
   const [data, setData] = useState([]);
-  const [userId, setUserId] = useState(null); // User ID handling
+  const [userId, setUserId] = useState(null);
 
-  useEffect(() => {
-    const fetchData = async () => {
+   useEffect(() => {
+    const fetchItineraryData = async () => {
       try {
-        const decodedState = decodeURIComponent(state);
-        const parsedData = JSON.parse(decodedState);
-        setData(parsedData);
+        const response = await axios.get(`/api/itinerary/${state}`);
+        setData(response.data);
       } catch (error) {
-        console.error("Error parsing data:", error);
-        alert("Failed to load itinerary data. Please try again later.");
+        console.error("Error fetching itinerary data:", error);
+        setData([]); // or some default data
       }
     };
 
-    fetchData();
+    fetchItineraryData();
   }, [state]);
 
-  // Fetch user ID from secure storage or context (example)
+
+
   useEffect(() => {
     const fetchUserId = () => {
-      const storedUserId = sessionStorage.getItem("userId"); // Check sessionStorage
-      console.log("Fetched userId from sessionStorage:", storedUserId); // Debugging line
+      const storedUserId = sessionStorage.getItem("userId");
       if (storedUserId) {
         setUserId(storedUserId);
+        console.log("User ID fetched:", storedUserId);
       } else {
         console.warn("No userId found in sessionStorage");
       }
@@ -39,26 +39,26 @@ const Itinerary = () => {
 
   const handleBookTour = async (tour) => {
     try {
-      const userId = sessionStorage.getItem('userId');
-      console.log("User ID:", userId); // Debugging line
-      console.log("Tour Object:", tour); // Log entire tour object
-      console.log("Tour ID:", tour._id); // Debugging line for Tour ID
-  
       if (!userId) {
         alert("You need to log in to book a tour.");
         return;
       }
-  
+
       if (!tour._id) {
         alert("Invalid tour selection. Please try again.");
         return;
       }
-  
+
+      console.log("Attempting to book tour with ID:", tour._id);
+      console.log("User ID:", userId);
+
       const response = await axios.post("/api/bookTour", {
         userId,
-        tourId: tour._id, // Ensure tourId is correctly passed
+        tourId: tour._id,
       });
-  
+
+      console.log("Response from server:", response.data);
+
       if (response.data.status === "success") {
         alert("Tour booked successfully!");
       } else {
@@ -69,17 +69,14 @@ const Itinerary = () => {
       alert("An error occurred while booking the tour. Please try again.");
     }
   };
-  
-  
-  
 
   return (
     <div>
       <div className="Bali">
         <div>
-          <p>Gujarat Tour Packages</p>
+          <p>{state} Tour Packages</p>
           <span>
-            Explore the vibrant culture, stunning landscapes, and rich heritage of Gujarat.
+            Explore the vibrant culture, stunning landscapes, and rich heritage of {state}.
           </span>
         </div>
       </div>
@@ -99,7 +96,6 @@ const Itinerary = () => {
       <div className="Balimainbox">
         <div className="BaliInfo">
           <div className="Budget">
-            {/* Budget and other filters */}
             <div className="Budget-Info">
               <p>Budget</p>
               <input type="checkbox" value="50K" style={{ width: "20px", height: "20px" }} />

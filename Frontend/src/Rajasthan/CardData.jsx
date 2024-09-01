@@ -437,7 +437,7 @@ const KeralaCardData = [
   },
   {
     title: "Eravikulam ",
-    image: "/images/Rajasthan_img/eravikulam-national-park .jpg",
+    image: "/images/Rajasthan_img/eravikulam-national-park.jpg",
     description: "Eravikulam National Park: wildlife sanctuary renowned for its diverse flora and fauna, including the Nilgiri Tahr."
   },
   {

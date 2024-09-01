@@ -34,7 +34,7 @@ function Slider1() {
         className="mySwiper"
       >
         <SwiperSlide className="swiper-slide" style={{ height: "280px", width: "280px" }}>
-          <Link to="/">
+          <Link to="/ladakh">
             <img
               src="ladakh.jpg"
               alt="coming soon..."
@@ -43,7 +43,7 @@ function Slider1() {
           </Link>
         </SwiperSlide>
         <SwiperSlide style={{ height: "280px", width: "280px" }}>
-          <Link to="/">
+          <Link to="/JammuAndKashmir">
             <img
               src="jandk.jpg"
               alt="coming soon..."
@@ -53,7 +53,7 @@ function Slider1() {
           </Link>
         </SwiperSlide>
         <SwiperSlide style={{ height: "280px", width: "280px" }}>
-          <Link to="/">
+          <Link to="/Himachal_Pradesh">
             <img
               src="handp.jpg"
               alt="coming soon..."
@@ -73,7 +73,7 @@ function Slider1() {
           </Link>
         </SwiperSlide>
         <SwiperSlide style={{ height: "280px", width: "280px" }}>
-          <Link to="/">
+          <Link to="/mp">
             <img
               src="mp.jpeg"
               alt="coming soon..."
@@ -83,7 +83,7 @@ function Slider1() {
           </Link>
         </SwiperSlide>
         <SwiperSlide style={{ height: "280px", width: "280px" }}>
-          <Link to="/">
+          <Link to="/gujrat">
             <img
               src="gujrat.jpg"
               alt="coming soon..."
@@ -93,7 +93,7 @@ function Slider1() {
           </Link>
         </SwiperSlide>
         <SwiperSlide style={{ height: "280px", width: "280px" }}>
-          <Link to="/">
+          <Link to="/keral">
             <img
               src="keral.jpg"
               alt="coming soon..."

@@ -38,7 +38,7 @@ const tourSchema = new Schema({
 // Define the schema for the slide data, mapping locations to arrays of tours
 const slideDataSchema = new Schema({
   Rajasthan: [tourSchema],
-  Gujrat: [tourSchema],
+  Gujarat: [tourSchema],
   MadhyaPradesh: [tourSchema],
   Maharashtra: [tourSchema],
   Daman: [tourSchema],

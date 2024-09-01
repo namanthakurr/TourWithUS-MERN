@@ -1,37 +1,36 @@
 const RajasthanSlidesData = [
   {
-    image: '/images/Rajasthan_img/Hawa_mahal.jpg',
-    title: 'FORTS AND PALACES OF RAJASTHAN 1',
-    description: 'Passionate about development and design, I carry out projects at the request of users.',
+    image: '/images/Rajasthan_img/Rajasthan-Tour-1.jpg',
+    title: 'Rajasthan Family Tour',
+    description: 'Explore Jaipur’s Amber Fort, Udaipur’s City Palace, Jodhpur’s Mehrangarh Fort, and Jaisalmer’s Golden Fort.',
     link: '/'
   },
   {
-    image: '/images/Rajasthan_img/Hawa_mahal.jpg',
-    title: 'FORTS AND PALACES OF RAJASTHAN 2',
-    description: 'Passionate about development and design, I carry out projects at the request of users.',
+    image: '/images/Rajasthan_img/Rajasthan-Tour-2.jpg',
+    title: 'Desert Adventure Tour',
+    description: 'Experience Jaisalmer’s dunes, Bikaner’s camel safaris, Jodhpur’s desert landscapes, and Barmer’s rustic villages.',
     link: '/'
   },
   {
-    image: '/images/Rajasthan_img/Hawa_mahal.jpg',
-    title: 'FORTS AND PALACES OF RAJASTHAN 3',
-    description: 'Passionate about development and design, I carry out projects at the request of users.',
+    image: '/images/Rajasthan_img/Rajasthan-Tour-3.jpg',
+    title: 'Spiritual Journey Tour',
+    description: 'Visit Ajmer’s Dargah Sharif, Pushkar’s Brahma Temple, Udaipur’s Jagdish Temple, and Mount Abu’s Dilwara Temples.',
     link: '/'
   },
   {
-    image: '/images/Rajasthan_img/Hawa_mahal.jpg',
-    title: 'FORTS AND PALACES OF RAJASTHAN 4',
-    description: 'Passionate about development and design, I carry out projects at the request of users.',
+    image: '/images/Rajasthan_img/Rajasthan-Tour-4.jpg',
+    title: 'Wildlife and Nature Tour',
+    description: 'Explore Ranthambore’s tigers, Sariska’s wildlife, Bharatpur’s bird sanctuary, and Mount Abu’s scenic beauty.',
     link: '/'
   },
   {
-    image: '/images/Rajasthan_img/Hawa_mahal.jpg',
-    title: 'FORTS AND PALACES OF RAJASTHAN 5',
-    description: 'Passionate about development and design, I carry out projects at the request of users.',
+    image: '/images/Rajasthan_img/Rajasthan-Tour-5.jpg',
+    title: 'Cultural and Festive Tour',
+    description: 'Experience Jaipur’s festivals, Udaipur’s cultural events, Jodhpur’s Marwar Festival, and Bikaner’s Camel Festival.',
     link: '/'
   },
   // Add more slides as needed
 ];
-
 const GujratSlidesData = [
   {
     image: '/images/Rajasthan_img/Heritage.jpg',
@@ -80,8 +79,6 @@ const GujratSlidesData = [
   },
   // Add more slides as needed
 ];
-
-
 const MPSlidesData = [
   {
     image: '/images/Rajasthan_img/Khajju.jpg',
@@ -397,7 +394,7 @@ const LadakhSlidesData = [
     link: '/'
   },
   {
-    image: '/images/Ladakh_img/Nubra - Camel Safari.jpg',
+    image: '/images/Ladakh_img/Nubra-CamelSafari.jpg',
     title: 'Discover Ladakh with Pangong Excursion',
     description: 'Discover the beauty of Ladakh with an exciting excursion to Pangong Lake.',
     link: '/'
@@ -409,13 +406,13 @@ const LadakhSlidesData = [
     link: '/'
   },
   {
-    image: '/images/Ladakh_img/Landscape at Khardungla pass.jpg',
+    image: '/images/Ladakh_img/LandscapeKhardungla.jpg',
     title: 'Explore Ladakh - The Land of High Passes',
     description: 'Explore the breathtaking high passes and unique landscapes of Ladakh.',
     link: '/'
   },
   {
-    image: '/images/Ladakh_img/Motorbikes in Ladakh.jpg',
+    image: '/images/Ladakh_img/MotorbikesinLadakh.jpg',
     title: 'Ladakh Bike Expedition from Srinagar',
     description: 'Embark on a thrilling bike expedition through Ladakh from Srinagar.',
     link: '/'

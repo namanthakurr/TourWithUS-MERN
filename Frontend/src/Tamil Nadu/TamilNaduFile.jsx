@@ -42,7 +42,7 @@ function TamilNaduFile() {
             <div className={styles.home}>
                 <div className={styles.overlay}></div>
                 <video muted loop autoPlay className={styles.video} >
-                    <source src="/videos/TamilNadu-video (online-video-cutter.com).mp4" type="video/mp4" />
+                    <source src="/videos/TamilNadu-video.mp4" type="video/mp4" />
                 </video>
                 <div className={styles.homeContent}>
                     <h1>Tamil Nadu</h1>

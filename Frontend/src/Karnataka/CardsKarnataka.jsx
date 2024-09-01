@@ -9,7 +9,7 @@ function CardsKarnataka() {
       <center>
         <section className={styles.Cards_Main_Karnataka}>
           <div className={styles.Gujrat_logo2}>
-            <img src="/images/Rajasthan_img/karnalogo.jpg" alt="Rajasthan-Logo2" />
+            <img style={{width:"50%"}} src="/images/Rajasthan_img/karnalogo.jpg" alt="Rajasthan-Logo2" />
           </div>   
           <FlipCardsSection cards={KarnatakaCardData} />
         </section>
