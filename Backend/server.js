@@ -6,19 +6,24 @@ import User from "./models/userModel.js";
 import TourData from "./models/TourModel.js";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
-import tourRoutes from "./Routes/tour.js";
+import  tourRoutes from './Routes/tour.js'
+// import bodyParser from "body-parser"
 
 const app = express();
 
+app.use('/api', tourRoutes);
 app.use(cors());
 app.use(express.json());
+// app.use(bodyParser.json());
 dotenv.config();
 // app.use("/api/TourData", tourRoutes);
 
 const DB = process.env.DATABASE;
 
 mongoose
-  .connect(DB)
+  .connect(DB
+    , { useNewUrlParser: true, useUnifiedTopology: true }
+  )
   .then(() => console.log("DB Connection Successful!"))
   .catch((err) => console.error("DB Connection Error:", err));
 
@@ -155,45 +160,56 @@ app.get("/api/itinerary/:state", async (req, res) => {
     res.status(500).json({ error: "Error fetching data" });
   }
 });
+ 
+app.post('/api/book-tour', async (req, res) => {
+  const { userId, tourId } = req.body;
+  console.log('Received request for /api/book-tour', req.body);
+  
+  try {    
+        if (!userId || !tourId) {
+          console.log("Missing userId or tourId");
+          return res.status(400).json({ status: "error", error: "Missing userId or tourId" });
+        }
+    
+        // Find the user by ID
+        console.log("Finding user by ID:", userId);
+        const user = await User.findById(userId);
+        if (!user) {
+          console.log("User not found:", userId);
+          return res.status(404).json({ status: "error", error: "User not found" });
+        }
+    
+        // Ensure the tour exists
+        console.log("Checking if tour exists:", tourId);
+        const tourExists = await TourData.exists({ _id: tourId });
+        if (!tourExists) {
+          console.log("Tour not found:", tourId);
+          return res.status(404).json({ status: "error", error: "Tour not found" });
+        }
+    
+        // Add the tour to the user's booked tours if not already booked
+        if (!user.bookedTours.includes(tourId)) {
+          console.log("Adding tour to user's booked tours:", tourId);
+          user.bookedTours.push(tourId);
+          await user.save();
+          console.log("Tour added successfully:", tourId);
+        }
+    
+        res.status(200).json({ status: "success", message: "Tour booked successfully" });
+      } catch (err) {
+        console.error("Error booking tour:", err); // Log the error details
+        res.status(500).json({ status: "error", error: "Error booking tour" });
+      }
+     });
 
-app.post("/api/bookTour", async (req, res) => {
-  try {
-    const { userId, tourId } = req.body;
 
-    if (!userId || !tourId) {
-      return res
-        .status(400)
-        .json({ status: "error", error: "Missing userId or tourId" });
-    }
 
-    // Find the user by ID
-    const user = await User.findById(userId);
-    if (!user) {
-      return res.status(404).json({ status: "error", error: "User not found" });
-    }
 
-    // Ensure the tour exists
-    const tourExists = await TourData.exists({ _id: tourId });
-    if (!tourExists) {
-      return res.status(404).json({ status: "error", error: "Tour not found" });
-    }
 
-    // Add the tour to the user's booked tours if not already booked
-    if (!user.bookedTours.includes(tourId)) {
-      user.bookedTours.push(tourId);
-      await user.save();
-    }
 
-    res
-      .status(200)
-      .json({ status: "success", message: "Tour booked successfully" });
-  } catch (err) {
-    console.error("Error booking tour:", err);
-    res.status(500).json({ status: "error", error: "Error booking tour" });
-  }
-});
 
 const port = process.env.PORT || 8000;
+console.log(port)
 
 app.listen(port, () => {
   console.log(`App running on port http://localhost:${port}...`);

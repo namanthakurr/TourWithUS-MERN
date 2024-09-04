@@ -1,6 +1,7 @@
 // Import necessary modules
 import express from 'express';
 import TourData from '../models/TourModel.js'; // Adjust the path based on your file structure
+import bookTour from '../models/userModel.js'
 
 const router = express.Router();
 
@@ -19,5 +20,7 @@ router.get('/api/tours', async (req, res) => {
     res.status(500).json({ message: 'Error fetching tour data.' });
   }
 });
+
+router.post('/bookTour', bookTour);
 
 export default router;

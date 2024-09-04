@@ -1,3 +1,4 @@
+/* eslint-disable*/
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
@@ -38,38 +39,24 @@ const Itinerary = () => {
   }, []);
 
   const handleBookTour = async (tour) => {
-    try {
-      if (!userId) {
-        alert("You need to log in to book a tour.");
-        return;
+    if (userId) {
+      try {
+        console.log('Attempting to book tour with ID:', tour._id);
+        const response = await axios.post('/api/book-tour', {
+          userId,
+          tourId: tour._id
+        });
+        console.log('Response from server:', response.data);
+        alert('Your tour is booked');
+      } catch (error) {
+        console.error('Error booking the tour:', error.response ? error.response.data : error.message);
+        alert('There was an error booking your tour');
       }
-
-      if (!tour._id) {
-        alert("Invalid tour selection. Please try again.");
-        return;
-      }
-
-      console.log("Attempting to book tour with ID:", tour._id);
-      console.log("User ID:", userId);
-
-      const response = await axios.post("/api/bookTour", {
-        userId,
-        tourId: tour._id,
-      });
-
-      console.log("Response from server:", response.data);
-
-      if (response.data.status === "success") {
-        alert("Tour booked successfully!");
-      } else {
-        alert("Failed to book tour: " + response.data.message);
-      }
-    } catch (error) {
-      console.error("Error booking tour:", error);
-      alert("An error occurred while booking the tour. Please try again.");
+    } else {
+      alert('User not logged in');
     }
   };
-
+  
   return (
     <div>
       <div className="Bali">
