@@ -44,7 +44,8 @@ const Itinerary = () => {
         console.log('Attempting to book tour with ID:', tour._id);
         const response = await axios.post('/api/book-tour', {
           userId,
-          tourId: tour._id
+          tourId: tour._id,
+          state // Add the state to the request body
         });
         console.log('Response from server:', response.data);
         alert('Your tour is booked');
