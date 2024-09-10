@@ -38,12 +38,22 @@ function NAveeeee() {
     <>
       <div className="navbar-container">
         <nav>
+<<<<<<< Updated upstream
           <Link to="/" onClick={closeMenuOnClick}>
             <img src='/images/tour-with-us_logo.png' alt='TourLogo' className='tourlogo' />
           </Link>
           <div className={`navbar-links ${menuActive ? 'open' : ''}`}>
             <Link to="/" onClick={closeMenuOnClick}>
               <p className='nav-item'>Home</p>
+=======
+          <div className="hamburger" onClick={toggleMenu}>
+            <p>🛩️</p>
+          </div>
+          <div className={`navbar-links ${isMenuOpen ? 'open' : ''}`}>
+            <img src='/images/TourLogo.png' alt='hanbde' className='tourlogo'/>
+            <Link to="/">
+              <p className='nav-item' style={{marginTop:"10px"}}>Home</p>
+>>>>>>> Stashed changes
             </Link>
             <div className="nav-item dropdown">
               <p>North</p>

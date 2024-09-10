@@ -9,7 +9,12 @@ const Itinerary = () => {
   const [filteredData, setFilteredData] = useState([]);
   const [userId, setUserId] = useState(null);
   const [selectedPriceRanges, setSelectedPriceRanges] = useState([]);
+<<<<<<< Updated upstream
   const navigate = useNavigate();
+=======
+  const [selectedDayRanges, setSelectedDayRanges] = useState([]); // State for selected day ranges
+  const[selectRatings, setSelectRatings] = useState([])
+>>>>>>> Stashed changes
 
   useEffect(() => {
     const fetchItineraryData = async () => {
@@ -32,9 +37,15 @@ const Itinerary = () => {
       if (storedUserId) {
         setUserId(storedUserId);
         // console.log("User ID fetched:", storedUserId);
+<<<<<<< Updated upstream
       } else {
         console.warn("No userId found in sessionStorage");
       }
+=======
+       } //else {
+      //   console.warn("No userId found in sessionStorage");
+      // }
+>>>>>>> Stashed changes
     };
 
     fetchUserId();
@@ -75,32 +86,74 @@ const Itinerary = () => {
     }
 
     setSelectedPriceRanges(updatedPriceRanges);
+    applyFilters(updatedPriceRanges, selectedDayRanges,selectRatings);
+  };
 
-    if (updatedPriceRanges.length === 0) {
-      setFilteredData(data); // Show all data if no price range is selected
+  const handleDayFilterChange = (event) => {
+    const { value, checked } = event.target;
+    let updatedDayRanges = [...selectedDayRanges];
+
+    if (checked) {
+      updatedDayRanges.push(value);
     } else {
-      const filtered = data.filter((item) => {
+      updatedDayRanges = updatedDayRanges.filter((range) => range !== value);
+    }
+
+    setSelectedDayRanges(updatedDayRanges);
+    applyFilters(selectedPriceRanges, updatedDayRanges,selectRatings);
+  };
+  const handleRatingFilterChange = (event) => {
+    const { value, checked } = event.target;
+    let updatedRatingRanges = [...selectRatings];
+  
+    if (checked) {
+      updatedRatingRanges.push(value);
+    } else {
+      updatedRatingRanges = updatedRatingRanges.filter((range) => range !== value);
+    }
+  
+    setSelectRatings(updatedRatingRanges);
+    applyFilters(selectedPriceRanges, selectedDayRanges, updatedRatingRanges); // Corrected to use the updated rating ranges
+  };
+
+  const applyFilters = (priceRanges, dayRanges, ratingRanges) => {
+    let filtered = data;
+
+    // Filter by price range
+    if (priceRanges.length > 0) {
+      filtered = filtered.filter((item) => {
         const price = parseInt(item.price.replace("₹", "").replace(",", ""));
-        if (updatedPriceRanges.includes("Below ₹20k") && price < 20000) {
-          return true;
-        }
-        if (updatedPriceRanges.includes("₹20k - ₹30k") && price >= 20000 && price <= 30000) {
-          return true;
-        }
-        if (updatedPriceRanges.includes("₹30k - ₹35k") && price > 30000 && price <= 35000) {
-          return true;
-        }
-        if (updatedPriceRanges.includes("₹35k - ₹45k") && price > 35000 && price <= 45000) {
-          return true;
-        }
-        if (updatedPriceRanges.includes("Above ₹45k") && price > 45000) {
-          return true;
-        }
+        if (priceRanges.includes("Below ₹20k") && price < 20000) return true;
+        if (priceRanges.includes("₹20k - ₹30k") && price >= 20000 && price <= 30000) return true;
+        if (priceRanges.includes("₹30k - ₹35k") && price > 30000 && price <= 35000) return true;
+        if (priceRanges.includes("₹35k - ₹45k") && price > 35000 && price <= 45000) return true;
+        if (priceRanges.includes("Above ₹45k") && price > 45000) return true;
         return false;
       });
-
-      setFilteredData(filtered);
     }
+
+    // Filter by day range
+    if (dayRanges.length > 0) {
+      filtered = filtered.filter((item) => {
+        const days = parseInt(item.itinerary.split(" ")[0]); // Assumes itinerary field starts with the number of days
+        if (dayRanges.includes("3-5 days") && days >= 3 && days <= 5) return true;
+        if (dayRanges.includes("4-8 days") && days >= 4 && days <= 8) return true;
+        if (dayRanges.includes("5-9 days") && days >= 5 && days <= 9) return true;
+        if (dayRanges.includes("Above 10 days") && days > 10) return true;
+        return false;
+      });
+    }
+    if (ratingRanges.length > 0) {
+      filtered = filtered.filter((item) => {
+        const rating = parseInt(item.rating); // Assume item.rating is a string or a number
+        if (ratingRanges.includes("5") && rating === 5) return true;
+        if (ratingRanges.includes("4") && rating === 4) return true;
+        if (ratingRanges.includes("3") && rating === 3) return true;
+        return false;
+      });
+    }
+  
+    setFilteredData(filtered);
   };
 
   return (
@@ -115,7 +168,7 @@ const Itinerary = () => {
         </div>
       </div>
 
-      <div className="Bali-black-box">
+      {/* <div className="Bali-black-box">
         <div className="Bali-info">
           <div>
             IDEAL DURATION
@@ -143,7 +196,7 @@ const Itinerary = () => {
           <br />
           4.8 from 10k travellers
         </div>
-      </div>
+      </div> */}
 
       <div className="Balimainbox">
         <div className="BaliInfo">
@@ -193,19 +246,38 @@ const Itinerary = () => {
               <hr />
             </div>
 
-            {/* Add more filter options here if needed */}
             <div className="Budget-Info">
               <p>No of days</p>
-              <input type="checkbox" value="days" style={{ width: "20px", height: "20px" }} />
+              <input
+                type="checkbox"
+                value="3-5 days"
+                onChange={handleDayFilterChange}
+                style={{ width: "20px", height: "20px" }}
+              />
               <label> 3-5 days </label>
               <br />
-              <input type="checkbox" value="days" style={{ width: "20px", height: "20px" }} />
+              <input
+                type="checkbox"
+                value="4-8 days"
+                onChange={handleDayFilterChange}
+                style={{ width: "20px", height: "20px" }}
+              />
               <label>4-8 days </label>
               <br />
-              <input type="checkbox" value="days" style={{ width: "20px", height: "20px" }} />
+              <input
+                type="checkbox"
+                value="5-9 days"
+                onChange={handleDayFilterChange}
+                style={{ width: "20px", height: "20px" }}
+              />
               <label> 5-9 days </label>
               <br />
-              <input type="checkbox" value="days" style={{ width: "20px", height: "20px" }} />
+              <input
+                type="checkbox"
+                value="Above 10 days"
+                onChange={handleDayFilterChange}
+                style={{ width: "20px", height: "20px" }}
+              />
               <label>Above 10 days </label>
               <br />
               <hr />
@@ -213,13 +285,13 @@ const Itinerary = () => {
 
             <div className="Budget-Info">
               <p>Hotel ratings</p>
-              <input type="checkbox" value="Rating" style={{ width: "20px", height: "20px" }} />
+              <input type="checkbox" value="5"   onChange={handleRatingFilterChange} style={{ width: "20px", height: "20px" }} />
               <label> 5 star </label>
               <br />
-              <input type="checkbox" value="Rating" style={{ width: "20px", height: "20px" }} />
+              <input type="checkbox" value="4"   onChange={handleRatingFilterChange} style={{ width: "20px", height: "20px" }} />
               <label>4 star </label>
               <br />
-              <input type="checkbox" value="Rating" style={{ width: "20px", height: "20px" }} />
+              <input type="checkbox" value="3"   onChange={handleRatingFilterChange} style={{ width: "20px", height: "20px" }} />
               <label> 3 star </label>
               <hr />
             </div>
