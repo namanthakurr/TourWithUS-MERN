@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom"; 
 import axios from "axios";
 
 const Itinerary = () => {
@@ -9,6 +9,7 @@ const Itinerary = () => {
   const [filteredData, setFilteredData] = useState([]);
   const [userId, setUserId] = useState(null);
   const [selectedPriceRanges, setSelectedPriceRanges] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchItineraryData = async () => {
@@ -30,7 +31,7 @@ const Itinerary = () => {
       const storedUserId = sessionStorage.getItem("userId");
       if (storedUserId) {
         setUserId(storedUserId);
-        console.log("User ID fetched:", storedUserId);
+        // console.log("User ID fetched:", storedUserId);
       } else {
         console.warn("No userId found in sessionStorage");
       }
@@ -42,14 +43,15 @@ const Itinerary = () => {
   const handleBookTour = async (tour) => {
     if (userId) {
       try {
-        console.log("Attempting to book tour with ID:", tour._id);
+        // console.log("Attempting to book tour with ID:", tour._id);
         const response = await axios.post("/api/book-tour", {
           userId,
           tourId: tour._id,
           state // Add the state to the request body
         });
-        console.log("Response from server:", response.data);
+        // console.log("Response from server:", response.data);
         alert("Your tour is booked");
+        navigate("/");
       } catch (error) {
         console.error(
           "Error booking the tour:",

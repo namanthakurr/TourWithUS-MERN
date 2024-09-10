@@ -1,42 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
-/* --------------------------------------------------------------------- */ 
-                                      /*Video  */
 /* --------------------------------------------------------------------- */
-.India{
-  font-family: 'Roboto Serif', serif;  
-  font-size: 48px;  
-  font-weight: bold;  
-  text-align: center;  
-  margin: 20px;  
+/*Video  */
+/* --------------------------------------------------------------------- */
+.India {
+  font-family: "Roboto Serif", serif;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px;
 
-  background: linear-gradient(45deg, #FF5733, #FFC300);  
+  background: linear-gradient(45deg, #ff5733, #ffc300);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);  
-  letter-spacing: 2px;  
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  letter-spacing: 2px;
 
-  
-  padding: 10px; 
-  border-radius: 10px;  
-} 
-   .text-overlay {
-     position: absolute;
-    top: 50%;
-     left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      width: 100%;
-      z-index: 2;
-   }
-    
-   .overlay-text {
-    font-size: 16px;
-    font-weight: 800;
-    color: white;
-   }
+  padding: 10px;
+  border-radius: 10px;
+}
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+}
 
+.overlay-text {
+  font-size: 16px;
+  font-weight: 800;
+  color: white;
+}
 
 .india-intro {
   max-width: 800px;
@@ -52,7 +50,7 @@
 
 .india-intro h2 {
   text-align: center;
-  color: #007BFF;
+  color: #007bff;
   font-size: 24px;
   margin-bottom: 20px;
   opacity: 0;
@@ -67,7 +65,7 @@
 }
 
 .india-intro p span {
-  color: #FF5733;
+  color: #ff5733;
   font-weight: bold;
 }
 
@@ -78,12 +76,12 @@
 
 @keyframes fadeIn {
   to {
-      opacity: 1;
+    opacity: 1;
   }
 }
- 
- /* navbaar css */
- .video-container {
+
+/* navbaar css */
+.video-container {
   width: 100%;
   text-align: center;
 }
@@ -93,7 +91,6 @@
   height: 100vh;
   object-fit: cover;
   z-index: -1;
-  
 }
 
 @media (max-width: 450px) {
@@ -196,24 +193,158 @@
   }
 }
 
-
-
-
-
-
 /* -------------------------------------------------------------------------- */
-                                        /*Navbar  */
+/*Navbar  */
 /* -------------------------------------------------------------------------- */
 
-.tourlogo{
-width: 150px;
-height: 80px;
+/* Main Navbar Styles */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  background: #09000e; /* Original --nav-bg */
+  box-shadow: 0px 3px dodgerblue; /* Original --nav-shadow */
+  top: 0;
+  z-index: 10;
+  padding: 11px 0;
+}
+
+nav .logo {
+  color: #fff;
+  text-decoration-color: dodgerblue; /* Original --main-clr */
+  font-size: 22px;
+  font-family: "Playfair Display", serif;
+  font-weight: 100;
+}
+
+nav ul {
+  --padding: 20px;
+  --font-size: 17px;
+
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-size: var(--font-size);
+  overflow-y: hidden;
+  transition: 1s cubic-bezier(0.68, -0.55, 0.27, 10.55);
+  box-shadow: 0px 3px dodgerblue; /* Original --nav-shadow */
+}
+
+nav ul li {
+  padding: var(--padding);
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0%;
+  height: 1.7px;
+  border-radius: 99px;
+  background: dodgerblue; /* Original --main-clr */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Menu Hamburger Styles */
+nav .menu {
+  width: 22px;
+  height: 16px;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  margin: 20px;
+}
+
+nav .menu span {
+  width: 100%;
+  height: 2px;
+  border-radius: 99px;
+  background: #fff;
+  transition: 0.3s ease;
+  transform-origin: left;
+}
+
+nav .menu.active span {
+  background: dodgerblue; /* Original --main-clr */
+}
+
+nav .menu.active span:nth-child(1) {
+  transform: rotate(40deg);
+}
+
+nav .menu span:nth-child(3) {
+  transform-origin: left;
+}
+
+nav .menu.active span:nth-child(3) {
+  transform: rotate(-40deg);
+}
+
+nav .menu.active span:nth-child(2) {
+  transform: scale(0);
+}
+
+@media (max-width: 910px) {
+  nav .menu {
+    display: flex;
+  }
+
+  nav ul {
+    --height: 0px;
+
+    flex-direction: column;
+    background: #08000e; /* Original --nav-bg */
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 56px;
+    height: var(--height);
+    transition: 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+
+  nav ul.active {
+    --height: calc(
+      (((var(--padding) * 2) + (var(--font-size) * 1.5))) * var(--childenNumber)
+    );
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul li a {
+    width: 100%;
+    text-transform: capitalize;
+  }
+}
+
+/* Updated for Desktop Logo */
+.tourlogo {
+  width: 150px;
+  height: 80px;
 }
 .navbar-container {
-  background-color: #333;
+  background-color: transparent;
   padding: 10px 0;
   margin-bottom: 10px;
-  
+  z-index: 20;
 }
 
 .navbar-links {
@@ -229,12 +360,8 @@ height: 80px;
   padding: 10px 15px;
   position: relative;
   transition: background-color 0.3s, color 0.3s;
-  display: flex;align-items: center;
- 
-}
-.nav-item:hover {
-  background-color: #575757;
-  color: #fff;
+  display: flex;
+  align-items: center;
 }
 
 .dropdown {
@@ -244,11 +371,11 @@ height: 80px;
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #575757;
-  min-width: 160px;
+  background-color: #3e4067;
+  min-width: 120px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 5;
-  top: 40px;
+  top: 50px;
 }
 
 .dropdown-content p {
@@ -257,26 +384,19 @@ height: 80px;
   text-decoration: none;
   display: block;
   transition: background-color 0.3s;
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
 }
 
 .dropdown-content p:hover {
-  background-color: #777;
+  background: linear-gradient(135deg, #feb47b, #ff7e5f);
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-.hamburger {
-  display: none;
-  color: #fff;
-  font-size: 24px;
-  cursor: pointer;
-  margin-left: auto;
-  padding: 10px 15px;
-}
 
-
+/* Signup Button */
 .signup-buttonn {
   background: linear-gradient(135deg, #feb47b, #ff7e5f);
   border: none;
@@ -285,7 +405,7 @@ height: 80px;
   width: 100px;
   color: white;
   font-size: 16px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 600;
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -319,41 +439,62 @@ height: 80px;
 }
 
 
+/* Mobile View Styling */
 @media (max-width: 768px) {
-
- 
+  .tourlogo {
+    width: 110px;
+    height: auto;
+    padding-right: 15%;
+    margin-right: 100px;
+  }
   .navbar-links {
     display: none;
     flex-direction: column;
     align-items: center;
+    position: absolute;
+    top: 80px; /* Adjust this based on your navbar height */
+    left: 0;
+    width: 100%;
+    background-color: #03000e; /* Match navbar background */
+    z-index: 5;
+    padding: 10px 0;
   }
 
   .navbar-links.open {
     display: flex;
   }
-
-  .hamburger {
-    display: block;
+  
+  .nav-item {
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid #444; /* Optional: Adds a divider between items */
   }
 
   .dropdown-content {
     position: static;
-    box-shadow: none;
+    box-shadow: none; /* Removes shadow for dropdowns on mobile */
   }
 
-  .dropdown-content p:hover {
-    background-color: #777;
+  .dropdown-content p {
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .signup-buttonn {
+    margin-top: 15px;
+    width: 100px;
+    text-align: center;
   }
 }
 
 
- 
+
 
 /* ------------------------------------------------------------------------------ */
-                          /* Slider css */
+/* Slider css */
 /* -------------------------------------------------------------------------------- */
-  
- 
 
 .swiper {
   width: 100%;
@@ -366,11 +507,11 @@ height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative; 
-  overflow: hidden;  
-  border-radius: 10px; 
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
   transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .swiper-slide img {
@@ -397,9 +538,9 @@ height: 80px;
   font-size: 24px; /* Adjust font size as needed */
 }
 
-.swiper-slide::before,
-.swiper-slide::after {
-  content: '';
+.swiper-slides::before,
+.swiper-slides::after {
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
@@ -436,28 +577,21 @@ height: 80px;
   object-fit: cover;
 }
 
-
-.mm{
-   padding: 70px;
-   height: 470px;
+.mm {
+  padding: 70px;
+  height: 470px;
 }
 
-
- 
 @media (max-width: 450px) {
- 
-
   .swiper-slide {
-    height: 200px  !important;
-    width: 100%  !important;
+    height: 200px !important;
+    width: 100% !important;
   }
 
- 
-
   .swiper-slide img {
-    width: 100%   ;
-    height: 100%   ;
-    object-fit: cover  
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .swiper-slide .content {
@@ -472,20 +606,16 @@ height: 80px;
   }
 }
 
-@media(min-width:450px) and (max-width:750px) {
- 
-
+@media (min-width: 450px) and (max-width: 750px) {
   .swiper-slide {
-    height: 300px  !important;
-    width: 100%  !important;
+    height: 300px !important;
+    width: 100% !important;
   }
 
- 
-
   .swiper-slide img {
-    width: 100%   ;
-    height: 100%   ;
-    object-fit: cover  
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .swiper-slide .content {
@@ -500,35 +630,28 @@ height: 80px;
   }
 }
 
-
- 
-
-
-
 /* --------------------------------------------------------- */
-              /* /Destination css */
+/* /Destination css */
 
 /* --------------------------------------------------------- */
 
-
-.Destinaton{
-  background-color:  rgb(252,243,233);
+.Destinaton {
+  background-color: rgb(252, 243, 233);
   height: 600px;
-  
-}
-.Destination-info{
-  margin: auto;
   width: 1260px;
-  margin-top: 80px;
-  
+}
 
-} 
+.Destination-info {
+  margin: auto;
+  margin-top: 80px;
+}
 .HEADER {
   background: linear-gradient(135deg, #ff7e5f, #feb47b);
   color: white;
   text-align: center;
   padding: 50px 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
 }
 
 .HEADER h3 {
@@ -536,103 +659,107 @@ height: 80px;
   margin: 0;
   font-weight: 700;
   text-transform: uppercase;
+  text-shadow: 2px 2px 0px #dc5f00, 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .HEADER p {
-  font-size: 1.2em;
+  font-size: 1.3em;
   margin: 10px 0 0;
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
   font-weight: 300;
 }
 
-.Countries-Distribution{
-   
+.Countries-Distribution {
   height: 400px;
   display: flex;
-  justify-content:space-between;
-   
+  justify-content: space-between;
 }
-.Ujjain{
+.Ujjain {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   width: 417px;
   position: relative;
 }
-.MAld{
+
+.quick_scale {
+  transition: all 0.5s ease-in-out;
+}
+.quick_scale:hover {
+  transform: scale(1.03);
+}
+.MAld {
   display: flex;
   gap: 20px;
 }
-.Mexico{
+.Mexico {
   gap: 10px;
   display: flex;
   flex-direction: column;
 }
-.Info{
+.Info {
   position: absolute;
   color: white;
   font-size: 16px;
   font-weight: 800;
   top: 130px;
-  left: 10px;
-
-
+  left: 25px;
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.9);
 }
-.Info-1{
+.Info-1 {
   position: absolute;
   color: white;
   font-size: 16px;
   font-weight: 800;
   bottom: -80px;
   left: 10px;
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.7);
 }
-.Info-2{
+.Info-2 {
   position: absolute;
   color: white;
   font-size: 16px;
   font-weight: 800;
   left: 230px;
   bottom: -80px;
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.7);
 }
 
-.LA{
+.LA {
   position: relative;
 }
-.Info-3{
+.Info-3 {
   position: absolute;
   color: white;
   font-size: 16px;
   font-weight: 800;
- bottom: -80px;
- left: 10px;
- 
+  bottom: -80px;
+  left: 10px;
+  text-shadow: 0px 0px 6px rgba(1, 1, 1, 0.7);
 }
 
-.Mexico{
+.Mexico {
   position: relative;
 }
- 
-.Info-4{
+
+.Info-4 {
   position: absolute;
   color: white;
   font-size: 16px;
   font-weight: 800;
- top: 160px;
- left: 10px;
- 
+  top: 160px;
+  left: 10px;
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.7);
 }
-.Info-5{
+.Info-5 {
   position: absolute;
   color: white;
   font-size: 16px;
   font-weight: 800;
- bottom: -80px;
- left: 10px;
- 
+  bottom: -80px;
+  left: 10px;
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.7);
 }
-
-
-
- 
 
 @media (max-width: 450px) {
   .Destination-info {
@@ -668,7 +795,6 @@ height: 80px;
     border-radius: 20px;
   }
 
- 
   .Info-5 {
     font-size: 14px;
     font-weight: 700;
@@ -676,21 +802,20 @@ height: 80px;
     bottom: 10px;
     left: 10px;
   }
-  .Info-2{
+  .Info-2 {
     font-size: 14px;
     font-weight: 700;
     top: unset;
     bottom: 10px;
-    
   }
-  .Info-1{
+  .Info-1 {
     font-size: 14px;
     font-weight: 700;
     top: unset;
     bottom: 10px;
     left: 10px;
   }
-  .Info-3{
+  .Info-3 {
     font-size: 14px;
     font-weight: 700;
     top: unset;
@@ -704,8 +829,6 @@ height: 80px;
     gap: 10px;
   }
 }
-
-
 
 @media (min-width: 450px) and (max-width: 850px) {
   .Destination-info {
@@ -723,7 +846,7 @@ height: 80px;
 
   .Countries-Distribution {
     height: auto;
-    width: 100% ;
+    width: 100%;
     justify-content: space-between;
     gap: 20px;
   }
@@ -742,7 +865,6 @@ height: 80px;
     border-radius: 20px;
   }
 
-  
   .Info-5 {
     font-size: 14px;
     font-weight: 700;
@@ -772,7 +894,6 @@ height: 80px;
     left: 10px;
   }
 
-  
   .MAld {
     display: flex;
     flex-wrap: wrap;
@@ -784,23 +905,24 @@ height: 80px;
   }
 }
 
-
-
 /* ---------------------------------------------------------- */
-                   /* Dialogue */
+/* Dialogue */
 /* --------------------------------------------------------- */
 
-.Dialogue-heading{
-  font-family: 'Pacifico', cursive; /* Custom font */
+.Dialogue-heading {
+  font-family: "Pacifico", cursive; /* Custom font */
   color: #333;
   font-size: 3em; /* Larger font size */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Text shadow */
   margin-bottom: 20px;
-  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient text color */
+  background: linear-gradient(
+    to right,
+    #ff7e5f,
+    #feb47b
+  ); /* Gradient text color */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
- 
 
 .dialogue-container {
   display: flex;
@@ -824,7 +946,6 @@ height: 80px;
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
-  
 }
 
 .left-images {
@@ -832,9 +953,10 @@ height: 80px;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   flex: 1;
-  
 }
-.left-images img{object-fit: contain;}
+.left-images img {
+  object-fit: contain;
+}
 
 .dialogue-image {
   width: 300px;
@@ -847,7 +969,6 @@ height: 80px;
 .right-image-container {
   flex: 1;
   height: 100%;
- 
 }
 
 .right-image {
@@ -855,18 +976,13 @@ height: 80px;
   height: 500px;
   object-fit: cover;
   /* filter: blur(2px); */
-  
- 
 }
 
 h1 {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   color: #333;
   margin-bottom: 20px;
 }
-
-
-
 
 @media (max-width: 450px) {
   .dialogue-heading {
@@ -916,8 +1032,7 @@ h1 {
   }
 }
 
-
-@media (min-width: 450px) and (max-width:750px) {
+@media (min-width: 450px) and (max-width: 750px) {
   .dialogue-heading {
     font-size: 2em; /* Smaller font size for smaller screens */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Adjust text shadow */
@@ -928,7 +1043,6 @@ h1 {
     height: auto; /* Adjust height for smaller screens */
     margin-top: 100px;
     padding: 10px;
-  
   }
 
   .dialogue-content {
@@ -965,47 +1079,43 @@ h1 {
   }
 }
 
-@media(min-width:750px) and (max-width:1000px){
+@media (min-width: 750px) and (max-width: 1000px) {
   .images-container {
     flex-direction: column; /* Stack images vertically */
     align-items: center; /* Center align images */
-    
   }
 }
 
-
-
-
 /* -------------------------------------------------------------- */
-                       /* VACATION */
+/* VACATION */
 /*--------------------------------------------------------------- */
 .center-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;  
+  height: 100vh;
 }
 
 .Vacation {
   width: 1000px;
-  background-color: transparent;  
+  background-color: transparent;
 }
 
 .rectangle {
   position: relative;
-  width: 1000px;  
-  height: 400px; 
+  width: 1000px;
+  height: 400px;
   /* border: 2px solid #000;   */
-  border-radius: 10px;  
-  overflow: hidden;  
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .Mini-Vacation {
   position: absolute;
-  width: 100%;  
+  width: 100%;
   /* height: 100%;  */
-  outline: none;  
-  z-index: -1;  
+  outline: none;
+  z-index: -1;
 }
 
 .f {
@@ -1034,27 +1144,27 @@ h1 {
   object-fit: cover; /* Maintain aspect ratio and cover the container */
 }
 
-
-.Traveler{
+.Traveler {
   position: absolute;
   top: 20px;
- 
-  font-size: 25px;font-weight: 600;
+
+  font-size: 25px;
+  font-weight: 600;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.Traveler span{
-  font-family:Cursive  ;
+.Traveler span {
+  font-family: Cursive;
   color: yellow;
   font-size: 30px;
   margin-left: 30px;
 }
-.image-container p{
+.image-container p {
   font-size: 16px;
   color: gray;
-  font-family:Cursive  ;
+  font-family: Cursive;
   background-color: aqua;
-  border-bottom-left-radius: 10px ;
+  border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   text-align: center;
 }
@@ -1062,70 +1172,73 @@ h1 {
 /*           YOUTUBE_SHRIYA */
 /* --------------------------------------------------- */
 
-.main{
-
+.main {
   background-color: antiquewhite;
-  padding: 50px;
+  background-image: url('/public/images/TourBack_BG.jpg');
+  background-position: top center;
+  background-size: cover; 
+  background-repeat: no-repeat;
+  width: auto;
+  height: auto; 
+  padding: 200px 0 50px 0;
 }
-.Shriya{
+
+.Shriya {
   margin: auto;
-  width: 1260px; 
+  width: 1260px;
   display: flex;
   justify-content: center;
 }
-.Hansika{
+.Hansika {
   display: flex;
-  width: 80%; 
+  width: 80%;
   justify-content: center;
   align-items: center;
   justify-content: space-around;
- 
 }
- .wow{
+.wow {
   width: 500px;
   border-radius: 10px;
- }
- .Happy{
+}
+.Happy {
   width: 400px;
   border-radius: 10px;
   height: 240px;
- }
- .mini-hansika{
-  background-color: #FDF3EB;
+}
+.mini-hansika {
+  background-color: #fdf3eb;
   width: 400px;
   height: 400px;
   border-radius: 10px;
- }
+}
 
- .mini-hansika p{
+.mini-hansika p {
   font-size: 25px;
   justify-content: center;
   display: flex;
   align-items: center;
   font-weight: 500;
-  color: green ;
+  color: green;
   font-family: cursive;
   margin-left: 75px;
   margin-top: 10px;
-  
- }
-.inputt{
+}
+.inputt {
   width: 100%;
   border: 2px solid aqua;
   height: 66px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  background-color: #FDF3EB;
+  background-color: #fdf3eb;
   margin-top: -13px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
   text-align: center;
 }
-  
 
 .inputt::placeholder {
   text-align: center;
-  padding: 0; 
+  padding: 0;
   font-size: 20px;
   font-weight: 800;
   color: black;
@@ -1277,9 +1390,8 @@ h1 {
   }
 }
 
-
 /* ---------------------------------------------------- */
-               /* PACKAGES */
+/* PACKAGES */
 /* ---------------------------------------------------- */
 /* Add this to your existing CSS */
 
@@ -1311,10 +1423,10 @@ h1 {
   font-family: emoji;
 }
 
-.PAckagess  span {
-  color:cadetblue; /* Set the color for 'budget' */
+.PAckagess span {
+  color: cadetblue; /* Set the color for 'budget' */
   font-family: cursive;
-  font-size: 2.0rem;
+  font-size: 2rem;
   font-weight: 900;
 }
 
@@ -1341,7 +1453,6 @@ h1 {
   justify-content: center;
   align-items: center;
   transition: transform 0.3s, box-shadow 0.3s;
-  
 }
 
 /* Hover effect */
@@ -1352,13 +1463,12 @@ h1 {
 
 /* Optional styling for text inside the divs */
 .PAckagess .prices div p {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   color: #333;
   margin: 0;
   text-align: center;
 }
-
 
 @media (max-width: 450px) {
   .PAckagess {
@@ -1438,11 +1548,10 @@ h1 {
   }
 }
 
-
 /* ------------------------------------------------------------- */
-                  
-                       /* DISCOUNT */
-/* ------------------------------------------------------------- *//* Container styling */
+
+/* DISCOUNT */
+/* ------------------------------------------------------------- */ /* Container styling */
 .signup-container {
   position: relative; /* Make container a positioning context */
   display: flex;
@@ -1460,7 +1569,7 @@ h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('/public/bgsignup.jpg'); /* Correct path from the public directory */
+  background-image: url("/public/bgsignup.jpg"); /* Correct path from the public directory */
   background-size: cover; /* Cover the entire container */
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; /* Prevent image from repeating */
@@ -1471,9 +1580,9 @@ h1 {
 /* Form styling */
 .signup-form {
   position: relative; /* Relative positioning to stay above the pseudo-element */
- 
+
   padding: 40px;
- 
+
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Larger shadow */
   width: 100%;
   max-width: 600px; /* Increase width to fit two columns */
@@ -1482,8 +1591,8 @@ h1 {
 /* Form heading styling */
 .signup-form h2 {
   margin-bottom: 20px;
-  font-family: 'Pacifico', cursive; /* Custom cursive font */
-  color:  black;
+  font-family: "Pacifico", cursive; /* Custom cursive font */
+  color: black;
   font-size: 2em; /* Larger font size */
 }
 
@@ -1505,7 +1614,7 @@ h1 {
 .form-group label {
   display: block;
   margin-bottom: 8px;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   color: #333;
   font-weight: bold; /* Bold labels */
   text-align: left; /* Align text to the left */
@@ -1518,9 +1627,14 @@ h1 {
   border: 2px solid #ff7e5f; /* Border color matching gradient */
   border-radius: 8px; /* Rounded corners */
   box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   color: #333;
-  background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Slightly transparent background */
   transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
 }
 
@@ -1537,9 +1651,13 @@ h1 {
   padding: 12px;
   border: none;
   border-radius: 8px; /* Rounded corners */
-  background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient background */
+  background: linear-gradient(
+    135deg,
+    #ff7e5f,
+    #feb47b
+  ); /* Gradient background */
   color: #fff;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   cursor: pointer;
   transition: background 0.3s, transform 0.3s; /* Smooth transitions */
@@ -1547,19 +1665,21 @@ h1 {
 
 /* Button hover styling */
 .signup-button:hover {
-  background: linear-gradient(135deg, #feb47b, #ff7e5f); /* Reverse gradient on hover */
+  background: linear-gradient(
+    135deg,
+    #feb47b,
+    #ff7e5f
+  ); /* Reverse gradient on hover */
   transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 /* Import custom font for heading */
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
- 
 /* -------------------------------------------------- */
-                 /* REVIEW */
+/* REVIEW */
 /* -------------------------------------------------- */
- .tab {
-  
+.tab {
   height: 100px;
   display: flex;
 }
@@ -1575,6 +1695,7 @@ h1 {
   outline: none;
   text-align: left;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 
 /* Change background color of buttons on hover */
@@ -1583,22 +1704,20 @@ h1 {
   transform: scale(1.1);
 }
 
-
 /* Style the tab content */
 .tabcontent {
   float: left;
   padding: 35px 85px;
-  
+
   border-left: none;
   /* height: 300px; */
   display: none;
   color: gray;
   /* margin-top: 60px; */
 }
-.tabcontent#London{
+.tabcontent#London {
   display: block;
 }
-
 
 .clearfix::after {
   content: "";
@@ -1606,17 +1725,16 @@ h1 {
   display: table;
 }
 
-
-.Revieww{
+.Revieww {
   margin: auto;
-  width: 1260px;
+  width: 100%;
   height: 600px;
   padding: 28px;
-  /* padding-top: 50px; */
-
+  background-color: #F8F8FF;
+  padding: 50px 150px;
 }
 
-.Revieww p{
+.Revieww p {
   display: flex;
   justify-content: center;
   font-size: 22px;
@@ -1703,37 +1821,33 @@ h1 {
 }
 
 /* ---------------------------------------------------------- */
-                              /* Footer */
+/* Footer */
 /* ---------------------------------------------------------- */
 
-
-.Footer{
+.Footer {
   width: 1260px;
- 
+
   height: 500px;
   display: flex;
- 
+
   align-items: center;
   gap: 80px;
-  
 }
 
-.MAin-footer{
+.MAin-footer {
   margin: auto;
   background-color: #000000;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
 }
 
-.footer-info{
+.footer-info {
   color: white;
-  
 }
-.gif{
+.gif {
   width: 400px;
   height: 200px;
 }
-
 
 @media (max-width: 450px) {
   .Footer {
@@ -1820,79 +1934,36 @@ h1 {
 }
 
 
-
-
- /* -------------------------------------------------------- */
-
-              /* DIFFERENTTOURS */
- /* -------------------------------------------------------- */
-
-
- /* .Footer-1{
-  width: 1260px;
- 
-  height: 400px;
-  display: flex;
- 
- 
- 
-  
-}
-.bgc{
-  background-color: #000000;
- 
-
-}
-
-.bgc p{
-  color: white;
-} 
-.MAin-footer-1{
-  margin: auto;
-  display: flex;
-  justify-content: center; 
-}
-
-.footer-info-1{
-  color: white;
-  line-height: 3;
-  
-} */
 /* --------------------------------------------- */
-              /* INFORMATION */
+/* INFORMATION */
 /* --------------------------------------------- */
 
-
- 
-.Info-flex{
+.Info-flex {
   width: 1260px;
- display: flex;
- justify-content: space-between;
- gap: 190px;
-
+  display: flex;
+  justify-content: space-between;
+  gap: 190px;
 }
-.Info-flex p{
-color: white;
-
+.Info-flex p {
+  color: white;
 }
-.text{
+.text {
   display: flex;
   flex-direction: column;
 }
 
-.MAin-footer-2{
+.MAin-footer-2 {
   margin: auto;
   background-color: #000000;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   padding: 60px;
 }
-.headingg p{
-  color: red;
+.headingg p {
+  color: rgb(255, 94, 0);
   font-size: 20px;
   font-weight: 600;
 }
-
 
 @media (max-width: 500px) {
   .Info-flex {
@@ -1923,7 +1994,7 @@ color: white;
   }
 
   .headingg p {
-    color: red; /* Maintain text color */
+    color: rgb(255, 94, 0); /* Maintain text color */
     font-size: 18px; /* Adjust font size for better readability */
     font-weight: 600; /* Maintain font weight */
     text-align: center; /* Center align text */
@@ -1955,23 +2026,20 @@ color: white;
   }
 
   .headingg p {
-    color: red; /* Maintain text color */
+    color: rgb(255, 94, 0);/* Maintain text color */
     font-size: 20px; /* Adjust font size for better readability */
     font-weight: 600; /* Maintain font weight */
     text-align: center; /* Center align text */
   }
 }
 
-
 /* ---------------------------------------------------------- */
 /* ---------------------------------------------------------- */
 
-
-                            /*ROUTER COMPONENT  */
+/*ROUTER COMPONENT  */
 
 /* ---------------------------------------------------------- */
 /* ---------------------------------------------------------- */
-
 
 .Bali {
   display: flex;
@@ -1989,13 +2057,17 @@ color: white;
 }
 
 .Bali::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%);
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
   pointer-events: none;
 }
 
@@ -2017,50 +2089,45 @@ color: white;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-.Bali button{   
-   background-color: red;
+.Bali button {
+  background-color: red;
   width: 177px;
   padding: 7px;
   border-radius: 6px;
   color: white;
   border: none;
-
 }
- 
 
-.Bali-black-box{
+.Bali-black-box {
   display: flex;
   width: 100%;
   justify-content: space-around;
-  background-color: #000000;padding: 10px;
+  background-color: #000000;
+  padding: 10px;
   margin-top: -5px;
 }
- 
 
-.Bali-info{
+.Bali-info {
   display: flex;
   justify-content: space-between;
-  width:600px;
-  color: white;font-weight: 500;
-
-}
-  
-
-.Bali-rating{
+  width: 600px;
   color: white;
   font-weight: 500;
 }
 
-.BaliInfo{
+.Bali-rating {
+  color: white;
+  font-weight: 500;
+}
+
+.BaliInfo {
   width: 1260px;
   margin: auto;
   display: flex;
   gap: 20px;
-  
-
 }
 
-.Budget{
+.Budget {
   background-color: white;
   width: 300px;
   height: 800px;
@@ -2071,93 +2138,81 @@ color: white;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.Tour-Info{
+.Tour-Info {
   width: 800px;
   /* background-color: blue; */
   border-radius: 10px;
-
 }
-.Budget-Info{
- padding: 30px;
- /* font-size: ; */
- font-weight: 400;
- 
+.Budget-Info {
+  padding: 30px;
+  /* font-size: ; */
+  font-weight: 400;
 }
-.Budget-Info label{
-  margin-left: 10px;margin-bottom: 2px;
+.Budget-Info label {
+  margin-left: 10px;
+  margin-bottom: 2px;
 }
 
- .Balimainbox{
-  background-color: #F3F4FB;
- 
- }
+.Balimainbox {
+  background-color: #f3f4fb;
+}
 
-
- .Hotel{
+.Hotel {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease-in-out; 
- }
- .Hotel-Review{
- 
+  transition: box-shadow 0.3s ease-in-out;
+}
+.Hotel-Review {
   display: flex;
- 
- }
+}
 
- .Hotel:hover{
-  
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
- }
- .imgg{
-  overflow: hidden; 
-  
-
- }
- .Hotel-image{
-   width: 100%;
+.Hotel:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.imgg {
+  overflow: hidden;
+}
+.Hotel-image {
+  width: 100%;
   height: 310px;
   transform: scale(1);
   transition: transform 0.5s cubic-bezier(0.47, 0.03, 0.49, 1.35);
- 
- }
- .Hotel-image:hover { 
-  transform: scale(1.1);
- 
-  
 }
-.R-I{
+.Hotel-image:hover {
+  transform: scale(1.1);
+}
+.R-I {
   display: flex;
   gap: 30px;
 }
 
- .Hotel-Info{
+.Hotel-Info {
   padding: 20px;
   background-color: white;
- }
+}
 
- .Hotel-Info blockquote{
+.Hotel-Info blockquote {
   font-weight: 600;
   font-size: 18px;
- }
- 
- .Bali-price{  
-  display: flex;
-justify-content: space-between;
-align-items: center;
- }
- 
- .Bali-price p{
-  font-weight: 600;
- }
- .Bali-Info-Footer{
-  height: 60px;
-  background-color:#E8EAF3 ;
- 
-  display: flex; 
-  align-items: center;
- }
- 
+}
 
-.Tour-column{
+.Bali-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Bali-price p {
+  font-weight: 600;
+}
+.Bali-Info-Footer {
+  height: 60px;
+  background-color: #e8eaf3;
+
+  display: flex;
+  align-items: center;
+}
+
+.Tour-column {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -2166,12 +2221,9 @@ align-items: center;
   overflow-y: auto;
   margin-top: 20px;
   margin-bottom: 20px;
-
 }
- 
 
 @media screen and (max-width: 450px) {
-
   .Bali {
     padding: 20px;
     height: auto;
@@ -2228,7 +2280,7 @@ align-items: center;
   }
 
   .Balimainbox {
-    background-color: #F3F4FB;
+    background-color: #f3f4fb;
   }
 
   .Hotel {
@@ -2271,10 +2323,7 @@ align-items: center;
   }
 }
 
-
-
 @media screen and (min-width: 450px) and (max-width: 750px) {
-
   .Bali {
     padding: 30px;
     height: auto;
@@ -2331,7 +2380,7 @@ align-items: center;
   }
 
   .Balimainbox {
-    background-color: #F3F4FB;
+    background-color: #f3f4fb;
   }
 
   .Hotel {
@@ -2374,9 +2423,7 @@ align-items: center;
   }
 }
 
-
 @media screen and (min-width: 750px) and (max-width: 1160px) {
-
   .Bali {
     padding: 20px;
     height: auto;
@@ -2438,7 +2485,7 @@ align-items: center;
   }
 
   .Balimainbox {
-    background-color: #F3F4FB;
+    background-color: #f3f4fb;
   }
 
   .Hotel {

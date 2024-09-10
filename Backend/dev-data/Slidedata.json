@@ -5,7 +5,7 @@
       "title": "RAJASTHAN FAMILY TOUR",
       "description": "Explore Jaipur’s Amber Fort, Udaipur’s City Palace, Jodhpur’s Mehrangarh Fort, and Jaisalmer’s Golden Fort.",
       "itinerary": "4-7 Days",
-      "price": "₹20,000 - ₹25,000",
+      "price": "₹18,000",
       "rating": 4.5,
       "link": "/"
     },
@@ -14,8 +14,8 @@
       "title": "DESERT ADVENTURE TOUR",
       "description": "Experience Jaisalmer’s dunes, Bikaner’s camel safaris, Jodhpur’s desert landscapes, and Barmer’s rustic villages.",
       "itinerary": "5-8 Days",
-      "price": "₹22,000 - ₹28,000",
-      "rating": 4.6,
+      "price": "₹22,000",
+      "rating": 3.6,
       "link": "/"
     },
     {
@@ -23,8 +23,8 @@
       "title": "SPIRITUAL JOURNEY TOUR",
       "description": "Visit Ajmer’s Dargah Sharif, Pushkar’s Brahma Temple, Udaipur’s Jagdish Temple, and Mount Abu’s Dilwara Temples.",
       "itinerary": "6-9 Days",
-      "price": "₹25,000 - ₹30,000",
-      "rating": 4.7,
+      "price": "₹30,000",
+      "rating": 5,
       "link": "/"
     },
     {
@@ -32,8 +32,8 @@
       "title": "WILDLIFE AND NATURE TOUR",
       "description": "Explore Ranthambore’s tigers, Sariska’s wildlife, Bharatpur’s bird sanctuary, and Mount Abu’s scenic beauty.",
       "itinerary": "7-10 Days",
-      "price": "₹28,000 - ₹35,000",
-      "rating": 4.8,
+      "price": "₹35,000",
+      "rating": 3,
       "link": "/"
     },
     {
@@ -41,7 +41,7 @@
       "title": "CULTURAL AND FESTIVE TOUR",
       "description": "Experience Jaipur’s festivals, Udaipur’s cultural events, Jodhpur’s Marwar Festival, and Bikaner’s Camel Festival.",
       "itinerary": "8-12 Days",
-      "price": "₹30,000 - ₹40,000",
+      "price": "₹40,000",
       "rating": 4.9,
       "link": "/"
     }
@@ -52,8 +52,8 @@
       "title": "Heritage and Culture Tour",
       "description": "Explore Gujarat heritage: temples, markets, arts, crafts, and traditions.",
       "itinerary": "3-9 Days",
-      "price": "₹25,000 - ₹30,000",
-      "rating": 4.7,
+      "price": "₹19,000",
+      "rating": 4,
       "link": "/"
     },
     {
@@ -61,7 +61,7 @@
       "title": "Wildlife and Nature Expedition",
       "description": "Experience Gujarat wildlife: lions, birdwatching, salt flats, and sanctuaries.",
       "itinerary": "4-6 Days",
-      "price": "₹28,000 - ₹35,000",
+      "price": "₹28,000",
       "rating": 4.8,
       "link": "/"
     },
@@ -70,7 +70,7 @@
       "title": "Spiritual Sojourn And Temples",
       "description": "Discover Gujarat spirituality: sacred temples, ashrams, peaceful retreats, ancient sites.",
       "itinerary": "3-5 Days",
-      "price": "₹22,000 - ₹28,000",
+      "price": "₹22,000",
       "rating": 4.6,
       "link": "/"
     },
@@ -79,8 +79,8 @@
       "title": "Beach and Coastal Retreat",
       "description": "Embark on a serene journey to Gujarat’s pristine beaches and coastal landscapes.",
       "itinerary": "5-7 Days",
-      "price": "₹30,000 - ₹40,000",
-      "rating": 4.5,
+      "price": "₹40,000",
+      "rating": 3.1,
       "link": "/"
     },
     {
@@ -88,8 +88,8 @@
       "title": "Festival and Cultural Tour",
       "description": "Celebrate Gujarat’s vibrant festivals: Navratri, Rann Utsav, and the International Kite Festival.",
       "itinerary": "5-7 Days",
-      "price": "₹32,000 - ₹42,000",
-      "rating": 4.9,
+      "price": "₹45,000",
+      "rating": 5,
       "link": "/"
     }
   ],
@@ -99,7 +99,7 @@
       "title": "Historical Wonders Tour",
       "description": "Explore Gwalior Fort, Khajuraho Temples, Ujjain, and Mandu’s grandeur.",
       "itinerary": "3-6 Days",
-      "price": "₹24,000 - ₹32,000",
+      "price": "₹18,000",
       "rating": 4.6,
       "link": "/"
     },
@@ -108,8 +108,8 @@
       "title": "Wildlife Adventure Tour",
       "description": "Safari in Bandhavgarh, Kanha, Pench, and explore Satpura’s wildlife.",
       "itinerary": "4-8 Days",
-      "price": "₹26,000 - ₹34,000",
-      "rating": 4.7,
+      "price": "₹26,000",
+      "rating": 3.7,
       "link": "/"
     },
     {
@@ -117,7 +117,7 @@
       "title": "Cultural-Spiritual Journey",
       "description": "Discover Ujjain’s temples, Sanchi’s carvings, Indore’s culture, and Jabalpur.",
       "itinerary": "5-9 Days",
-      "price": "₹28,000 - ₹36,000",
+      "price": "₹36,000",
       "rating": 4.8,
       "link": "/"
     },
@@ -126,7 +126,7 @@
       "title": "Nature-Scenic Beauty Tour",
       "description": "Explore Pachmarhi’s hills, Bhedaghat’s waterfalls, Kanha, and Satpura’s beauty.",
       "itinerary": "6-10 Days",
-      "price": "₹30,000 - ₹40,000",
+      "price": "₹40,000",
       "rating": 4.9,
       "link": "/"
     },
@@ -135,7 +135,7 @@
       "title": "Festivals and Local Experiences Tour",
       "description": "Experience Indore’s festivals, Jabalpur’s markets, Ujjain’s Kumbh, and Mandu’s crafts.",
       "itinerary": "7-12 Days",
-      "price": "₹32,000 - ₹42,000",
+      "price": "₹42,000",
       "rating": 5.0,
       "link": "/"
     }
@@ -146,7 +146,7 @@
       "title": "Mumbai Highlights Tour",
       "description": "Explore Mumbai iconic landmarks, vibrant markets, and cultural treasures.",
       "itinerary": "3-5 Days",
-      "price": "₹25,000 - ₹30,000",
+      "price": "₹15,000",
       "rating": 4.7,
       "link": "/"
     },
@@ -155,8 +155,8 @@
       "title": "Western Adventure",
       "description": "Discover hill stations, scenic views, and historical forts in Maharashtra.",
       "itinerary": "4-7 Days",
-      "price": "₹28,000 - ₹35,000",
-      "rating": 4.8,
+      "price": "₹28,000",
+      "rating": 3.8,
       "link": "/"
     },
     {
@@ -164,7 +164,7 @@
       "title": "Central Heritage Tour",
       "description": "Explore historic sites and cultural heritage.",
       "itinerary": "5-9 Days",
-      "price": "₹30,000 - ₹38,000",
+      "price": "₹38,000",
       "rating": 4.9,
       "link": "/"
     },
@@ -173,7 +173,7 @@
       "title": "Maharashtra Wildlife Safari",
       "description": "Embark on thrilling wildlife safaris through Maharashtra rich national parks and reserves.",
       "itinerary": "6-10 Days",
-      "price": "₹32,000 - ₹42,000",
+      "price": "₹42,000",
       "rating": 4.7,
       "link": "/"
     },
@@ -182,8 +182,8 @@
       "title": "Spiritual Maharashtra Pilgrimage",
       "description": "Visit sacred temples and spiritual sites.",
       "itinerary": "7-12 Days",
-      "price": "₹35,000 - ₹45,000",
-      "rating": 4.9,
+      "price": "₹45,000",
+      "rating": 5,
       "link": "/"
     }
   ],
@@ -194,8 +194,8 @@
       "description": "Discover the historic Diu Fort with its panoramic views and rich heritage.",
       "link": "/",
       "itinerary": "1-2 Days",
-      "price": "₹8,000 - ₹12,000",
-      "rating": 4.5
+      "price": "₹15,000",
+      "rating": 3
     },
     {
       "image": "/images/Rajasthan_img/beachtourism03.jpg",
@@ -203,7 +203,7 @@
       "description": "Enjoy the serene beaches of Daman and Diu, perfect for relaxation.",
       "link": "/",
       "itinerary": "2-3 Days",
-      "price": "₹10,000 - ₹15,000",
+      "price": "₹25,000",
       "rating": 4.7
     },
     {
@@ -212,8 +212,8 @@
       "description": "Explore the cultural landmarks and colonial architecture of Daman and Diu.",
       "link": "/",
       "itinerary": "3-4 Days",
-      "price": "₹12,000 - ₹18,000",
-      "rating": 4.6
+      "price": "₹28,000",
+      "rating": 4
     },
     {
       "image": "/images/Rajasthan_img/devka-beach.jpg",
@@ -221,7 +221,7 @@
       "description": "Embark on thrilling water sports activities in the clear waters of Daman and Diu.",
       "link": "/",
       "itinerary": "2-3 Days",
-      "price": "₹14,000 - ₹20,000",
+      "price": "₹30,000",
       "rating": 4.8
     },
     {
@@ -230,8 +230,8 @@
       "description": "Luxury: Relax, explore, indulge in Daman and Diu.",
       "link": "/",
       "itinerary": "3-5 Days",
-      "price": "₹18,000 - ₹25,000",
-      "rating": 4.9
+      "price": "₹35,000",
+      "rating": 5
     }
   ],
   "Goa": [
@@ -241,8 +241,8 @@
       "description": "Discover the historic Aguada Fort with its panoramic views and rich heritage.",
       "link": "/",
       "itinerary": "1 Day",
-      "price": "₹5,000 - ₹7,000",
-      "rating": 4.4
+      "price": "₹12,000",
+      "rating": 4
     },
     {
       "image": "/images/Rajasthan_img/Baga-Beach-in-goa.jpg",
@@ -250,7 +250,7 @@
       "description": "Enjoy the serene beaches of Goa.",
       "link": "/",
       "itinerary": "2-3 Days",
-      "price": "₹8,000 - ₹12,000",
+      "price": "₹20,000",
       "rating": 4.7
     },
     {
@@ -259,8 +259,8 @@
       "description": "Explore the cultural landmarks and colonial architecture of Old Goa and cultural dances.",
       "link": "/",
       "itinerary": "2-4 Days",
-      "price": "₹10,000 - ₹15,000",
-      "rating": 4.6
+      "price": "₹25,000",
+      "rating": 3.6
     },
     {
       "image": "/images/Rajasthan_img/watergoa.jpg",
@@ -268,7 +268,7 @@
       "description": "Embark on thrilling water sports activities in the clear waters of Goa.",
       "link": "/",
       "itinerary": "3-5 Days",
-      "price": "₹12,000 - ₹18,000",
+      "price": "₹35,000",
       "rating": 4.8
     },
     {
@@ -277,8 +277,8 @@
       "description": "Experience the natural beauty and adventure at Dudhsagar Falls.",
       "link": "/",
       "itinerary": "3-4 Days",
-      "price": "₹15,000 - ₹20,000",
-      "rating": 4.9
+      "price": "₹30,000",
+      "rating": 5
     }
   ],
   "Kerala": [
@@ -288,7 +288,7 @@
       "description": "Explore the serene backwaters of Kerala on a traditional houseboat.",
       "link": "/",
       "itinerary": "2-3 Days",
-      "price": "₹15,000 - ₹20,000",
+      "price": "₹18,000",
       "rating": 4.8
     },
     {
@@ -297,8 +297,8 @@
       "description": "Discover the lush tea gardens and scenic views of Munnar.",
       "link": "/",
       "itinerary": "2 Days",
-      "price": "₹10,000 - ₹15,000",
-      "rating": 4.7
+      "price": "₹22,000",
+      "rating": 3.7
     },
     {
       "image": "/images/Rajasthan_img/one-bedroom-premium-houseboat-alleppey.jpeg",
@@ -306,8 +306,8 @@
       "description": "Enjoy a relaxing houseboat stay in the tranquil backwaters of Alleppey.",
       "link": "/",
       "itinerary": "2-3 Days",
-      "price": "₹18,000 - ₹25,000",
-      "rating": 4.9
+      "price": "₹25,000",
+      "rating": 5
     },
     {
       "image": "/images/Rajasthan_img/keralwildlife.jpg",
@@ -315,7 +315,7 @@
       "description": "Explore the diverse wildlife in Kerala’s national parks and sanctuaries.",
       "link": "/",
       "itinerary": "3-4 Days",
-      "price": "₹12,000 - ₹18,000",
+      "price": "₹35,000",
       "rating": 4.6
     },
     {
@@ -324,8 +324,8 @@
       "description": "Experience  Kathakali dance and local cultural performances in Kerala.",
       "link": "/",
       "itinerary": "3-5 Days",
-      "price": "₹20,000 - ₹30,000",
-      "rating": 4.9
+      "price": "₹40,000",
+      "rating": 5
     }
   ],
   "Karnataka": [
@@ -335,8 +335,8 @@
       "description": "Karnataka: Heritage Wonders and Timeless Traditions",
       "link": "/",
       "itinerary": "3-4 Days",
-      "price": "₹12,000 - ₹18,000",
-      "rating": 4.5
+      "price": "₹28,000",
+      "rating": 3
     },
     {
       "image": "/images/Rajasthan_img/naturekarna.jpg",
@@ -344,7 +344,7 @@
       "description": "Karnataka: Nature Trails and Adventure Escapes.",
       "link": "/",
       "itinerary": "2-3 Days",
-      "price": "₹10,000 - ₹15,000",
+      "price": "₹18,000",
       "rating": 4.6
     },
     {
@@ -353,7 +353,7 @@
       "description": "Wild Safaris and Nature Bounty",
       "link": "/",
       "itinerary": "3 Days",
-      "price": "₹15,000 - ₹20,000",
+      "price": "₹25,000",
       "rating": 4.7
     },
     {
@@ -362,7 +362,7 @@
       "description": "Scenic Coasts and Beachfront Bliss",
       "link": "/",
       "itinerary": "2 Days",
-      "price": "₹8,000 - ₹12,000",
+      "price": "₹15,000",
       "rating": 4.4
     },
     {
@@ -371,8 +371,8 @@
       "description": "Karnataka: Majestic Hills and Scenic Retreats",
       "link": "/",
       "itinerary": "3 Days",
-      "price": "₹10,000 - ₹15,000",
-      "rating": 4.6
+      "price": "₹35,000",
+      "rating": 5
     }
   ],
   "AndhraPradesh": [
@@ -382,8 +382,8 @@
       "description": "Discover Andhra Pradesh's spiritual heart with Tirupati temples, Srisailam shrine, and Puttaparthi ashram.",
       "link": "/",
       "itinerary": "4 Days / 3 Nights",
-      "price": "₹12,500 per person",
-      "rating": "4.6"
+      "price": "₹22,500 per person",
+      "rating": 3.6
     },
     {
       "image": "/images/Rajasthan_img/historicthings.png",
@@ -391,8 +391,8 @@
       "description": "Explore ancient ruins, temples, heritage sites, and historical marvels.",
       "link": "/",
       "itinerary": "4 Days / 3 Nights",
-      "price": "₹10,000 per person",
-      "rating": "4.5"
+      "price": "₹30,000 per person",
+      "rating": 4.5
     },
     {
       "image": "/images/Rajasthan_img/cbeauty.jpg",
@@ -401,7 +401,7 @@
       "link": "/",
       "itinerary": "4 Days / 3 Nights",
       "price": "₹15,000 per person",
-      "rating": "4.7"
+      "rating": 5
     },
     {
       "image": "/images/Rajasthan_img/andhufour.jpg",
@@ -409,8 +409,8 @@
       "description": "Journey through regal palaces, historic forts, vibrant markets, and cultural richness.",
       "link": "/",
       "itinerary": "4 Days / 3 Nights",
-      "price": "₹13,000 per person",
-      "rating": "4.4"
+      "price": "₹33,000 per person",
+      "rating": 4.4
     },
     {
       "image": "/images/Rajasthan_img/andhrufive.jpg",
@@ -418,8 +418,8 @@
       "description": "Embark on wildlife safaris, scenic treks, and adventurous escapes in lush forests.",
       "link": "/",
       "itinerary": "4 Days / 3 Nights",
-      "price": "₹14,000 per person",
-      "rating": "4.8"
+      "price": "₹44,000 per person",
+      "rating": 4
     }
   ],
   "UttarPradesh": [
@@ -430,7 +430,7 @@
       "link": "/",
       "itinerary": "4 Days / 3 Nights",
       "price": "₹18,000 per person",
-      "rating": "4.8"
+      "rating": 4.8
     },
     {
       "image": "/images/Rajasthan_img/baba.jpg",
@@ -438,8 +438,8 @@
       "description": "Dive into Varanasi’s spirituality and Lucknow’s heritage.",
       "link": "/",
       "itinerary": "5 Days / 4 Nights",
-      "price": "₹12,500 per person",
-      "rating": "4.7"
+      "price": "₹22,500 per person",
+      "rating": 3.7
     },
     {
       "image": "/images/Rajasthan_img/fatehpur-sikri-buland-darwaza-10.jpg",
@@ -447,8 +447,8 @@
       "description": "Discover the Taj Mahal and Mughal architectural splendor.",
       "link": "/",
       "itinerary": "3 Days / 2 Nights",
-      "price": "₹9,000 per person",
-      "rating": "4.6"
+      "price": "₹39,000 per person",
+      "rating": 4.6
     },
     {
       "image": "/images/Rajasthan_img/ghat.jpg",
@@ -456,8 +456,8 @@
       "description": "Explore Mathura, Vrindavan, and cultural landmarks.",
       "link": "/",
       "itinerary": "4 Days / 3 Nights",
-      "price": "₹10,500 per person",
-      "rating": "4.5"
+      "price": "₹40,500 per person",
+      "rating": 4
     },
     {
       "image": "/images/Rajasthan_img/tigerup.jpg",
@@ -465,8 +465,8 @@
       "description": "Experience Mughal sites and wildlife in Dudhwa.",
       "link": "/",
       "itinerary": "5 Days / 4 Nights",
-      "price": "₹15,000 per person",
-      "rating": "4.7"
+      "price": "₹45,000 per person",
+      "rating": 5
     }
   ],
   "Meghalaya": [
@@ -477,7 +477,7 @@
       "link": "/",
       "itinerary": "5 Days / 4 Nights",
       "price": "₹18,000 per person",
-      "rating": "4.8"
+      "rating": 4
     },
     {
       "image": "/images/Rajasthan_img/Adventuremeghalaya.jpg",
@@ -486,7 +486,7 @@
       "link": "/",
       "itinerary": "6 Days / 5 Nights",
       "price": "₹20,000 per person",
-      "rating": "4.7"
+      "rating": 4.7
     },
     {
       "image": "/images/Rajasthan_img/culturemeghalaya.jpg",
@@ -494,8 +494,8 @@
       "description": "Explore Khasi culture, historical sites, and Garo Hills.",
       "link": "/",
       "itinerary": "4 Days / 3 Nights",
-      "price": "₹15,000 per person",
-      "rating": "4.5"
+      "price": "₹35,000 per person",
+      "rating": 5
     },
     {
       "image": "/images/Rajasthan_img/honeymeghalaya.jpg",
@@ -503,8 +503,8 @@
       "description": "Boat rides, cozy stays, scenic viewpoints.",
       "link": "/",
       "itinerary": "5 Days / 4 Nights",
-      "price": "₹22,000 per couple",
-      "rating": "4.9"
+      "price": "₹42,000 per couple",
+      "rating": 4.9
     },
     {
       "image": "/images/Rajasthan_img/familymeghalaya.jpg",
@@ -512,8 +512,8 @@
       "description": "Family activities, trekking, picnics, Umiam Lake.",
       "link": "/",
       "itinerary": "5 Days / 4 Nights",
-      "price": "₹17,000 per person",
-      "rating": "4.6"
+      "price": "₹37,000 per person",
+      "rating": 3.6
     }
   ],
   "Ladakh": [
@@ -523,8 +523,8 @@
       "description": "Explore stunning Ladakh with Nubra Valley and Pangong Lake.",
       "link": "/",
       "itinerary": "6 Days / 5 Nights",
-      "price": "₹25,000 per person",
-      "rating": "4.8"
+      "price": "₹20,000 per person",
+      "rating": 3.8
     },
     {
       "image": "/images/Ladakh_img/Nubra-CamelSafari.jpg",
@@ -532,8 +532,8 @@
       "description": "Discover the beauty of Ladakh with an exciting excursion to Pangong Lake.",
       "link": "/",
       "itinerary": "5 Days / 4 Nights",
-      "price": "₹22,000 per person",
-      "rating": "4.7"
+      "price": "₹18,000 per person",
+      "rating": 4.7
     },
     {
       "image": "/images/Ladakh_img/Ladakh-Temple.jpg",
@@ -542,7 +542,7 @@
       "link": "/",
       "itinerary": "7 Days / 6 Nights",
       "price": "₹28,000 per person",
-      "rating": "4.9"
+      "rating": 5
     },
     {
       "image": "/images/Ladakh_img/LandscapeKhardungla.jpg",
@@ -550,8 +550,8 @@
       "description": "Explore the breathtaking high passes and unique landscapes of Ladakh.",
       "link": "/",
       "itinerary": "6 Days / 5 Nights",
-      "price": "₹26,000 per person",
-      "rating": "4.6"
+      "price": "₹32,000 per person",
+      "rating": 4.6
     },
     {
       "image": "/images/Ladakh_img/MotorbikesinLadakh.jpg",
@@ -559,8 +559,8 @@
       "description": "Embark on a thrilling bike expedition through Ladakh from Srinagar.",
       "link": "/",
       "itinerary": "8 Days / 7 Nights",
-      "price": "₹30,000 per person",
-      "rating": "4.9"
+      "price": "₹45,000 per person",
+      "rating": 4
     }
   ],
   "JammuAndKashmir": [
@@ -570,8 +570,8 @@
       "description": "Enjoy breathtaking views of Kashmir with a stay in a houseboat.",
       "link": "/",
       "itinerary": "4 Days",
-      "price": "₹15,000 per person",
-      "rating": "4.8"
+      "price": "₹18,000 per person",
+      "rating": 4.8
     },
     {
       "image": "/images/J&K_img/HouseboatTour.jpg",
@@ -579,8 +579,8 @@
       "description": "Experience a magnificent Kashmir holiday with houseboat accommodation.",
       "link": "/",
       "itinerary": "4 Days",
-      "price": "₹16,000 per person",
-      "rating": "4.7"
+      "price": "₹20,000 per person",
+      "rating": 4.7
     },
     {
       "image": "/images/J&K_img/GulmargTour.jpeg",
@@ -588,8 +588,8 @@
       "description": "Explore the beauty of Kashmir with an excursion to Gulmarg.",
       "link": "/",
       "itinerary": "4 Days",
-      "price": "₹17,000 per person",
-      "rating": "4.9"
+      "price": "₹27,000 per person",
+      "rating": 3.9
     },
     {
       "image": "/images/J&K_img/Mata-Vaishno-Devi.jpg",
@@ -597,8 +597,8 @@
       "description": "Embark on a holy trip to Vaishno Devi with a land-only package.",
       "link": "/",
       "itinerary": "3 Days",
-      "price": "₹14,000 per person",
-      "rating": "4.6"
+      "price": "₹34,000 per person",
+      "rating": 4.6
     },
     {
       "image": "/images/J&K_img/JammuTour.jpg",
@@ -606,8 +606,8 @@
       "description": "Enjoy a stunning Kashmir holiday combined with Vaishno Devi Darshan.",
       "link": "/",
       "itinerary": "5 Days",
-      "price": "₹18,000 per person",
-      "rating": "4.9"
+      "price": "₹38,000 per person",
+      "rating": 5
     }
   ],
   "HimachalPradesh": [
@@ -617,7 +617,7 @@
       "description": "Enjoy a serene holiday in Shimla with a convenient start from Chandigarh.",
       "link": "/",
       "itinerary": "4 Days",
-      "price": "₹12,000",
+      "price": "₹18,000",
       "rating": 4.7
     },
     {
@@ -635,7 +635,7 @@
       "description": "Spend a romantic weekend in the scenic beauty of Shimla, starting from Delhi.",
       "link": "/",
       "itinerary": "4 Days",
-      "price": "₹15,000",
+      "price": "₹25,000",
       "rating": 4.7
     },
     {
@@ -644,8 +644,8 @@
       "description": "Discover the magical beauty of Himachal Pradesh with flights included from Delhi.",
       "link": "/",
       "itinerary": "5 Days",
-      "price": "₹25,000",
-      "rating": 4.9
+      "price": "₹35,000",
+      "rating": 5
     },
     {
       "image": "/images/HimachalPradesh_img/HP-Tour-5.jpg",
@@ -653,8 +653,8 @@
       "description": "Explore the majestic landscapes of Kasol and Manali with this tour package.",
       "link": "/",
       "itinerary": "5 Days",
-      "price": "₹22,000",
-      "rating": 4.8
+      "price": "₹42,000",
+      "rating": 3.8
     }
   ],
   "Uttarakhand": [
@@ -665,7 +665,7 @@
       "link": "/",
       "itinerary": "4 Days",
       "price": "₹14,000",
-      "rating": 4.7
+      "rating": 3.7
     },
     {
       "image": "/images/Uttarakhand_img/Uttarakhand-Tour-2.jpg",
@@ -673,8 +673,8 @@
       "description": "Enjoy a memorable trip to Mussoorie and Dehradun with your soulmate.",
       "link": "/",
       "itinerary": "5 Days",
-      "price": "₹16,000",
-      "rating": 4.8
+      "price": "₹26,000",
+      "rating": 3.8
     },
     {
       "image": "/images/Uttarakhand_img/Uttarakhand-Tour-3.jpg",
@@ -682,7 +682,7 @@
       "description": "Take a short and scenic road trip to Nainital starting from Delhi.",
       "link": "/",
       "itinerary": "4 Days",
-      "price": "₹13,000",
+      "price": "₹33,000",
       "rating": 4.7
     },
     {
@@ -691,8 +691,8 @@
       "description": "Discover the serenity of Rishikesh and Srinagar Garhwal along with Mussoorie.",
       "link": "/",
       "itinerary": "6 Days",
-      "price": "₹18,000",
-      "rating": 4.9
+      "price": "₹40,000",
+      "rating": 5
     },
     {
       "image": "/images/Uttarakhand_img/Uttarakhand-Tour-5.jpg",
@@ -700,7 +700,7 @@
       "description": "Embark on a spiritual journey with the Chardham Yatra group tour.",
       "link": "/",
       "itinerary": "7 Days",
-      "price": "₹22,000",
+      "price": "₹48,000",
       "rating": 4.8
     }
   ],
@@ -720,7 +720,7 @@
       "description": "Enjoy a romantic honeymoon with scenic views and serene surroundings in Kalimpong and Darjeeling.",
       "link": "/",
       "itinerary": "5 Days",
-      "price": "₹24,000",
+      "price": "₹18,000",
       "rating": 4.7
     },
     {
@@ -729,8 +729,8 @@
       "description": "Experience the romance of the mountains in the picturesque towns of Lachung and Lachen.",
       "link": "/",
       "itinerary": "5 Days",
-      "price": "₹23,000",
-      "rating": 4.9
+      "price": "₹33,000",
+      "rating": 5
     },
     {
       "image": "/images/Sikkim_img/Sikkim-Tour-4.jpg",
@@ -738,8 +738,8 @@
       "description": "Indulge in luxury and explore the vibrant culture of Gangtok and Darjeeling on this tour package.",
       "link": "/",
       "itinerary": "6 Days",
-      "price": "₹30,000",
-      "rating": 4.8
+      "price": "₹40,000",
+      "rating": 3.8
     },
     {
       "image": "/images/Sikkim_img/Sikkim-Tour-5.jpg",
@@ -747,7 +747,7 @@
       "description": "Celebrate your honeymoon amidst the serene and tranquil beauty of the Northeast.",
       "link": "/",
       "itinerary": "6 Days",
-      "price": "₹28,000",
+      "price": "₹42,000",
       "rating": 4.9
     }
   ],
@@ -758,7 +758,7 @@
       "description": "Discover the rich cultural and historical heritage of Kolkata.",
       "link": "/",
       "itinerary": "3 Days",
-      "price": "₹12,000",
+      "price": "₹18,000",
       "rating": 4.6
     },
     {
@@ -776,8 +776,8 @@
       "description": "Experience the artistic and cultural marvels of Kolkata and Shantiniketan.",
       "link": "/",
       "itinerary": "4 Days",
-      "price": "₹15,000",
-      "rating": 4.8
+      "price": "₹35,000",
+      "rating": 3.8
     },
     {
       "image": "/images/WestBengal_img/WestBengal-Tour-4.jpg",
@@ -785,8 +785,8 @@
       "description": "Enjoy the serene hill stations of Darjeeling and Kalimpong.",
       "link": "/",
       "itinerary": "6 Days",
-      "price": "₹22,000",
-      "rating": 4.7
+      "price": "₹42,000",
+      "rating": 3.7
     },
     {
       "image": "/images/WestBengal_img/WestBengal-Tour-5.jpg",
@@ -794,8 +794,8 @@
       "description": "Experience the diverse attractions of West Bengal, from hills to heritage sites and many more.",
       "link": "/",
       "itinerary": "7 Days",
-      "price": "₹25,000",
-      "rating": 4.8
+      "price": "₹55,000",
+      "rating": 5
     }
   ],
   "Assam": [
@@ -805,8 +805,8 @@
       "description": "Experience a romantic getaway in the serene landscapes of Assam.",
       "link": "/",
       "itinerary": "5 Days",
-      "price": "₹18,000",
-      "rating": 4.7
+      "price": "₹28,000",
+      "rating": 3.7
     },
     {
       "image": "/images/Assam_img/assam-Tour-2.jpg",
@@ -823,8 +823,8 @@
       "description": "Discover the rich wildlife and visit famous national parks in Assam.",
       "link": "/",
       "itinerary": "6 Days",
-      "price": "₹20,000",
-      "rating": 4.8
+      "price": "₹30,000",
+      "rating": 5
     },
     {
       "image": "/images/Assam_img/assam-Tour-4.jpg",
@@ -832,7 +832,7 @@
       "description": "Visit sacred temples and experience the spiritual essence of Assam.",
       "link": "/",
       "itinerary": "4 Days",
-      "price": "₹12,000",
+      "price": "₹32,000",
       "rating": 4.5
     },
     {
@@ -841,7 +841,7 @@
       "description": "A memorable family vacation exploring Assam’s cultural and natural sites.",
       "link": "/",
       "itinerary": "5 Days",
-      "price": "₹16,000",
+      "price": "₹46,000",
       "rating": 4.7
     }
   ],
@@ -852,8 +852,8 @@
       "description": "Discover the ancient temples and rich cultural heritage of Bhubaneswar with this package.",
       "link": "/",
       "itinerary": "4 Days",
-      "price": "₹14,000",
-      "rating": 4.6
+      "price": "₹18,000",
+      "rating": 3.6
     },
     {
       "image": "/images/Odisha_img/Odisha-Tour-2.jpg",
@@ -861,7 +861,7 @@
       "description": "Visit the famous Jagannath Temple and attend the annual Rath Yatra in Puri with this package.",
       "link": "/",
       "itinerary": "3 Days",
-      "price": "₹12,000",
+      "price": "₹22,000",
       "rating": 4.7
     },
     {
@@ -870,8 +870,8 @@
       "description": "Explore the architectural marvel of the Sun Temple, a UNESCO World Heritage Site.",
       "link": "/",
       "itinerary": "5 Days",
-      "price": "₹16,000",
-      "rating": 4.8
+      "price": "₹36,000",
+      "rating": 3.8
     },
     {
       "image": "/images/Odisha_img/Odisha-Tour-4.jpg",
@@ -879,7 +879,7 @@
       "description": "Discover the diverse wildlife of Bhitarkanika and the cultural sites of Puri and Bhubaneswar.",
       "link": "/",
       "itinerary": "6 Days",
-      "price": "₹18,000",
+      "price": "₹38,000",
       "rating": 4.7
     },
     {
@@ -888,8 +888,8 @@
       "description": "Experience the hidden gems and rich traditions of Eastern India, including Odisha.",
       "link": "/",
       "itinerary": "7 Days",
-      "price": "₹20,000",
-      "rating": 4.8
+      "price": "₹40,000",
+      "rating": 5
     }
   ],
   "TamilNadu": [
@@ -899,8 +899,8 @@
       "description": "Explore the grandeur of Tamil Nadu’s ancient temples, known for their intricate architecture.",
       "link": "/",
       "itinerary": "6 Days",
-      "price": "₹20,000",
-      "rating": 4.7
+      "price": "₹45,000",
+      "rating": 3.9
     },
     {
       "image": "/images/TamilNadu_img/TamilNadu-Tour-2.jpg",
@@ -908,8 +908,8 @@
       "description": "Experience the serene hill stations of Ooty and Kodaikanal, perfect for a peaceful retreat.",
       "link": "/",
       "itinerary": "5 Days",
-      "price": "₹18,000",
-      "rating": 4.8
+      "price": "₹38,000",
+      "rating": 3.8
     },
     {
       "image": "/images/TamilNadu_img/TamilNadu-Tour-3.jpg",
@@ -917,7 +917,7 @@
       "description": "Discover the rich cultural heritage and historical significance of Madurai and Rameswaram.",
       "link": "/",
       "itinerary": "4 Days",
-      "price": "₹15,000",
+      "price": "₹35,000",
       "rating": 4.6
     },
     {
@@ -926,7 +926,7 @@
       "description": "Explore the vibrant city life, historical landmarks, and beautiful beaches of Chennai.",
       "link": "/",
       "itinerary": "3 Days",
-      "price": "₹12,000",
+      "price": "₹18,000",
       "rating": 4.7
     },
     {
@@ -935,8 +935,8 @@
       "description": "Relax and unwind on the pristine beaches of Tamil Nadu, offering a perfect coastal getaway.",
       "link": "/",
       "itinerary": "4 Days",
-      "price": "₹14,000",
-      "rating": 4.8
+      "price": "₹24,000",
+      "rating": 5
     }
   ]
 }

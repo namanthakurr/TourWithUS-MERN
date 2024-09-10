@@ -5,14 +5,15 @@ function Destination() {
     <>
       <div className="Destination">
         <div className="Destination-info">
-        <div className="HEADER">
-    <h3>QUICK GETAWAY DESTINATIONS</h3>
-    <p>Ideal for 2-3 or 3-5 days trip</p>
-  </div>
-          <div className="Countries-Distribution">
+          <div className="HEADER">
+            <h3>QUICK GETAWAY DESTINATIONS</h3>
+            <p>Ideal for 2-3 or 3-5 days trip</p>
+          </div>
+          <div className="Countries-Distribution container">
             <div className="Ujjain">
               <img
                 src="mahakal.jpg"
+                className="quick_scale"
                 alt="coming soon..."
                 style={{
                   width: "420px",
@@ -31,6 +32,7 @@ function Destination() {
                   <img
                     src="udaipur.jpg"
                     alt="coming soon..."
+                    className="quick_scale"
                     style={{
                       width: "200px",
                       height: "250px",
@@ -48,6 +50,7 @@ function Destination() {
                   <img
                     src="darjeeling.jpg"
                     alt="coming soon..."
+                    className="quick_scale"
                     style={{
                       width: "200px",
                       height: "250px",
@@ -67,6 +70,7 @@ function Destination() {
               <img
                 src="lucknow.jpg"
                 alt="coming soon..."
+                className="quick_scale"
                 style={{
                   width: "400px",
                   height: "469px",
@@ -85,6 +89,7 @@ function Destination() {
                 <img
                   src="chandigarh.jpg"
                   alt="coming soon..."
+                  className="quick_scale"
                   style={{
                     width: "360px",
                     height: "230px",
@@ -102,6 +107,7 @@ function Destination() {
                 <img
                   src="mysore.jpg"
                   alt="coming soon..."
+                  className="quick_scale"
                   style={{
                     width: "360px",
                     height: "230px",
