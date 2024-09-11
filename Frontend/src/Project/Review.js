@@ -25,9 +25,9 @@ function Review() {
     <div className="Revieww">
       <p>What the press says</p>
       <div className="tabu">
-        <div class="tab">
+        <div className="tab">
           <button
-            class="tablinks"
+            className="tablinks"
             onMouseOver={(event) => {
               openCity(event, "London");
             }}
@@ -35,7 +35,7 @@ function Review() {
             <img src="/images/yourstory.jpg" style={{ width: "100px" }} alt="" />
           </button>
           <button
-            class="tablinks"
+            className="tablinks"
             onMouseOver={(event) => {
               openCity(event, "Paris");
             }}
@@ -43,7 +43,7 @@ function Review() {
             <img src="/images/thehindu.jpg" style={{ width: "100px" }} alt="" />
           </button>
           <button
-            class="tablinks"
+            className="tablinks"
             onMouseOver={(event) => {
               openCity(event, "Tokyo");
             }}
@@ -51,7 +51,7 @@ function Review() {
             <img src="/images/NASCOM.png" style={{ width: "100px" }} alt="" />
           </button>
           <button
-            class="tablinks"
+            className="tablinks"
             onMouseOver={(event) => {
               openCity(event, "to");
             }}
@@ -59,7 +59,7 @@ function Review() {
             <img src="/images/TCT.png" style={{ width: "100px" }} alt="" />
           </button>
           <button
-            class="tablinks"
+            className="tablinks"
             onMouseOver={(event) => {
               openCity(event, "yo");
             }}
@@ -68,7 +68,7 @@ function Review() {
           </button>
         </div>
 
-        <div id="London" class="tabcontent">
+        <div id="London" className="tabcontent">
           <h3>
             “Tour-With-Us is also carving a niche for itself in this space and
             intends to become one-stop shop for personalised vacation”
@@ -76,7 +76,7 @@ function Review() {
           <p>YourStory Jun 08, 2019 Read more on Yourstory</p>
         </div>
 
-        <div id="Paris" class="tabcontent">
+        <div id="Paris" className="tabcontent">
           <h3>
             With offbeat experiences and a platter-full of trending
             destinations, Tour-With-Us is helping change the way people travel”
@@ -84,14 +84,14 @@ function Review() {
           <p>The Hindu Apr 22, 2019 Read more on The Hindu</p>
         </div>
 
-        <div id="to" class="tabcontent">
+        <div id="to" className="tabcontent">
           <h3>
             “Tailor made to suit the needs of the travellers,Tour-With-Us
             offers a much-needed respite from the packaged tours”
           </h3>
           <p>Nasscom May 30, 2019 Read more on Nasscom</p>
         </div>
-        <div id="Tokyo" class="tabcontent">
+        <div id="Tokyo" className="tabcontent">
           <h3>
             “Tour-With-Us uses its unique matching algorithms and price
             comparison engine to help travellers create customised tour packages
@@ -99,7 +99,7 @@ function Review() {
           </h3>
           <p>Economic Times Feb 18, 2019 Read more on Economic Times</p>
         </div>
-        <div id="yo" class="tabcontent">
+        <div id="yo" className="tabcontent">
           <h3>
             “Tour-With-Us has helped book international vacations for over
             10,000 travelers since 2014”

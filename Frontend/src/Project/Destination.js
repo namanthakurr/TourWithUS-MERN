@@ -21,12 +21,12 @@ function Destination() {
                   borderRadius: "50px",
                 }}
               />
-              <p className="Info">
-                Ujjain
-                <p>
+              <div className="Info"> {/* Changed from <p> to <div> */}
+                <p>Ujjain</p>
+                <span>
                   From <span>&#8377;</span> 13,999/-
-                </p>
-              </p>
+                </span>
+              </div>
               <div className="MAld">
                 <div>
                   <img
@@ -39,12 +39,12 @@ function Destination() {
                       borderRadius: "20px",
                     }}
                   />
-                  <p className="Info-1">
-                    Udaipur
-                    <p>
+                  <div className="Info-1"> {/* Changed from <p> to <div> */}
+                    <p>Udaipur</p>
+                    <span>
                       From <span>&#8377;</span> 19,555/-
-                    </p>
-                  </p>
+                    </span>
+                  </div>
                 </div>
                 <div>
                   <img
@@ -57,12 +57,12 @@ function Destination() {
                       borderRadius: "20px",
                     }}
                   />
-                  <p className="Info-2">
-                    Darjeeling
-                    <p>
+                  <div className="Info-2"> {/* Changed from <p> to <div> */}
+                    <p>Darjeeling</p>
+                    <span>
                       From <span>&#8377;</span> 35,000/-
-                    </p>
-                  </p>
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -77,12 +77,12 @@ function Destination() {
                   borderRadius: "20px",
                 }}
               />
-              <p className="Info-3">
-                Lucknow
-                <p>
+              <div className="Info-3"> {/* Changed from <p> to <div> */}
+                <p>Lucknow</p>
+                <span>
                   From <span>&#8377;</span> 18,999/-
-                </p>
-              </p>
+                </span>
+              </div>
             </div>
             <div className="Mexico">
               <div>
@@ -96,12 +96,12 @@ function Destination() {
                     borderRadius: "20px",
                   }}
                 />
-                <p className="Info-4">
-                  Chandigarh
-                  <p>
+                <div className="Info-4"> {/* Changed from <p> to <div> */}
+                  <p>Chandigarh</p>
+                  <span>
                     From <span>&#8377;</span> 23,899/-
-                  </p>
-                </p>
+                  </span>
+                </div>
               </div>
               <div>
                 <img
@@ -114,12 +114,12 @@ function Destination() {
                     borderRadius: "20px",
                   }}
                 />
-                <p className="Info-5">
-                  Mysore
-                  <p>
+                <div className="Info-5"> {/* Changed from <p> to <div> */}
+                  <p>Mysore</p>
+                  <span>
                     From <span>&#8377;</span> 10,999/-
-                  </p>
-                </p>
+                  </span>
+                </div>
               </div>
             </div>
           </div>
