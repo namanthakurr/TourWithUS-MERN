@@ -28,7 +28,7 @@ const SignUpForm = () => {
     }
 
     try {
-      const res = await axios.post("/api/signUp", formData);
+      const res = await axios.post(`${process.env.REACT_APP_SERVER_URL}/api/signUp`, formData);
       console.log(res.data);
 
       if (res.data.status === "success" && res.data.token) {

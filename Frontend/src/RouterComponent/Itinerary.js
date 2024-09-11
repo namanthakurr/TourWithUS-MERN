@@ -16,9 +16,9 @@ const Itinerary = () => {
   useEffect(() => {
     const fetchItineraryData = async () => {
       try {
-        const response = await axios.get(`/api/itinerary/${state}`);
+        const response = await axios.get(`${process.env.REACT_APP_SERVER_URL}/api/itinerary/${state}`);
         setData(response.data);
-        setFilteredData(response.data); // Initialize filtered data with the full data set
+        setFilteredData(response.data);
       } catch (error) {
         console.error("Error fetching itinerary data:", error);
         setData([]); // Set to an empty array or some default data on error
@@ -46,7 +46,7 @@ const Itinerary = () => {
     if (userId) {
       try {
         // console.log("Attempting to book tour with ID:", tour._id);
-        const response = await axios.post("/api/book-tour", {
+        const response = await axios.post(`${process.env.REACT_APP_SERVER_URL}/api/book-tour`, {
           userId,
           tourId: tour._id,
           state // Add the state to the request body
@@ -289,7 +289,7 @@ const Itinerary = () => {
           </div>
 
           <div className="Tour-column">
-            {filteredData.map((item, index) => (
+            {filteredData && filteredData.map((item, index) => (
               <div className="Tour-Info" key={item._id || index}>
                 <div
                   style={{ borderRadius: "10px", overflow: "hidden" }}

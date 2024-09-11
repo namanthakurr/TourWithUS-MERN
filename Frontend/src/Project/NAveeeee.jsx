@@ -20,7 +20,7 @@ function NAveeeee() {
 
   const handleLogout = async () => {
     try {
-      await axios.get('/api/logout');
+      await axios.get(`${process.env.REACT_APP_SERVER_URL}/api/logout`);
       localStorage.removeItem("token");
       setIsLoggedIn(false);
       navigate('/');

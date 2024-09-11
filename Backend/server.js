@@ -22,7 +22,6 @@ app.use("/api", tourRoutes);
 app.use("/api", userRoutes);
 
 const port = process.env.PORT || 8000;
-console.log(port);
 
 app.listen(port, () => {
   console.log(`App running on port http://localhost:${port}...`);

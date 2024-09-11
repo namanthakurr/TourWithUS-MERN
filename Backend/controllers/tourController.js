@@ -1,7 +1,6 @@
 import TourData from "../models/TourModel.js";
 import User from "../models/userModel.js";
 
-
 // Backend endpoint to get itinerary data by state
 
 export async function getItinerary(req, res) {
@@ -21,7 +20,7 @@ export async function getItinerary(req, res) {
     console.error("Error fetching data:", err);
     res.status(500).json({ error: "Error fetching data" });
   }
-};
+}
 
 export async function bookTours(req, res) {
   const { userId, tourId, state } = req.body;
@@ -75,11 +74,9 @@ export async function bookTours(req, res) {
     console.error("Error booking tour:", err); // Log the error details
     res.status(500).json({ status: "error", error: "Error booking tour" });
   }
-};
+}
 
-
-
-// -----------------extra endpoint for Reference 
+// -----------------extra endpoint for Reference
 
 // app.get("/api/tours", async (req, res) => {
 //   try {
