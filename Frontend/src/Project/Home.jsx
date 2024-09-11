@@ -4,7 +4,7 @@ import Slider1 from "./Slider1.js";
 import Destination from "./Destination.js";
 // import Vacation from "./Vacation.js";
 import Youtube from "./Youtube.js";
-import Packages from "./Packages.js";
+// import Packages from "./Packages.js";
 import SignUpForm from "./SignUpForm.js";
 import Review from "./Review.js";
 import Dialogue from './Dialogue.js';
@@ -42,7 +42,7 @@ const Home = () => {
       <Destination />
       <Dialogue />
       {/* <Vacation /> */}
-      <Packages />
+      {/* <Packages /> */}
       <Youtube />
       <Review />
       <SignUpForm />

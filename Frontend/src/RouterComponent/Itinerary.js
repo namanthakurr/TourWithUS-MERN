@@ -9,12 +9,9 @@ const Itinerary = () => {
   const [filteredData, setFilteredData] = useState([]);
   const [userId, setUserId] = useState(null);
   const [selectedPriceRanges, setSelectedPriceRanges] = useState([]);
-<<<<<<< Updated upstream
   const navigate = useNavigate();
-=======
   const [selectedDayRanges, setSelectedDayRanges] = useState([]); // State for selected day ranges
   const[selectRatings, setSelectRatings] = useState([])
->>>>>>> Stashed changes
 
   useEffect(() => {
     const fetchItineraryData = async () => {
@@ -37,15 +34,9 @@ const Itinerary = () => {
       if (storedUserId) {
         setUserId(storedUserId);
         // console.log("User ID fetched:", storedUserId);
-<<<<<<< Updated upstream
-      } else {
-        console.warn("No userId found in sessionStorage");
-      }
-=======
        } //else {
       //   console.warn("No userId found in sessionStorage");
       // }
->>>>>>> Stashed changes
     };
 
     fetchUserId();

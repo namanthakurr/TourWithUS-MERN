@@ -9,11 +9,7 @@ function Destination() {
             <h3>QUICK GETAWAY DESTINATIONS</h3>
             <p>Ideal for 2-3 or 3-5 days trip</p>
           </div>
-<<<<<<< Updated upstream
           <div className="Countries-Distribution container">
-=======
-          <div className="Countries-Distribution">
->>>>>>> Stashed changes
             <div className="Ujjain">
               <img
                 src="mahakal.jpg"
