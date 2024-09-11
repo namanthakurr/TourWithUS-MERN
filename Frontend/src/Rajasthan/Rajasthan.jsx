@@ -43,7 +43,7 @@ function Rajasthan() {
                 </video>
                 <div className={styles.homeContent}>
                     <h1>Rajasthan</h1>
-                    <p>- Lands of Kings</p>
+                    <p>- Land of Kings</p>
                 </div>
             </div>
             <center>
