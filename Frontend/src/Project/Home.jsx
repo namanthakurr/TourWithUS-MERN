@@ -2,9 +2,7 @@ import React from 'react'
 import Mountain from '../video/Mountain.mp4';
 import Slider1 from "./Slider1.js";
 import Destination from "./Destination.js";
-// import Vacation from "./Vacation.js";
 import Youtube from "./Youtube.js";
-// import Packages from "./Packages.js";
 import SignUpForm from "./SignUpForm.js";
 import Review from "./Review.js";
 import Dialogue from './Dialogue.js';
@@ -41,8 +39,6 @@ const Home = () => {
       <Slider1 />
       <Destination />
       <Dialogue />
-      {/* <Vacation /> */}
-      {/* <Packages /> */}
       <Youtube />
       <Review />
       <SignUpForm />
